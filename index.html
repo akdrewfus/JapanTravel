@@ -298,6 +298,23 @@
       letter-spacing: 0.5px;
       margin-top: 3px;
     }
+    .maps-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: #1558d6;
+      font-size: 0.78rem;
+      text-decoration: none;
+      margin-top: 6px;
+      margin-left: 6px;
+      padding: 3px 9px;
+      background: #e8f0fe;
+      border-radius: 4px;
+      font-weight: 500;
+      border: 1px solid #c5d3f7;
+      transition: background 0.15s;
+    }
+    .maps-link:hover { background: #d0e1fc; }
 
     /* TRANSIT */
     .transit-item {
@@ -892,7 +909,10 @@ function renderTimeline(day) {
           ${s.time ? `<div class="timeline-time">⏰ ${s.time}</div>` : ''}
           <div class="timeline-name">${info.emoji} ${s.name}</div>
           ${s.notes ? `<div class="timeline-notes">${s.notes}</div>` : ''}
-          <span class="stop-type-tag type-${s.type}" style="background:${color}">${info.label}</span>
+          <div style="margin-top:5px;">
+            <span class="stop-type-tag type-${s.type}" style="background:${color}">${info.label}</span>
+            ${(s.lat && s.lng) ? `<a class="maps-link" href="https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}" target="_blank" rel="noopener">🗺️ Directions</a>` : ''}
+          </div>
         </div>
       </li>`;
   }).join('');

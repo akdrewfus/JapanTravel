@@ -22,16 +22,16 @@
         },
         {
           "name": "Courtyard by Marriott Tokyo Station",
-          "lat": 35.6791,
-          "lng": 139.7693,
+          "lat": 35.6777,
+          "lng": 139.7704,
           "type": "hotel",
           "time": "16:15",
           "notes": "Yaesu side of Tokyo Station. Check in, drop bags, freshen up. 7-Eleven is in the building."
         },
         {
           "name": "Tokyo Character Street",
-          "lat": 35.6814,
-          "lng": 139.7670,
+          "lat": 35.6815,
+          "lng": 139.7672,
           "type": "attraction",
           "time": "17:00",
           "notes": "In the Tokyo Station basement. Official Pokémon Center and Ghibli store — perfect first stop for Sadie."
@@ -39,7 +39,7 @@
         {
           "name": "Rokurinsha (Ramen Street)",
           "lat": 35.6813,
-          "lng": 139.7668,
+          "lng": 139.7669,
           "type": "food",
           "time": "19:00",
           "notes": "Thick dipping-style Tsukemen ramen. Open 7:30 AM–10:30 PM, last order 10:00 PM. Expect a short queue."
@@ -84,8 +84,8 @@
       "stops": [
         {
           "name": "Courtyard by Marriott Tokyo Station",
-          "lat": 35.6791,
-          "lng": 139.7693,
+          "lat": 35.6777,
+          "lng": 139.7704,
           "type": "hotel",
           "time": "07:00",
           "notes": "Leave hotel early for Tsukiji."
@@ -100,8 +100,8 @@
         },
         {
           "name": "Sushi no Midori — Ginza",
-          "lat": 35.6703,
-          "lng": 139.7634,
+          "lat": 35.6692,
+          "lng": 139.7633,
           "type": "food",
           "time": "10:00",
           "notes": "10-min walk from Tsukiji to Ginza Station. High-quality sushi at reasonable prices. May have a queue."
@@ -124,8 +124,8 @@
         },
         {
           "name": "Ichiran Shimbashi",
-          "lat": 35.6663,
-          "lng": 139.7577,
+          "lat": 35.6655,
+          "lng": 139.7586,
           "type": "food",
           "time": "19:00",
           "notes": "Solo ramen booths — each person eats in their own cubicle. Customise your broth on a paper form."
@@ -188,8 +188,8 @@
       "stops": [
         {
           "name": "Courtyard by Marriott Tokyo Station",
-          "lat": 35.6791,
-          "lng": 139.7693,
+          "lat": 35.6777,
+          "lng": 139.7704,
           "type": "hotel",
           "time": "07:00",
           "notes": "Leave by 7:30 AM. Walk north to Yaesu South Exit."
@@ -298,16 +298,16 @@
         },
         {
           "name": "Katsudon-ya Zuicho — Shibuya",
-          "lat": 35.6593,
-          "lng": 139.7036,
+          "lat": 35.6601,
+          "lng": 139.6982,
           "type": "food",
           "time": "12:00",
           "notes": "20-min stroll south via Cat Street corridor. Opens 11:30 AM. Counter-only. Crispy pork katsudon — arrive near opening."
         },
         {
           "name": "INITIAL Omotesando",
-          "lat": 35.6663,
-          "lng": 139.7157,
+          "lat": 35.6653,
+          "lng": 139.7142,
           "type": "food",
           "time": "14:00",
           "notes": "17-min walk. 'Shime Parfaits' — artistic high-end desserts with seasonal fruit and Hokkaido cream."
@@ -330,8 +330,8 @@
         },
         {
           "name": "Yakitori Toriyoshi Nishiazabu",
-          "lat": 35.6567,
-          "lng": 139.7267,
+          "lat": 35.6544,
+          "lng": 139.7278,
           "type": "food",
           "time": "18:00",
           "notes": "Arrive ~6:00–6:15 PM, expect 30-min wait. Polished yakitori — calm, minimalist, smoke-free. 'Omakase stop system' keeps skewers coming until you say stop."
@@ -386,24 +386,24 @@
       "stops": [
         {
           "name": "Age.3 Ginza",
-          "lat": 35.6707,
-          "lng": 139.7649,
+          "lat": 35.6738,
+          "lng": 139.7683,
           "type": "shopping",
           "time": "09:15",
-          "notes": "Near the hotel. Browse to warm up the day before heading north."
+          "notes": "Near the hotel. Browse to warm up the day before heading north. (1-24-11 Ginza — north end of Ginza near Ginza-itchome Station)"
         },
         {
           "name": "Kama-Asa — Kappabashi",
-          "lat": 35.7145,
-          "lng": 139.7940,
+          "lat": 35.7136,
+          "lng": 139.7933,
           "type": "shopping",
           "time": "10:00",
           "notes": "Handmade Damascus-style knives. On-site engraving available — perfect functional souvenir. Arrive at opening."
         },
         {
           "name": "Unatoto Asakusa",
-          "lat": 35.7120,
-          "lng": 139.7968,
+          "lat": 35.7119,
+          "lng": 139.7958,
           "type": "food",
           "time": "12:00",
           "notes": "10-min walk from the knife shops. Grilled eel (unagi) over rice — affordable, high-quality."
@@ -426,24 +426,24 @@
         },
         {
           "name": "teamLab Borderless — Azabudai Hills",
-          "lat": 35.6574,
-          "lng": 139.7420,
+          "lat": 35.6579,
+          "lng": 139.7445,
           "type": "activity",
           "time": "15:00",
           "notes": "Booked 3:00 PM entry. Everything connected underground from Kamiyacho Station — follow signs for Azabudai Hills."
         },
         {
           "name": "Oumi Beef Yakiniku Nikutatsu — Ginza",
-          "lat": 35.6714,
-          "lng": 139.7658,
+          "lat": 35.6706,
+          "lng": 139.7648,
           "type": "food",
           "time": "19:00",
           "notes": "A5 Wagyu with private booth seating. Take Hibiya Line back toward Ginza (~10 min)."
         },
         {
           "name": "Itoya Stationery Store — Ginza",
-          "lat": 35.6713,
-          "lng": 139.7651,
+          "lat": 35.6729,
+          "lng": 139.7678,
           "type": "attraction",
           "time": "20:30",
           "notes": "12-story stationery store. Visit the indoor hydroponic farm on the top floor before or after dinner."
@@ -528,19 +528,19 @@
         },
         {
           "name": "Godzilla Head — Shinjuku Toho Building",
-          "lat": 35.6941,
-          "lng": 139.7024,
+          "lat": 35.6940,
+          "lng": 139.7019,
           "type": "attraction",
           "time": "14:00",
-          "notes": "Look up at the Kabukicho entrance. The Godzilla head looms over the building — unmissable."
+          "notes": "Look up at the Kabukicho entrance. The Godzilla head looms over the building — unmissable. (1-19-1 Kabukicho)"
         },
         {
           "name": "Don Quijote Shinjuku Kabukicho",
-          "lat": 35.6934,
-          "lng": 139.7031,
+          "lat": 35.6936,
+          "lng": 139.7012,
           "type": "shopping",
           "time": "14:30",
-          "notes": "Multi-story megastore. Perfect for unique snacks and souvenirs."
+          "notes": "Multi-story megastore. Perfect for unique snacks and souvenirs. (1-16-5 Kabukicho)"
         },
         {
           "name": "120-Minute Cosplay Adventure",
@@ -606,16 +606,16 @@
       "stops": [
         {
           "name": "Courtyard by Marriott — Bell Desk",
-          "lat": 35.6791,
-          "lng": 139.7693,
+          "lat": 35.6777,
+          "lng": 139.7704,
           "type": "hotel",
           "time": "08:30",
           "notes": "⚠️ DROP LARGE LUGGAGE FOR TAKKYUBIN FORWARDING TO OSAKA BY 10:00 AM. Ask the bell desk for the Takkyubin (luggage delivery) service."
         },
         {
           "name": "Animate Ikebukuro Flagship",
-          "lat": 35.7307,
-          "lng": 139.7126,
+          "lat": 35.7301,
+          "lng": 139.7207,
           "type": "shopping",
           "time": "10:00",
           "notes": "World's largest anime shop — 9 floors of manga, CDs, exclusive merch, and a theatre. Often has exclusive pop-up shops. Opens 10:00 AM."
@@ -654,11 +654,11 @@
         },
         {
           "name": "Seafood Buffet Dining Ginza Happo",
-          "lat": 35.6722,
-          "lng": 139.7675,
+          "lat": 35.6671,
+          "lng": 139.7619,
           "type": "food",
           "time": "18:00",
-          "notes": "King crab, fresh sushi, and premium yakiniku in an elegant, smoke-free basement setting."
+          "notes": "King crab, fresh sushi, and premium yakiniku in an elegant, smoke-free basement setting. (GINZA NINE 3, B1 — south Ginza near Shimbashi)"
         }
       ],
       "transit": [
@@ -716,11 +716,11 @@
       "stops": [
         {
           "name": "Godaime Hanayama Udon — Ginza",
-          "lat": 35.6717,
-          "lng": 139.7651,
+          "lat": 35.6699,
+          "lng": 139.7661,
           "type": "food",
           "time": "11:00",
-          "notes": "Optional if Fuji is NOT visible. Near Ginza, famous for extra-wide flat noodles in a crane-shaped bowl. Opens 11:00 AM."
+          "notes": "Optional if Fuji is NOT visible. Near Higashi-Ginza (behind Kabukiza Theatre), famous for extra-wide flat noodles in a crane-shaped bowl. Opens 11:00 AM."
         },
         {
           "name": "Tokyo Station — Shinkansen Gates",
@@ -855,19 +855,19 @@
         },
         {
           "name": "GYUKATSU Kyoto Katsugyu Umeda",
-          "lat": 34.7030,
-          "lng": 135.4979,
+          "lat": 34.7041,
+          "lng": 135.4982,
           "type": "food",
           "time": "12:30",
-          "notes": "Deep-fried beef cutlets — cook on your own personal stone grill. Fun and 'Instagrammable'. 12–15 min walk or 5-min taxi from Westin."
+          "notes": "Deep-fried beef cutlets — cook on your own personal stone grill. Fun and 'Instagrammable'. 12–15 min walk or 5-min taxi from Westin. (1-1-27 Shibata, Kita-ku — B1F near Hankyu Umeda)"
         },
         {
           "name": "Sushi Fukushima — Osaka",
-          "lat": 34.7040,
-          "lng": 135.5050,
+          "lat": 34.6944,
+          "lng": 135.4852,
           "type": "food",
           "time": "18:00",
-          "notes": "2-hour VIP Omakase Course. Do NOT be late. Confirm reservation details."
+          "notes": "2-hour VIP Omakase Course. Do NOT be late. Confirm reservation details. (1-2-17 Fukushima, Fukushima-ku — west of central Osaka near Fukushima Station)"
         }
       ],
       "transit": [
@@ -877,7 +877,7 @@
           "method": "Walk or Taxi",
           "duration": "12–15 min walk / 5 min taxi",
           "cost": "Free / ~¥700",
-          "notes": "Located in the basement level near Umeda Station."
+          "notes": "Located in the basement level near Umeda/Hankyu Station."
         },
         {
           "from": "Westin Osaka",
@@ -885,7 +885,7 @@
           "method": "Taxi (GO app)",
           "duration": "~10 min",
           "cost": "~¥1,000",
-          "notes": "Recommended for a reservation dinner — don't risk being late."
+          "notes": "Recommended for a reservation dinner — don't risk being late. Restaurant is in Fukushima Ward, west of Umeda."
         }
       ],
       "apps": ["GO", "Omakase.in", "TableCheck", "Tablelog"],
@@ -917,8 +917,8 @@
         },
         {
           "name": "Kyoto International Manga Museum",
-          "lat": 35.0117,
-          "lng": 135.7594,
+          "lat": 35.0119,
+          "lng": 135.7593,
           "type": "attraction",
           "time": "09:45",
           "notes": "Arrive by 9:45 AM — be first in line. Head IMMEDIATELY to the 'Manga Artist Corner' to sign up for the Manga Portrait list. Browse 50,000 volumes on the 'Wall of Manga' while you wait."
@@ -1061,11 +1061,11 @@
         },
         {
           "name": "Tsutenkaku — Shinsekai",
-          "lat": 34.6526,
-          "lng": 135.5064,
+          "lat": 34.6525,
+          "lng": 135.5063,
           "type": "attraction",
           "time": "17:30",
-          "notes": "Observatory deck for city views. Or try the 'Tower Slider' — 60-metre slide spiralling down the outside of the tower."
+          "notes": "Observatory deck for city views. Or try the 'Tower Slider' — 60-metre slide spiralling down the outside of the tower. (1-18-6 Ebisuhigashi, Naniwa Ward)"
         },
         {
           "name": "Kasuga Goraku-jo Vintage Arcade",
@@ -1257,27 +1257,27 @@
         },
         {
           "name": "Alice On Wednesday",
-          "lat": 34.6719,
-          "lng": 135.4982,
+          "lat": 34.6714,
+          "lng": 135.4977,
           "type": "shopping",
           "time": "10:45",
-          "notes": "Boutique themed after Alice in Wonderland with a 'goth-cute' aesthetic. Perfect for Sadie."
+          "notes": "Boutique themed after Alice in Wonderland with a 'goth-cute' aesthetic. Perfect for Sadie. (2-12-25 Nishishinsaibashi, Chuo-ku)"
         },
         {
           "name": "Mandarake Grand Chaos",
-          "lat": 34.6733,
-          "lng": 135.5010,
+          "lat": 34.6594,
+          "lng": 135.5057,
           "type": "shopping",
           "time": "11:15",
-          "notes": "Multi-story temple for otaku culture. Rare anime figures, alternative subculture goods."
+          "notes": "Multi-story temple for otaku culture. Rare anime figures, alternative subculture goods. NOTE: Located in Nipponbashi (Den Den Town), not Amemura — 15-min walk south or quick taxi. (4-12-6 Nippombashi, Naniwa-ku)"
         },
         {
           "name": "Red Rock Amemura (or Critters Burger)",
-          "lat": 34.6719,
-          "lng": 135.4984,
+          "lat": 34.6714,
+          "lng": 135.4975,
           "type": "food",
           "time": "12:30",
-          "notes": "Option A — Red Rock: viral 'Roast Beef Don' — mountain of beef over rice with creamy yogurt sauce and raw egg yolk. Option B — Critters Burger: best gourmet burger in Osaka, Japanese beef on artisanal buns."
+          "notes": "Option A — Red Rock: viral 'Roast Beef Don' — mountain of beef over rice with creamy yogurt sauce and raw egg yolk. Option B — Critters Burger: best gourmet burger in Osaka, Japanese beef on artisanal buns. (2-10-21 Nishishinsaibashi, Chuo-ku)"
         },
         {
           "name": "Shinsaibashi-Suji Shopping Street",
@@ -1289,11 +1289,11 @@
         },
         {
           "name": "Yoshitora — Honmachi",
-          "lat": 34.6793,
-          "lng": 135.5017,
+          "lat": 34.6796,
+          "lng": 135.5021,
           "type": "food",
           "time": "18:30",
-          "notes": "Premier Osaka-style unagi. Grilled directly over charcoal without steaming — crispier skin, richer flavour. Midosuji Line north 1 stop to Honmachi (2 min), Exit 12, 5-min walk."
+          "notes": "Premier Osaka-style unagi. Grilled directly over charcoal without steaming — crispier skin, richer flavour. Midosuji Line north 1 stop to Honmachi (2 min), Exit 12, 5-min walk. (1-6-6 Bingomachi, Chuo Ward)"
         }
       ],
       "transit": [
