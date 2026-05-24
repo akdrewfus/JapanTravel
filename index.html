@@ -1085,9 +1085,10 @@ function renderAppsTickets(day) {
 function buildMap(day) {
   if (state.map) { state.map.remove(); state.map = null; }
   state.map = L.map('map');
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors',
-    maxZoom: 18,
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 20,
   }).addTo(state.map);
 
   const stops  = (day.stops || []).filter(s => s.lat && s.lng);
