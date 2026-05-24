@@ -1,0 +1,1444 @@
+{
+  "tripName": "Japan 2026",
+  "travelers": ["Andrew", "Sadie"],
+  "days": [
+    {
+      "date": "2026-05-27",
+      "title": "The Landing & The Underground City",
+      "location": "Tokyo",
+      "hotel": "Courtyard by Marriott Tokyo Station",
+      "suggestedStart": "15:25",
+      "startReason": "Arrival day — you land at Haneda at 3:25 PM. Zero complexity goal after a 14-hour flight.",
+      "rushHourNote": "",
+      "dayNotes": "Goal: zero complexity. Private transfer to hotel, drop bags, then a 4-min walk into Tokyo Station's underground for world-class ramen. The 7-Eleven is right in your hotel building for late-night snacks.",
+      "stops": [
+        {
+          "name": "Haneda Airport Terminal 3",
+          "lat": 35.5494,
+          "lng": 139.7803,
+          "type": "transport",
+          "time": "15:25",
+          "notes": "Meet your Klook driver at the arrivals hall. Look for a sign with your name."
+        },
+        {
+          "name": "Courtyard by Marriott Tokyo Station",
+          "lat": 35.6791,
+          "lng": 139.7693,
+          "type": "hotel",
+          "time": "16:15",
+          "notes": "Yaesu side of Tokyo Station. Check in, drop bags, freshen up. 7-Eleven is in the building."
+        },
+        {
+          "name": "Tokyo Character Street",
+          "lat": 35.6814,
+          "lng": 139.7670,
+          "type": "attraction",
+          "time": "17:00",
+          "notes": "In the Tokyo Station basement. Official Pokémon Center and Ghibli store — perfect first stop for Sadie."
+        },
+        {
+          "name": "Rokurinsha (Ramen Street)",
+          "lat": 35.6813,
+          "lng": 139.7668,
+          "type": "food",
+          "time": "19:00",
+          "notes": "Thick dipping-style Tsukemen ramen. Open 7:30 AM–10:30 PM, last order 10:00 PM. Expect a short queue."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Haneda Terminal 3",
+          "to": "Courtyard by Marriott",
+          "method": "Private Limo (Klook)",
+          "duration": "30–40 min",
+          "cost": "Pre-paid",
+          "notes": "Driver meets you at arrivals. Drop-off at hotel lobby."
+        },
+        {
+          "from": "Hotel",
+          "to": "Rokurinsha / Character Street",
+          "method": "Walk",
+          "duration": "4 min",
+          "cost": "Free",
+          "notes": "Walk north to Tokyo Station Yaesu South Exit. Follow signs for 'Tokyo Ichibangai' (First Avenue), then Ramen Street."
+        }
+      ],
+      "apps": ["GO", "SUICA", "Japan Travel by NAVITIME", "NERV", "Papago", "Payke"],
+      "tickets": [
+        {
+          "name": "Klook Limo Transfer — Haneda to Hotel",
+          "reference": "",
+          "notes": "Pre-booked via Klook. Driver meets at Terminal 3 arrivals hall."
+        }
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "title": "The Fish Market & The Anime Mecca",
+      "location": "Tokyo",
+      "hotel": "Courtyard by Marriott Tokyo Station",
+      "suggestedStart": "07:00",
+      "startReason": "Tsukiji is best before 9 AM when stalls are freshest. Heading south early lets you beat the rush hour crowd heading into the city center.",
+      "rushHourNote": "Avoid Tokyo trains 7:30–9:30 AM (you'll be walking to Tsukiji). Return from Akihabara before 5:30 PM or after 8 PM to skip evening rush.",
+      "dayNotes": "High-protein morning at the market, then deep anime dive in Akihabara. Stick to the Hibiya and Yamanote lines — simple and direct.",
+      "stops": [
+        {
+          "name": "Courtyard by Marriott Tokyo Station",
+          "lat": 35.6791,
+          "lng": 139.7693,
+          "type": "hotel",
+          "time": "07:00",
+          "notes": "Leave hotel early for Tsukiji."
+        },
+        {
+          "name": "Tsukiji Outer Market",
+          "lat": 35.6654,
+          "lng": 139.7707,
+          "type": "attraction",
+          "time": "07:20",
+          "notes": "Walk 15 min south or take a 5-min taxi (GO app). Fresh sushi, tamagoyaki, and street food. Browse the stalls."
+        },
+        {
+          "name": "Sushi no Midori — Ginza",
+          "lat": 35.6703,
+          "lng": 139.7634,
+          "type": "food",
+          "time": "10:00",
+          "notes": "10-min walk from Tsukiji to Ginza Station. High-quality sushi at reasonable prices. May have a queue."
+        },
+        {
+          "name": "Radio Kaikan — Akihabara",
+          "lat": 35.6987,
+          "lng": 139.7731,
+          "type": "shopping",
+          "time": "12:00",
+          "notes": "Floors 4–6: Hatsune Miku and anime merchandise. Right outside the Electric Town Exit."
+        },
+        {
+          "name": "Kanda Myojin Shrine",
+          "lat": 35.7020,
+          "lng": 139.7649,
+          "type": "attraction",
+          "time": "14:30",
+          "notes": "10-min walk from Radio Kaikan. The 'geek shrine' — buy talismans for your electronics. Beautiful vermilion gates."
+        },
+        {
+          "name": "Ichiran Shimbashi",
+          "lat": 35.6663,
+          "lng": 139.7577,
+          "type": "food",
+          "time": "19:00",
+          "notes": "Solo ramen booths — each person eats in their own cubicle. Customise your broth on a paper form."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Hotel",
+          "to": "Tsukiji Outer Market",
+          "method": "Walk or Taxi",
+          "duration": "15 min walk / 5 min taxi",
+          "cost": "Free / ~¥800",
+          "notes": "Walk south. Or use GO app for a quick taxi."
+        },
+        {
+          "from": "Tsukiji",
+          "to": "Ginza Station (Sushi no Midori)",
+          "method": "Walk",
+          "duration": "10 min",
+          "cost": "Free",
+          "notes": "Head north toward Ginza."
+        },
+        {
+          "from": "Ginza Station",
+          "to": "Akihabara Station",
+          "method": "Hibiya Line (Gray)",
+          "duration": "10 min",
+          "cost": "¥180",
+          "notes": "Direct line from Ginza. Exit at Akihabara — use Electric Town Exit for Radio Kaikan."
+        },
+        {
+          "from": "Akihabara",
+          "to": "Tokyo Station",
+          "method": "JR Yamanote Line (Green)",
+          "duration": "5 min",
+          "cost": "¥160",
+          "notes": "Only 2 stops. First train 4:30 AM, last train 12:30 AM."
+        },
+        {
+          "from": "Kyobashi Station (near hotel)",
+          "to": "Shimbashi Station (dinner)",
+          "method": "Ginza Line (Yellow)",
+          "duration": "3 min",
+          "cost": "¥180",
+          "notes": "Kyobashi Station is a 1-min walk from the hotel lobby. Direct to Shimbashi."
+        }
+      ],
+      "apps": ["SUICA", "Japan Travel by NAVITIME", "Tablelog", "Ramen Beast", "GO"],
+      "tickets": []
+    },
+    {
+      "date": "2026-05-29",
+      "title": "Tokyo DisneySea",
+      "location": "Tokyo",
+      "hotel": "Courtyard by Marriott Tokyo Station",
+      "suggestedStart": "07:30",
+      "startReason": "Bus departs from Yaesu South Exit Bus Stop #1. Buses run every 10–20 min from 7:00 AM. Leave hotel by 7:30 AM to arrive at park near opening and beat the entry queues.",
+      "rushHourNote": "Leaving at 7:30 AM means you travel before peak rush hour (7:30–9:30 AM) — it'll be moderately busy but you'll be heading against the main commuter flow.",
+      "dayNotes": "DisneySea is legendary but transit is tricky. Take the bus from Yaesu South Exit — NOT the train (the Disney platform is a 20-min maze inside the station). Meals at quick service. Keep checking for last-minute restaurant reservations in the app.",
+      "stops": [
+        {
+          "name": "Courtyard by Marriott Tokyo Station",
+          "lat": 35.6791,
+          "lng": 139.7693,
+          "type": "hotel",
+          "time": "07:00",
+          "notes": "Leave by 7:30 AM. Walk north to Yaesu South Exit."
+        },
+        {
+          "name": "Tokyo Station — Yaesu South Exit Bus Stop #1",
+          "lat": 35.6802,
+          "lng": 139.7686,
+          "type": "transport",
+          "time": "07:30",
+          "notes": "Board the direct bus to Tokyo DisneySea here. Runs every 10–20 min, ~35 min ride."
+        },
+        {
+          "name": "Tokyo DisneySea",
+          "lat": 35.6270,
+          "lng": 139.8851,
+          "type": "activity",
+          "time": "08:15",
+          "notes": "Full day at the park! Meals at quick service. Keep scoping last-minute dining reservations."
+        },
+        {
+          "name": "Maihama Station",
+          "lat": 35.6323,
+          "lng": 139.8790,
+          "type": "transport",
+          "time": "21:00",
+          "notes": "Take the Disney Resort Line (monorail) from the park to Maihama Station."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Yaesu South Exit Bus Stop #1",
+          "to": "Tokyo DisneySea",
+          "method": "Direct Bus",
+          "duration": "~35 min",
+          "cost": "~¥900",
+          "notes": "Runs every 10–20 min from 7:00–10:00 AM. Much easier than the train."
+        },
+        {
+          "from": "DisneySea",
+          "to": "Maihama Station",
+          "method": "Disney Monorail (Resort Line)",
+          "duration": "~10 min",
+          "cost": "Included with park ticket",
+          "notes": "Take the monorail around the resort to Maihama Station."
+        },
+        {
+          "from": "Maihama Station",
+          "to": "Tokyo Station",
+          "method": "JR Keiyo Line",
+          "duration": "~20 min",
+          "cost": "¥240",
+          "notes": "Direct train back. Runs until midnight. Park usually empties by 9:30 PM."
+        }
+      ],
+      "apps": ["Klook", "SUICA", "Japan Travel by NAVITIME"],
+      "tickets": [
+        {
+          "name": "Tokyo DisneySea Entry Tickets",
+          "reference": "",
+          "notes": "Must be pre-purchased. Book well in advance — often sells out. Use the Disney app or Klook."
+        }
+      ]
+    },
+    {
+      "date": "2026-05-30",
+      "title": "Harajuku Alternative & Shibuya Lights",
+      "location": "Tokyo",
+      "hotel": "Courtyard by Marriott Tokyo Station",
+      "suggestedStart": "09:00",
+      "startReason": "CAFE REISSUE opens at 10:00 AM. Arrive by 9:45 AM to beat the 2-hour line. Saturday means no rush hour but crowds build quickly after noon.",
+      "rushHourNote": "Saturday — no commuter rush. But Takeshita Street becomes shoulder-to-shoulder after noon. Arrive early.",
+      "dayNotes": "Hit the 3D coffee first to beat the queue, then shop for Sadie's goth/emo style. Stroll via Cat Street to Shibuya for lunch and afternoon. Yakitori dinner in Nishiazabu — a polished, smoke-free spot.",
+      "stops": [
+        {
+          "name": "CAFE REISSUE — Harajuku",
+          "lat": 35.6701,
+          "lng": 139.7029,
+          "type": "food",
+          "time": "09:45",
+          "notes": "Arrive 15 min before 10 AM opening to beat the queue. Show the barista a photo of Sadie's favourite anime character for 3D foam art."
+        },
+        {
+          "name": "Takeshita Street",
+          "lat": 35.6707,
+          "lng": 139.7048,
+          "type": "shopping",
+          "time": "10:30",
+          "notes": "6-min walk from the cafe. Pedestrian-only street — the heart of Harajuku youth fashion."
+        },
+        {
+          "name": "ACDC RAG 原宿本店",
+          "lat": 35.6706,
+          "lng": 139.7046,
+          "type": "shopping",
+          "time": "11:00",
+          "notes": "Yami Kawaii and goth-punk styles Sadie will love. On Takeshita Street."
+        },
+        {
+          "name": "Totti Candy Factory",
+          "lat": 35.6708,
+          "lng": 139.7050,
+          "type": "food",
+          "time": "11:30",
+          "notes": "1-min walk away. Famous 'Harajuku Rainbow' cotton candy — larger than an umbrella. Great photo."
+        },
+        {
+          "name": "Katsudon-ya Zuicho — Shibuya",
+          "lat": 35.6593,
+          "lng": 139.7036,
+          "type": "food",
+          "time": "12:00",
+          "notes": "20-min stroll south via Cat Street corridor. Opens 11:30 AM. Counter-only. Crispy pork katsudon — arrive near opening."
+        },
+        {
+          "name": "INITIAL Omotesando",
+          "lat": 35.6663,
+          "lng": 139.7157,
+          "type": "food",
+          "time": "14:00",
+          "notes": "17-min walk. 'Shime Parfaits' — artistic high-end desserts with seasonal fruit and Hokkaido cream."
+        },
+        {
+          "name": "Shibuya 109",
+          "lat": 35.6597,
+          "lng": 139.6986,
+          "type": "shopping",
+          "time": "15:00",
+          "notes": "15-min walk. 10-story tower — epicentre of Japanese teen fashion with alt and anime-influenced styles."
+        },
+        {
+          "name": "Shibuya Parco",
+          "lat": 35.6592,
+          "lng": 139.6984,
+          "type": "shopping",
+          "time": "16:30",
+          "notes": "If you have extra time. Nintendo and Pokémon stores inside."
+        },
+        {
+          "name": "Yakitori Toriyoshi Nishiazabu",
+          "lat": 35.6567,
+          "lng": 139.7267,
+          "type": "food",
+          "time": "18:00",
+          "notes": "Arrive ~6:00–6:15 PM, expect 30-min wait. Polished yakitori — calm, minimalist, smoke-free. 'Omakase stop system' keeps skewers coming until you say stop."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Tokyo Station",
+          "to": "Harajuku Station",
+          "method": "JR Yamanote Line (Outer Loop / Green)",
+          "duration": "25–30 min",
+          "cost": "¥210",
+          "notes": "From Tokyo Station. Then 10-min scenic walk to CAFE REISSUE."
+        },
+        {
+          "from": "Harajuku",
+          "to": "Shibuya (lunch/shopping)",
+          "method": "Walk via Cat Street",
+          "duration": "20 min",
+          "cost": "Free",
+          "notes": "Trendy Cat Street corridor heading south — worth the stroll."
+        },
+        {
+          "from": "Shibuya Parco",
+          "to": "Yakitori Toriyoshi Nishiazabu",
+          "method": "Taxi (GO app)",
+          "duration": "10–15 min",
+          "cost": "¥1,500–¥2,000",
+          "notes": "Rest your feet — take a taxi."
+        },
+        {
+          "from": "Nishiazabu",
+          "to": "Hotel",
+          "method": "Taxi (GO app)",
+          "duration": "~20 min",
+          "cost": "~¥3,500",
+          "notes": "Direct taxi back to Courtyard Marriott."
+        }
+      ],
+      "apps": ["SUICA", "GO", "Japan Travel by NAVITIME", "Tablelog"],
+      "tickets": []
+    },
+    {
+      "date": "2026-05-31",
+      "title": "The Master Knife & Digital Dreamscapes",
+      "location": "Tokyo",
+      "hotel": "Courtyard by Marriott Tokyo Station",
+      "suggestedStart": "09:00",
+      "startReason": "Browse Age.3 Ginza near the hotel first, then take the Ginza Line to Kappabashi — arriving at 10:00 AM when shops open. teamLab at 3:00 PM is ideal for a Sunday (avoids heaviest morning rush).",
+      "rushHourNote": "Sunday — no rush hour. teamLab Borderless requires a specific entry time — book the 3:00 PM slot in advance.",
+      "dayNotes": "From high-craft knife shopping in Kappabashi to Tokyo's oldest temple, then into the neon art of teamLab. Ends with A5 Wagyu in Ginza — a 10-min walk back to the hotel.",
+      "stops": [
+        {
+          "name": "Age.3 Ginza",
+          "lat": 35.6707,
+          "lng": 139.7649,
+          "type": "shopping",
+          "time": "09:15",
+          "notes": "Near the hotel. Browse to warm up the day before heading north."
+        },
+        {
+          "name": "Kama-Asa — Kappabashi",
+          "lat": 35.7145,
+          "lng": 139.7940,
+          "type": "shopping",
+          "time": "10:00",
+          "notes": "Handmade Damascus-style knives. On-site engraving available — perfect functional souvenir. Arrive at opening."
+        },
+        {
+          "name": "Unatoto Asakusa",
+          "lat": 35.7120,
+          "lng": 139.7968,
+          "type": "food",
+          "time": "12:00",
+          "notes": "10-min walk from the knife shops. Grilled eel (unagi) over rice — affordable, high-quality."
+        },
+        {
+          "name": "Senso-ji Temple",
+          "lat": 35.7148,
+          "lng": 139.7967,
+          "type": "attraction",
+          "time": "13:00",
+          "notes": "5-min walk. Tokyo's oldest temple. Explore the Nakamise shopping street leading to the gate."
+        },
+        {
+          "name": "Asakusa Underground Mall",
+          "lat": 35.7118,
+          "lng": 139.7965,
+          "type": "attraction",
+          "time": "13:45",
+          "notes": "At the Ginza Line entrance. 1950s time-capsule vibe — surprisingly photogenic."
+        },
+        {
+          "name": "teamLab Borderless — Azabudai Hills",
+          "lat": 35.6574,
+          "lng": 139.7420,
+          "type": "activity",
+          "time": "15:00",
+          "notes": "Booked 3:00 PM entry. Everything connected underground from Kamiyacho Station — follow signs for Azabudai Hills."
+        },
+        {
+          "name": "Oumi Beef Yakiniku Nikutatsu — Ginza",
+          "lat": 35.6714,
+          "lng": 139.7658,
+          "type": "food",
+          "time": "19:00",
+          "notes": "A5 Wagyu with private booth seating. Take Hibiya Line back toward Ginza (~10 min)."
+        },
+        {
+          "name": "Itoya Stationery Store — Ginza",
+          "lat": 35.6713,
+          "lng": 139.7651,
+          "type": "attraction",
+          "time": "20:30",
+          "notes": "12-story stationery store. Visit the indoor hydroponic farm on the top floor before or after dinner."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Hotel (Kyobashi Station)",
+          "to": "Tawaramachi Station (Kappabashi)",
+          "method": "Ginza Line (Yellow)",
+          "duration": "15 min",
+          "cost": "¥210",
+          "notes": "Kyobashi Station is 1 min from hotel lobby. Direct to Tawaramachi, then 5-min walk to Kama-Asa."
+        },
+        {
+          "from": "Kappabashi",
+          "to": "Asakusa (lunch & temple)",
+          "method": "Walk",
+          "duration": "10 min",
+          "cost": "Free",
+          "notes": "Easy flat walk south into Asakusa."
+        },
+        {
+          "from": "Asakusa Station",
+          "to": "teamLab Borderless (Kamiyacho)",
+          "method": "Ginza Line → Hibiya Line",
+          "duration": "~35 min",
+          "cost": "¥280",
+          "notes": "Ginza Line from Asakusa → Ginza Station. Switch to Hibiya Line (Gray) → Kamiyacho. Follow underground signs for Azabudai Hills."
+        },
+        {
+          "from": "teamLab / Kamiyacho",
+          "to": "Nikutatsu Ginza (dinner)",
+          "method": "Hibiya Line (Gray)",
+          "duration": "~10 min",
+          "cost": "¥180",
+          "notes": "Head back toward Ginza on the Hibiya Line."
+        },
+        {
+          "from": "Ginza",
+          "to": "Hotel",
+          "method": "Walk",
+          "duration": "10 min",
+          "cost": "Free",
+          "notes": "Easy walk back to Courtyard Marriott."
+        }
+      ],
+      "apps": ["SUICA", "GO", "Japan Travel by NAVITIME", "Klook"],
+      "tickets": [
+        {
+          "name": "teamLab Borderless — 3:00 PM Entry",
+          "reference": "",
+          "notes": "Must book in advance. Entry time is strict. Located in Azabudai Hills, Mori Building."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "title": "Shinjuku Subcultures & Cosplay Adventures",
+      "location": "Tokyo",
+      "hotel": "Courtyard by Marriott Tokyo Station",
+      "suggestedStart": "10:00",
+      "startReason": "Monday morning rush runs until ~9:30 AM. Leave after 10:00 AM to ride a comfortable train. Shinjuku Gyoen is best mid-morning.",
+      "rushHourNote": "Avoid the Marunouchi Line before 9:30 AM on Monday — very crowded. Leave hotel at 10:00 AM.",
+      "dayNotes": "Full day in Shinjuku. The cosplay adventure at 5 PM is the centrepiece — everything else builds around it. Tsurutontan is 4 mins from the Godzilla Head so dinner is effortless post-cosplay.",
+      "stops": [
+        {
+          "name": "Shinjuku Gyoen National Garden",
+          "lat": 35.6852,
+          "lng": 139.7100,
+          "type": "attraction",
+          "time": "10:30",
+          "notes": "Traditional Japanese, French, and English gardens — a peaceful contrast to the Shinjuku skyline. 5-min walk from station exit."
+        },
+        {
+          "name": "Omoide Yokocho (Memory Lane)",
+          "lat": 35.6918,
+          "lng": 139.6995,
+          "type": "food",
+          "time": "12:30",
+          "notes": "'Piss Alley' — narrow grid of tiny stalls serving yakitori and ramen. Look for the green and red lanterns next to the train tracks."
+        },
+        {
+          "name": "Godzilla Head — Shinjuku Toho Building",
+          "lat": 35.6941,
+          "lng": 139.7024,
+          "type": "attraction",
+          "time": "14:00",
+          "notes": "Look up at the Kabukicho entrance. The Godzilla head looms over the building — unmissable."
+        },
+        {
+          "name": "Don Quijote Shinjuku Kabukicho",
+          "lat": 35.6934,
+          "lng": 139.7031,
+          "type": "shopping",
+          "time": "14:30",
+          "notes": "Multi-story megastore. Perfect for unique snacks and souvenirs."
+        },
+        {
+          "name": "120-Minute Cosplay Adventure",
+          "lat": 35.6941,
+          "lng": 139.7026,
+          "type": "activity",
+          "time": "17:00",
+          "notes": "Check in at 5:00 PM near the Godzilla Head. Guided walkthrough — dress as anime characters. Finishes around 7:00 PM."
+        },
+        {
+          "name": "Tsurutontan Shinjuku",
+          "lat": 35.6949,
+          "lng": 139.7029,
+          "type": "food",
+          "time": "19:15",
+          "notes": "4-min walk from Godzilla Head. Stylish udon brasserie — non-smoking. Massive 'washbowl' sized udon bowls. Teenager-friendly with occasional live music."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Tokyo Station",
+          "to": "Shinjuku-gyoemmae Station",
+          "method": "Marunouchi Line (Red)",
+          "duration": "20 min",
+          "cost": "¥210",
+          "notes": "Direct from Tokyo Station. Exit at Shinjuku-gyoemmae — garden is a 5-min walk."
+        },
+        {
+          "from": "Shinjuku Gyoen",
+          "to": "Omoide Yokocho / Kabukicho",
+          "method": "Walk",
+          "duration": "15 min",
+          "cost": "Free",
+          "notes": "Walk toward Shinjuku Station's West Exit for Memory Lane."
+        },
+        {
+          "from": "Shinjuku",
+          "to": "Tokyo Station (return)",
+          "method": "Marunouchi Line (Red)",
+          "duration": "20 min",
+          "cost": "¥210",
+          "notes": "From Shinjuku Station directly back to Tokyo Station."
+        }
+      ],
+      "apps": ["SUICA", "GO", "Japan Travel by NAVITIME"],
+      "tickets": [
+        {
+          "name": "120-Minute Cosplay Adventure",
+          "reference": "",
+          "notes": "5:00 PM check-in near the Godzilla Head, Kabukicho. Pre-book via Klook."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "title": "The Anime Flagship & Sky-High Sunshine City",
+      "location": "Tokyo",
+      "hotel": "Courtyard by Marriott Tokyo Station",
+      "suggestedStart": "08:30",
+      "startReason": "CRITICAL: Luggage must be forwarded to Osaka by 10:00 AM. Drop bags at the bell desk first thing. Animate opens at 10:00 AM — arrive with time to spare.",
+      "rushHourNote": "Tuesday rush 7:30–9:30 AM. Drop luggage at 8:30 AM, then wait until after 9:30 AM before boarding the Marunouchi Line.",
+      "dayNotes": "Last full day in Tokyo. Forward luggage to Osaka via Takkyubin BEFORE 10 AM — critical for smooth departure tomorrow. The entire Sunshine 60 complex is a city within a city.",
+      "stops": [
+        {
+          "name": "Courtyard by Marriott — Bell Desk",
+          "lat": 35.6791,
+          "lng": 139.7693,
+          "type": "hotel",
+          "time": "08:30",
+          "notes": "⚠️ DROP LARGE LUGGAGE FOR TAKKYUBIN FORWARDING TO OSAKA BY 10:00 AM. Ask the bell desk for the Takkyubin (luggage delivery) service."
+        },
+        {
+          "name": "Animate Ikebukuro Flagship",
+          "lat": 35.7307,
+          "lng": 139.7126,
+          "type": "shopping",
+          "time": "10:00",
+          "notes": "World's largest anime shop — 9 floors of manga, CDs, exclusive merch, and a theatre. Often has exclusive pop-up shops. Opens 10:00 AM."
+        },
+        {
+          "name": "Namja Gyoza Stadium — Sunshine 60",
+          "lat": 35.7296,
+          "lng": 139.7193,
+          "type": "food",
+          "time": "12:00",
+          "notes": "6-min walk from Animate. Inside Namjatown (indoor theme park, 2nd floor of Sunshine 60). Try tasting plates from gyoza stalls across Japan. Non-smoking."
+        },
+        {
+          "name": "Pokémon Center Mega Tokyo & Pikachu Sweets",
+          "lat": 35.7298,
+          "lng": 139.7195,
+          "type": "shopping",
+          "time": "13:30",
+          "notes": "One of the largest Pokémon Centres in the world. Pikachu Sweets has character-themed cupcakes and lattes."
+        },
+        {
+          "name": "Donguri Kyowakoku — Studio Ghibli Shop",
+          "lat": 35.7296,
+          "lng": 139.7191,
+          "type": "shopping",
+          "time": "14:30",
+          "notes": "Within the Sunshine 60 mall. High-quality Ghibli merch — Totoro, Spirited Away, and more."
+        },
+        {
+          "name": "Sunshine 60 Observatory Tenbou Park",
+          "lat": 35.7294,
+          "lng": 139.7190,
+          "type": "attraction",
+          "time": "15:30",
+          "notes": "360-degree view from 251 metres up. Indoor grassy areas and café. Great last look at Tokyo."
+        },
+        {
+          "name": "Seafood Buffet Dining Ginza Happo",
+          "lat": 35.6722,
+          "lng": 139.7675,
+          "type": "food",
+          "time": "18:00",
+          "notes": "King crab, fresh sushi, and premium yakiniku in an elegant, smoke-free basement setting."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Tokyo Station",
+          "to": "Ikebukuro Station",
+          "method": "Marunouchi Line (Red)",
+          "duration": "20 min",
+          "cost": "¥210",
+          "notes": "Direct. Leave after 9:30 AM to avoid rush. 5-min walk from station to Animate."
+        },
+        {
+          "from": "Animate",
+          "to": "Sunshine 60 (Namjatown / shops / observatory)",
+          "method": "Walk",
+          "duration": "6 min",
+          "cost": "Free",
+          "notes": "All connected within the Sunshine City complex."
+        },
+        {
+          "from": "Higashi-Ikebukuro Station",
+          "to": "Ginza-itchome Station (dinner)",
+          "method": "Yurakucho Line",
+          "duration": "20 min",
+          "cost": "¥210",
+          "notes": "Higashi-Ikebukuro Station is connected to the Sunshine 60 mall. Direct to Ginza-itchome."
+        },
+        {
+          "from": "Ginza",
+          "to": "Hotel",
+          "method": "Walk or Taxi",
+          "duration": "20 min walk / 5 min taxi",
+          "cost": "Free / ~¥800",
+          "notes": "Last night at the Courtyard. Easy walk or quick taxi."
+        }
+      ],
+      "apps": ["SUICA", "SmartEX", "Japan Travel by NAVITIME"],
+      "tickets": [
+        {
+          "name": "Takkyubin Luggage Forwarding to Osaka",
+          "reference": "",
+          "notes": "Drop large bags at hotel bell desk BEFORE 10:00 AM. They will arrive at The Westin Osaka by the afternoon of June 3. Ask front desk to arrange."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "title": "The Mt. Fuji Shinkansen Run → Soul of Osaka",
+      "location": "Tokyo → Osaka",
+      "hotel": "The Westin Osaka",
+      "suggestedStart": "Check isfujivisible.com first",
+      "startReason": "If Mt. Fuji is visible, take an earlier train and skip lunch. If not visible, enjoy Godaime Hanayama Udon (opens 11 AM) before boarding.",
+      "rushHourNote": "Wednesday — leave hotel after 9:30 AM to avoid residual rush. Dotonbori gets crowded after 8 PM but the Haunted Castle tour is at 8 PM so plan around it.",
+      "dayNotes": "The easiest travel day. Board the Nozomi Shinkansen — SEATS D AND E (right side from Tokyo) for the Mt. Fuji view ~45 min in. Check isfujivisible.com before choosing your train time.",
+      "stops": [
+        {
+          "name": "Godaime Hanayama Udon — Ginza",
+          "lat": 35.6717,
+          "lng": 139.7651,
+          "type": "food",
+          "time": "11:00",
+          "notes": "Optional if Fuji is NOT visible. Near Ginza, famous for extra-wide flat noodles in a crane-shaped bowl. Opens 11:00 AM."
+        },
+        {
+          "name": "Tokyo Station — Shinkansen Gates",
+          "lat": 35.6817,
+          "lng": 139.7674,
+          "type": "transport",
+          "time": "11:30",
+          "notes": "Board Nozomi Shinkansen bound for Shin-Osaka. ⚠️ SEATS D AND E — right-hand side when heading to Osaka. Mt. Fuji visible ~45 min in."
+        },
+        {
+          "name": "Mt. Fuji Viewing Window",
+          "lat": 35.3606,
+          "lng": 138.7274,
+          "type": "attraction",
+          "time": "12:15",
+          "notes": "Look right from Seats D/E approximately 45 minutes into the journey. Check isfujivisible.com in the morning!"
+        },
+        {
+          "name": "Shin-Osaka Station",
+          "lat": 34.7335,
+          "lng": 135.5000,
+          "type": "transport",
+          "time": "14:00",
+          "notes": "Arrive Shin-Osaka. Transfer to JR Kyoto Line (1 stop, 4 min) to JR Osaka Station."
+        },
+        {
+          "name": "The Westin Osaka",
+          "lat": 34.7046,
+          "lng": 135.4958,
+          "type": "hotel",
+          "time": "14:30",
+          "notes": "Exit at Sakurabashi Exit and catch the Westin Shuttle Bus (every 15–20 min, 7:30 AM–10 PM). Or 10–12 min walk via Umeda Underground."
+        },
+        {
+          "name": "Dotonbori",
+          "lat": 34.6687,
+          "lng": 135.5012,
+          "type": "attraction",
+          "time": "18:00",
+          "notes": "Street food, shopping, and Osaka energy. 'Kuidaore' — eat until you drop!"
+        },
+        {
+          "name": "Wagyu Itaden",
+          "lat": 34.6689,
+          "lng": 135.5018,
+          "type": "food",
+          "time": "18:30",
+          "notes": "Amazing wagyu bento box. Alternatives: Mizuno for Okonomiyaki, Kukuru for Takoyaki."
+        },
+        {
+          "name": "Osaka Castle — Haunted Tour",
+          "lat": 34.6873,
+          "lng": 135.5262,
+          "type": "activity",
+          "time": "20:00",
+          "notes": "Meet at the BACK EXIT of Starbucks at Jo-Terrace, near OsakaJoKoen Station. Guide wears a GREEN BACKPACK. Booking ref: GYGG45XBK2NZ."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Tokyo Station",
+          "to": "Shin-Osaka Station",
+          "method": "Nozomi Shinkansen",
+          "duration": "~2 hr 15 min",
+          "cost": "~¥14,000",
+          "notes": "⚠️ SEATS D & E (standard car) or Seat E (Green Car) — RIGHT side for Mt. Fuji. Book via SmartEX. Large luggage requires 'Seat with Oversized Luggage Area' reservation if bags >160cm total."
+        },
+        {
+          "from": "Shin-Osaka",
+          "to": "JR Osaka Station",
+          "method": "JR Kyoto Line",
+          "duration": "4 min",
+          "cost": "¥160",
+          "notes": "Just 1 stop."
+        },
+        {
+          "from": "Osaka Station (Sakurabashi Exit)",
+          "to": "Westin Osaka",
+          "method": "Westin Shuttle Bus",
+          "duration": "~5 min",
+          "cost": "Free (complimentary)",
+          "notes": "Look for the High-Speed Bus Terminal area near Sakurabashi Exit. Every 15–20 min, 7:30 AM–10 PM."
+        },
+        {
+          "from": "Westin Osaka",
+          "to": "Dotonbori",
+          "method": "Shuttle → Midosuji Line (Red)",
+          "duration": "~15 min",
+          "cost": "¥240",
+          "notes": "Take shuttle to Osaka Station → walk 2 min to Umeda Station → Midosuji Line (Red) → Namba Station."
+        },
+        {
+          "from": "Dotonbori",
+          "to": "Osaka Castle (tour)",
+          "method": "Taxi (GO app)",
+          "duration": "~15 min",
+          "cost": "~¥1,200",
+          "notes": "Taxi is easiest from Dotonbori to OsakaJoKoen Station area. Meet guide at Starbucks Jo-Terrace back exit."
+        }
+      ],
+      "apps": ["SmartEX", "SUICA", "GO", "Japan Travel by NAVITIME"],
+      "tickets": [
+        {
+          "name": "Nozomi Shinkansen — Tokyo → Shin-Osaka",
+          "reference": "",
+          "notes": "Book via SmartEX app. Request Seats D & E (standard) or Seat E (Green Car). Right side = Mt. Fuji view. If bags are over 160cm total, must reserve 'Seat with Oversized Luggage Area'."
+        },
+        {
+          "name": "Haunted Osaka Castle Tour",
+          "reference": "GYGG45XBK2NZ",
+          "notes": "8:00 PM. Meet at BACK EXIT of Starbucks at Jo-Terrace, near OsakaJoKoen Station. Guide wears GREEN BACKPACK."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-04",
+      "title": "Relaxing Day — Umeda & Omakase",
+      "location": "Osaka",
+      "hotel": "The Westin Osaka",
+      "suggestedStart": "11:00",
+      "startReason": "Easy day — sleep in and explore on foot near the hotel. The only fixed commitment is the 6:00 PM omakase dinner.",
+      "rushHourNote": "Thursday rush 7:30–9:30 AM — not relevant since you're starting late.",
+      "dayNotes": "Chill day near the Westin. The gyukatsu lunch is nearby. The omakase at Sushi Fukushima is the centrepiece — VIP Course at 6 PM. Don't be late.",
+      "stops": [
+        {
+          "name": "The Westin Osaka",
+          "lat": 34.7046,
+          "lng": 135.4958,
+          "type": "hotel",
+          "time": "11:00",
+          "notes": "Relaxed morning. Enjoy the hotel or stroll the Nakanoshima area."
+        },
+        {
+          "name": "GYUKATSU Kyoto Katsugyu Umeda",
+          "lat": 34.7030,
+          "lng": 135.4979,
+          "type": "food",
+          "time": "12:30",
+          "notes": "Deep-fried beef cutlets — cook on your own personal stone grill. Fun and 'Instagrammable'. 12–15 min walk or 5-min taxi from Westin."
+        },
+        {
+          "name": "Sushi Fukushima — Osaka",
+          "lat": 34.7040,
+          "lng": 135.5050,
+          "type": "food",
+          "time": "18:00",
+          "notes": "2-hour VIP Omakase Course. Do NOT be late. Confirm reservation details."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Westin Osaka",
+          "to": "GYUKATSU Umeda",
+          "method": "Walk or Taxi",
+          "duration": "12–15 min walk / 5 min taxi",
+          "cost": "Free / ~¥700",
+          "notes": "Located in the basement level near Umeda Station."
+        },
+        {
+          "from": "Westin Osaka",
+          "to": "Sushi Fukushima",
+          "method": "Taxi (GO app)",
+          "duration": "~10 min",
+          "cost": "~¥1,000",
+          "notes": "Recommended for a reservation dinner — don't risk being late."
+        }
+      ],
+      "apps": ["GO", "Omakase.in", "TableCheck", "Tablelog"],
+      "tickets": [
+        {
+          "name": "Sushi Fukushima — VIP Omakase Course",
+          "reference": "",
+          "notes": "6:00 PM reservation. 2-hour course. Confirm details and any dietary notes in advance."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Kyoto Day Trip — Manga, Udon & Kiyamachi Nights",
+      "location": "Kyoto (day trip from Osaka)",
+      "hotel": "The Westin Osaka",
+      "suggestedStart": "08:45",
+      "startReason": "Need to arrive at the Manga Museum by 9:45 AM to be first in line for the Manga Portrait list. Leave by 8:45 AM to catch the JR Special Rapid.",
+      "rushHourNote": "Friday — Osaka trains busy until ~9 AM. Catch the shuttle early and board the train. Last Special Rapid from Kyoto back to Osaka: 11:29 PM. Local trains until 12:14 AM.",
+      "dayNotes": "A day in Kyoto's creative and culinary heart. Sign up for the Manga Portrait first thing — then explore while you wait. Everything is walkable in the city centre.",
+      "stops": [
+        {
+          "name": "Westin Osaka → Osaka Station",
+          "lat": 34.7025,
+          "lng": 135.4959,
+          "type": "transport",
+          "time": "08:45",
+          "notes": "Take the Westin shuttle to Osaka Station."
+        },
+        {
+          "name": "Kyoto International Manga Museum",
+          "lat": 35.0117,
+          "lng": 135.7594,
+          "type": "attraction",
+          "time": "09:45",
+          "notes": "Arrive by 9:45 AM — be first in line. Head IMMEDIATELY to the 'Manga Artist Corner' to sign up for the Manga Portrait list. Browse 50,000 volumes on the 'Wall of Manga' while you wait."
+        },
+        {
+          "name": "Omen Ginkaku-ji",
+          "lat": 35.0269,
+          "lng": 135.7956,
+          "type": "food",
+          "time": "12:00",
+          "notes": "Artisan udon with a platter of seasonal condiments (ginger, sesame, Kyoto veg). 15-min taxi (GO app) or Bus #32/#203 to Ginkakuji-michi stop."
+        },
+        {
+          "name": "Nishiki Market",
+          "lat": 35.0047,
+          "lng": 135.7662,
+          "type": "shopping",
+          "time": "14:00",
+          "notes": "'Kitchen of Kyoto.' High-quality kitchenware and food souvenirs. Bus #5 or #203 from Ginkakuji back to Shijo-Kawaramachi."
+        },
+        {
+          "name": "Teramachi Shopping Street",
+          "lat": 35.0046,
+          "lng": 135.7678,
+          "type": "shopping",
+          "time": "15:00",
+          "notes": "Covered arcade adjacent to Nishiki. Traditional woodblock prints, fine stationery, and tea merchants."
+        },
+        {
+          "name": "Ninenzaka",
+          "lat": 34.9988,
+          "lng": 135.7791,
+          "type": "attraction",
+          "time": "16:00",
+          "notes": "If time allows — short taxi. Preserved wooden architecture from the Edo period. Beautiful for photos."
+        },
+        {
+          "name": "Chao Chao Gyoza — Sanjo Kiyamachi",
+          "lat": 35.0080,
+          "lng": 135.7706,
+          "type": "food",
+          "time": "18:00",
+          "notes": "Award-winning bite-sized 'hitokuchi' gyoza. Unique flavours: shrimp, ginger, curry. 10-min walk from Teramachi/Nishiki."
+        },
+        {
+          "name": "Kyoto Station",
+          "lat": 34.9858,
+          "lng": 135.7588,
+          "type": "transport",
+          "time": "19:30",
+          "notes": "Walk 15 min or take subway from nearby Sanjo Station. Board JR Special Rapid back to Osaka."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Osaka Station",
+          "to": "Kyoto Station",
+          "method": "JR Special Rapid",
+          "duration": "30 min",
+          "cost": "¥580",
+          "notes": "Frequent departures. Runs throughout the day."
+        },
+        {
+          "from": "Kyoto Station",
+          "to": "Karasuma Oike Station (Manga Museum)",
+          "method": "Karasuma Subway Line",
+          "duration": "5 min",
+          "cost": "¥220",
+          "notes": "Then 2-min walk to the museum."
+        },
+        {
+          "from": "Manga Museum",
+          "to": "Omen Ginkaku-ji",
+          "method": "Taxi (GO app) or Bus",
+          "duration": "15 min taxi / 25 min bus",
+          "cost": "~¥1,500 taxi / ¥230 bus",
+          "notes": "Taxi via GO app is most efficient. Or walk to main road and take Bus #32 or #203 to Ginkakuji-michi stop."
+        },
+        {
+          "from": "Ginkakuji area",
+          "to": "City Centre (Shijo-Kawaramachi)",
+          "method": "City Bus #5 or #203",
+          "duration": "~25 min",
+          "cost": "¥230",
+          "notes": "Back toward Nishiki Market and Teramachi."
+        },
+        {
+          "from": "Kyoto Station",
+          "to": "Osaka Station",
+          "method": "JR Special Rapid (return)",
+          "duration": "30 min",
+          "cost": "¥580",
+          "notes": "Last Special Rapid: 11:29 PM. Local trains until 12:14 AM. Don't miss it!"
+        }
+      ],
+      "apps": ["GO", "SUICA", "Japan Travel by NAVITIME"],
+      "tickets": []
+    },
+    {
+      "date": "2026-06-06",
+      "title": "Kobe Beef & Osaka Craftsmanship",
+      "location": "Kobe + Osaka",
+      "hotel": "The Westin Osaka",
+      "suggestedStart": "10:30",
+      "startReason": "Depart for Kobe at 11:00 AM. The JR Special Rapid to Sannomiya takes 22 minutes. Arrive in time for lunch at Ishida.",
+      "rushHourNote": "Saturday — no rush hour. Evening trains from Namba back to Umeda are frequent. Last Midosuji: ~11:50 PM.",
+      "dayNotes": "Luxury lunch in Kobe, then back to Osaka for knife shopping, fashion for Sadie in Amemura, retro Shinsekai vibes, and an omakase dinner. Monitor Omakase.in throughout the day for cancellations.",
+      "stops": [
+        {
+          "name": "Sannomiya Station — Kobe",
+          "lat": 34.6913,
+          "lng": 135.1956,
+          "type": "transport",
+          "time": "11:25",
+          "notes": "JR Special Rapid from Osaka Station (22 min). 5-min walk to Ishida."
+        },
+        {
+          "name": "Kobe Beef Steak Ishida Main Shop",
+          "lat": 34.6921,
+          "lng": 135.1950,
+          "type": "food",
+          "time": "12:00",
+          "notes": "A5 Kobe beef prepared teppanyaki-style right in front of you. Your locked-in Kobe experience."
+        },
+        {
+          "name": "Sennichimae Doguyasuji — Knife Street",
+          "lat": 34.6657,
+          "lng": 135.5041,
+          "type": "shopping",
+          "time": "15:15",
+          "notes": "10-min walk south from Namba Station. Look for Sakai Ichimonji Mitsuhide — Damascus-style blades with on-site engraving. Name or date engraved as permanent souvenir."
+        },
+        {
+          "name": "Amerikamura (Amemura) — Triangle Park",
+          "lat": 34.6721,
+          "lng": 135.4984,
+          "type": "shopping",
+          "time": "16:30",
+          "notes": "15-min walk or quick subway hop from Doguyasuji to Shinsaibashi. Heart of Osaka youth culture. Volcan & Aphrodite: bold graphic tees and alt styles for Sadie."
+        },
+        {
+          "name": "Tsutenkaku — Shinsekai",
+          "lat": 34.6526,
+          "lng": 135.5064,
+          "type": "attraction",
+          "time": "17:30",
+          "notes": "Observatory deck for city views. Or try the 'Tower Slider' — 60-metre slide spiralling down the outside of the tower."
+        },
+        {
+          "name": "Kasuga Goraku-jo Vintage Arcade",
+          "lat": 34.6528,
+          "lng": 135.5060,
+          "type": "activity",
+          "time": "18:30",
+          "notes": "Vintage arcade near Tsutenkaku capturing the 'retro-future' look."
+        },
+        {
+          "name": "Dinner — Omakase or Kame Sushi",
+          "lat": 34.7022,
+          "lng": 135.4990,
+          "type": "food",
+          "time": "20:00",
+          "notes": "Tier 1: Watch Omakase.in for cancellations at Sushi Oga, Sushiya Yohei, Sushi Harasho, or Sushi Saeki KitaWard. Tier 2 backup: Kame Sushi Sohonten (Umeda) — legendary high-energy sushi, world-class fish."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Osaka Station",
+          "to": "Sannomiya Station (Kobe)",
+          "method": "JR Special Rapid toward Himeji/Aboshi",
+          "duration": "22 min",
+          "cost": "¥420",
+          "notes": "Direct from Osaka Station platform."
+        },
+        {
+          "from": "Sannomiya (Kobe)",
+          "to": "Osaka Station",
+          "method": "JR Special Rapid (return)",
+          "duration": "22 min",
+          "cost": "¥420",
+          "notes": "Head back after lunch."
+        },
+        {
+          "from": "Osaka Station",
+          "to": "Namba Station (knife shopping)",
+          "method": "Midosuji Line (Red)",
+          "duration": "~10 min",
+          "cost": "¥240",
+          "notes": "South toward Namba."
+        },
+        {
+          "from": "Shinsaibashi",
+          "to": "Tsutenkaku / Shinsekai",
+          "method": "Midosuji Line (Red)",
+          "duration": "5 min",
+          "cost": "¥200",
+          "notes": "To Dobutsuen-mae Station. Shinsekai is right there."
+        },
+        {
+          "from": "Shinsekai / Namba area",
+          "to": "Westin Osaka",
+          "method": "Midosuji Line → Umeda",
+          "duration": "~10 min",
+          "cost": "¥240",
+          "notes": "Last Midosuji train ~11:50 PM. Westin shuttle from Osaka Station until 10 PM, or walk/taxi 10–12 min."
+        }
+      ],
+      "apps": ["SUICA", "GO", "Omakase.in", "Japan Travel by NAVITIME"],
+      "tickets": [
+        {
+          "name": "Omakase Monitoring — Sushi Oga / Sushiya Yohei / Sushi Harasho / Sushi Saeki",
+          "reference": "",
+          "notes": "Watch Omakase.in throughout the day for cancellations. These are top-tier Osaka omakase — often open up due to travel changes. Kame Sushi Sohonten (Umeda) is the backup."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-07",
+      "title": "Nara's Giants & Garden Serenity + Osaka Food Tour",
+      "location": "Nara (day trip) + Osaka",
+      "hotel": "The Westin Osaka",
+      "suggestedStart": "08:30",
+      "startReason": "Board train by 9:00 AM for a ~45–50 min journey to Nara. Arrive before crowds build at Todai-ji. Need to be back in Osaka by 6:45 PM for the 7:00 PM food tour.",
+      "rushHourNote": "Sunday — no rush hour. Evening food tour in Dotonbori starts at 7 PM. Last Special Rapid from Nara area: check schedule.",
+      "dayNotes": "Morning of scale and history in Nara, then the legendary 10 Tastings of Osaka food tour with Fay in the evening. Book the 6:57 PM train back at the latest.",
+      "stops": [
+        {
+          "name": "Nara Park — Deer",
+          "lat": 34.6851,
+          "lng": 135.8431,
+          "type": "attraction",
+          "time": "10:00",
+          "notes": "10–15 min walk from Nara Station. The famous bowing deer roam freely through the park."
+        },
+        {
+          "name": "Todai-ji — The Great Buddha",
+          "lat": 34.6888,
+          "lng": 135.8398,
+          "type": "attraction",
+          "time": "10:30",
+          "notes": "Houses the Daibutsu — one of the largest bronze Buddha statues in the world. The wooden hall was once the largest wooden building on earth."
+        },
+        {
+          "name": "Kasugataisha Shrine",
+          "lat": 34.6815,
+          "lng": 135.8482,
+          "type": "attraction",
+          "time": "11:00",
+          "notes": "Forest path lined with thousands of stone lanterns leading to a vermilion shrine. Serene contrast to busy Todai-ji."
+        },
+        {
+          "name": "Nakatanidou — Mochi",
+          "lat": 34.6848,
+          "lng": 135.8332,
+          "type": "food",
+          "time": "11:30",
+          "notes": "Fresh warm Yomogi Mochi with red bean filling. Watch the mochi pounding demonstration."
+        },
+        {
+          "name": "Maguro Koya (or Mizuya Chaya)",
+          "lat": 34.6851,
+          "lng": 135.8332,
+          "type": "food",
+          "time": "12:00",
+          "notes": "Option A — Maguro Koya: tiny family-run shop with incredibly fresh tuna bowls (Donburi). Opens 11 AM, often a wait. Option B — Mizuya Chaya: traditional thatched-roof teahouse inside the park serving udon/soba."
+        },
+        {
+          "name": "Nara Station (return to Osaka)",
+          "lat": 34.6854,
+          "lng": 135.8328,
+          "type": "transport",
+          "time": "14:00",
+          "notes": "Walk 20 min back to station. Return to Osaka to rest before the evening food tour."
+        },
+        {
+          "name": "10 Tastings of Osaka Food Tour",
+          "lat": 34.6688,
+          "lng": 135.5014,
+          "type": "activity",
+          "time": "19:00",
+          "notes": "With Fay from withLocals. Booking reference: 7D89B827. Meet near Dotonbori at 7:00 PM — confirm exact meeting point with Fay."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Osaka (Tennoji area or Namba)",
+          "to": "Nara",
+          "method": "JR Yamatoji Line or Kintetsu Nara Line",
+          "duration": "45–50 min",
+          "cost": "¥470–¥570",
+          "notes": "JR Yamatoji from Tennoji Station, or Kintetsu from Namba Station. Both ~45–50 min."
+        },
+        {
+          "from": "Nara",
+          "to": "Osaka (return)",
+          "method": "Same line back",
+          "duration": "45–50 min",
+          "cost": "¥470–¥570",
+          "notes": "Allow enough time to reach Dotonbori for the 7:00 PM food tour."
+        },
+        {
+          "from": "Westin Osaka",
+          "to": "Food Tour Start (Dotonbori)",
+          "method": "Westin Shuttle → Midosuji Line (Red)",
+          "duration": "~20 min",
+          "cost": "¥240",
+          "notes": "Shuttle to Osaka Station → Umeda → Midosuji Line south → Namba."
+        }
+      ],
+      "apps": ["GO", "SUICA", "Japan Travel by NAVITIME"],
+      "tickets": [
+        {
+          "name": "10 Tastings of Osaka — withLocals (Fay)",
+          "reference": "7D89B827",
+          "notes": "7:00 PM. Confirm exact meeting point with Fay ahead of time. Walking food tour of Dotonbori area."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "title": "Alternative Culture & Shinsaibashi Style",
+      "location": "Osaka",
+      "hotel": "The Westin Osaka",
+      "suggestedStart": "10:00",
+      "startReason": "Monday rush until ~9:30 AM. Leave hotel at 10:00 AM after rush clears.",
+      "rushHourNote": "Monday — avoid Midosuji Line before 9:30 AM. Last Midosuji from Honmachi toward Umeda: ~12:06 AM.",
+      "dayNotes": "Full immersion in Osaka's youth subcultures. Amemura for Sadie, Shinsaibashi for shopping, then Osaka-style unagi for dinner. The Osaka-style unagi (direct charcoal, no steaming first) is crispier and richer than Tokyo-style.",
+      "stops": [
+        {
+          "name": "Sankaku Koen — Triangle Park (Amemura)",
+          "lat": 34.6721,
+          "lng": 135.4984,
+          "type": "attraction",
+          "time": "10:30",
+          "notes": "Epicentre of Osaka street fashion. Shinsaibashi Station, Exit 7 or 8."
+        },
+        {
+          "name": "Alice On Wednesday",
+          "lat": 34.6719,
+          "lng": 135.4982,
+          "type": "shopping",
+          "time": "10:45",
+          "notes": "Boutique themed after Alice in Wonderland with a 'goth-cute' aesthetic. Perfect for Sadie."
+        },
+        {
+          "name": "Mandarake Grand Chaos",
+          "lat": 34.6733,
+          "lng": 135.5010,
+          "type": "shopping",
+          "time": "11:15",
+          "notes": "Multi-story temple for otaku culture. Rare anime figures, alternative subculture goods."
+        },
+        {
+          "name": "Red Rock Amemura (or Critters Burger)",
+          "lat": 34.6719,
+          "lng": 135.4984,
+          "type": "food",
+          "time": "12:30",
+          "notes": "Option A — Red Rock: viral 'Roast Beef Don' — mountain of beef over rice with creamy yogurt sauce and raw egg yolk. Option B — Critters Burger: best gourmet burger in Osaka, Japanese beef on artisanal buns."
+        },
+        {
+          "name": "Shinsaibashi-Suji Shopping Street",
+          "lat": 34.6735,
+          "lng": 135.5013,
+          "type": "shopping",
+          "time": "14:00",
+          "notes": "5-min walk east from Amemura. Nearly 1 mile of covered shopping. Sanrio Gallery for character goods; huge drugstores for Japanese skincare and alt makeup."
+        },
+        {
+          "name": "Yoshitora — Honmachi",
+          "lat": 34.6793,
+          "lng": 135.5017,
+          "type": "food",
+          "time": "18:30",
+          "notes": "Premier Osaka-style unagi. Grilled directly over charcoal without steaming — crispier skin, richer flavour. Midosuji Line north 1 stop to Honmachi (2 min), Exit 12, 5-min walk."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Westin Osaka",
+          "to": "Shinsaibashi Station (Amemura)",
+          "method": "Westin Shuttle → Midosuji Line (Red)",
+          "duration": "~15 min",
+          "cost": "¥240",
+          "notes": "Shuttle to Osaka Station → Midosuji Line south → Shinsaibashi Station (6 min). Use Exit 7 or 8."
+        },
+        {
+          "from": "Shinsaibashi",
+          "to": "Honmachi (Yoshitora dinner)",
+          "method": "Midosuji Line (Red) — 1 stop north",
+          "duration": "2 min",
+          "cost": "¥200",
+          "notes": "Honmachi Station, Exit 12, 5-min walk."
+        },
+        {
+          "from": "Honmachi",
+          "to": "Westin Osaka",
+          "method": "Midosuji Line → Umeda",
+          "duration": "4 min",
+          "cost": "¥240",
+          "notes": "2 stops north to Umeda Station. Last Midosuji from Honmachi: ~12:06 AM. Trains every 4–6 min."
+        }
+      ],
+      "apps": ["SUICA", "GO", "Japan Travel by NAVITIME"],
+      "tickets": []
+    },
+    {
+      "date": "2026-06-09",
+      "title": "To Haneda — The Final Run",
+      "location": "Osaka → Tokyo (Haneda)",
+      "hotel": "Royal Park Hotel Tokyo Haneda",
+      "suggestedStart": "09:30",
+      "startReason": "Leave hotel ~11:00 AM. Need time to reach Shin-Osaka for the Shinkansen. If using Takkyubin, bags should already be at the Haneda hotel — just carry day bags.",
+      "rushHourNote": "Tuesday — Osaka trains moderately busy 7:30–9:30 AM. Leave after 9:30 AM.",
+      "dayNotes": "The most efficient route: Westin → Osaka Station → Shin-Osaka → Nozomi Shinkansen → Shinagawa → Keikyu Airport Line → Haneda Terminal 3. The Royal Park Hotel is literally inside Terminal 3 on the 3rd floor.",
+      "stops": [
+        {
+          "name": "The Westin Osaka",
+          "lat": 34.7046,
+          "lng": 135.4958,
+          "type": "hotel",
+          "time": "09:30",
+          "notes": "Final check of luggage. If using Takkyubin, bags should already be en route to Haneda. Carry only hand luggage."
+        },
+        {
+          "name": "Shin-Osaka Station — Shinkansen",
+          "lat": 34.7335,
+          "lng": 135.5000,
+          "type": "transport",
+          "time": "11:15",
+          "notes": "Board Nozomi Shinkansen to Shinagawa. ⚠️ SEATS D AND E for Mt. Fuji view on the left (~45 min in)."
+        },
+        {
+          "name": "Mt. Fuji Viewing Window (return trip)",
+          "lat": 35.3606,
+          "lng": 138.7274,
+          "type": "attraction",
+          "time": "12:00",
+          "notes": "Look LEFT from Seats D/E on the return journey to Tokyo."
+        },
+        {
+          "name": "Shinagawa Station",
+          "lat": 35.6284,
+          "lng": 139.7387,
+          "type": "transport",
+          "time": "13:30",
+          "notes": "Arrive from Shin-Osaka. Transfer to the Keikyu Airport Line on the same level."
+        },
+        {
+          "name": "Haneda Airport Terminal 3",
+          "lat": 35.5494,
+          "lng": 139.7803,
+          "type": "transport",
+          "time": "13:45",
+          "notes": "Keikyu Airport Line Ltd. Express, ~13 min. Last stop: Haneda Airport Terminal 3."
+        },
+        {
+          "name": "Royal Park Hotel Tokyo Haneda",
+          "lat": 35.5490,
+          "lng": 139.7798,
+          "type": "hotel",
+          "time": "14:00",
+          "notes": "Directly inside Terminal 3 — 3rd floor. Walk straight from the hotel lobby to check-in counters tomorrow. Note: Hotel Villa Fontaine Premier is also connected via Haneda Airport Garden (rooftop spa option)."
+        },
+        {
+          "name": "Haneda Airport Garden — Dinner",
+          "lat": 35.5488,
+          "lng": 139.7796,
+          "type": "food",
+          "time": "19:00",
+          "notes": "Massive connected complex with dozens of high-end restaurant options. The perfect final dinner before your flight home."
+        }
+      ],
+      "transit": [
+        {
+          "from": "Westin Osaka",
+          "to": "Osaka Station",
+          "method": "Westin Shuttle or Taxi",
+          "duration": "5–10 min",
+          "cost": "Free / ~¥1,000",
+          "notes": "Shuttle to Sakurabashi Exit or taxi direct."
+        },
+        {
+          "from": "Osaka Station",
+          "to": "Shin-Osaka Station",
+          "method": "Local JR Train",
+          "duration": "4 min",
+          "cost": "¥160",
+          "notes": "Just 1 stop on the local JR line."
+        },
+        {
+          "from": "Shin-Osaka",
+          "to": "Shinagawa",
+          "method": "Nozomi Shinkansen",
+          "duration": "~2 hr 15 min",
+          "cost": "~¥14,000",
+          "notes": "SEATS D & E for Mt. Fuji view. Book via SmartEX."
+        },
+        {
+          "from": "Shinagawa",
+          "to": "Haneda Terminal 3",
+          "method": "Keikyu Airport Line (Ltd. Express)",
+          "duration": "~13 min",
+          "cost": "¥310",
+          "notes": "Direct to Haneda Airport Terminal 3 Station."
+        }
+      ],
+      "apps": ["SmartEX", "SUICA", "Japan Travel by NAVITIME"],
+      "tickets": [
+        {
+          "name": "Nozomi Shinkansen — Shin-Osaka → Shinagawa",
+          "reference": "",
+          "notes": "Book via SmartEX. SEATS D & E for Mt. Fuji. Pick up Ekiben (station bento) at Shin-Osaka Eki Marché before boarding — look for 'Kobe Beef' or 'Osaka-style' box."
+        },
+        {
+          "name": "Takkyubin Luggage — Westin to Haneda Hotel",
+          "reference": "",
+          "notes": "If arranged, bags arrive at Royal Park Hotel by afternoon of June 9. Confirm with Westin bell desk on June 8."
+        }
+      ]
+    }
+  ]
+}

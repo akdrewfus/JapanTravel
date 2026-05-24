@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japan 2026 🗾</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #C8102E;
+      --navy: #1a1a2e;
+      --bg: #f0f2f5;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #666;
+      --border: #e0e0e0;
+      --hotel: #27ae60;
+      --food: #e74c3c;
+      --attraction: #3498db;
+      --shopping: #9b59b6;
+      --transport: #f39c12;
+      --activity: #e67e22;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 12px 16px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .header-top h1 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .header-top h1 span { color: var(--red); }
+    .edit-btn {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.4);
+      color: white;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .edit-btn:hover { background: rgba(255,255,255,0.1); }
+
+    /* DATE NAV */
+    .date-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .date-nav button {
+      background: rgba(255,255,255,0.15);
+      border: none;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .date-nav button:hover { background: rgba(255,255,255,0.25); }
+    .date-nav button:disabled { opacity: 0.3; cursor: default; }
+    #date-input {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      flex: 1;
+      cursor: pointer;
+    }
+    #date-input::-webkit-calendar-picker-indicator { filter: invert(1); }
+    .day-counter {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.6);
+      white-space: nowrap;
+    }
+
+    /* MAIN */
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 12px 12px 80px;
+    }
+
+    /* CARDS */
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .card-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    /* DAY HERO */
+    .day-hero {
+      background: linear-gradient(135deg, var(--navy), #2d2d54);
+      color: white;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .day-date {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .day-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin: 4px 0 6px;
+      line-height: 1.3;
+    }
+    .day-location {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.7);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* START TIME */
+    .start-card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      border-left: 4px solid var(--red);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .start-time-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+    .start-time-badge {
+      background: var(--red);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .start-label { font-weight: 600; font-size: 0.9rem; }
+    .start-reason { font-size: 0.82rem; color: var(--muted); line-height: 1.4; }
+    .rush-warning {
+      margin-top: 8px;
+      padding: 8px 10px;
+      background: #fff3cd;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: #856404;
+      display: flex;
+      gap: 6px;
+    }
+
+    /* MAP */
+    #map {
+      height: 300px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      z-index: 1;
+    }
+    .map-marker-div {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 11px;
+      border: 2px solid white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    }
+    .type-hotel { background: var(--hotel); }
+    .type-food { background: var(--food); }
+    .type-attraction { background: var(--attraction); }
+    .type-shopping { background: var(--shopping); }
+    .type-transport { background: var(--transport); }
+    .type-activity { background: var(--activity); }
+
+    /* LEGEND */
+    .map-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    /* TIMELINE */
+    .timeline { list-style: none; }
+    .timeline-item {
+      display: flex;
+      gap: 12px;
+      padding-bottom: 16px;
+      position: relative;
+    }
+    .timeline-item:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      left: 13px;
+      top: 28px;
+      bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+    .timeline-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+    }
+    .timeline-content { flex: 1; padding-top: 2px; }
+    .timeline-time {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .timeline-name {
+      font-size: 0.92rem;
+      font-weight: 600;
+      margin: 1px 0 2px;
+    }
+    .timeline-notes {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .stop-type-tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      padding: 1px 7px;
+      border-radius: 10px;
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 3px;
+    }
+
+    /* TRANSIT */
+    .transit-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+    }
+    .transit-item:last-child { margin-bottom: 0; }
+    .transit-route {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+    }
+    .transit-arrow { color: var(--muted); font-size: 0.8rem; }
+    .transit-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+    .transit-method-badge {
+      display: inline-block;
+      background: #e8f4fd;
+      color: #1a6fa8;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+    .transit-notes-text {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 3px;
+      line-height: 1.4;
+    }
+
+    /* APPS & TICKETS */
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip {
+      background: #f0f2f5;
+      border: 1px solid var(--border);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+    .ticket-item {
+      border: 1px solid #e3d5f5;
+      background: #faf7ff;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+    }
+    .ticket-item:last-child { margin-bottom: 0; }
+    .ticket-name {
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .ticket-ref {
+      font-size: 0.78rem;
+      color: var(--red);
+      font-weight: 700;
+      font-family: monospace;
+    }
+    .ticket-notes-text {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 3px;
+      line-height: 1.4;
+    }
+
+    /* DAY NOTES */
+    .day-notes-text {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    /* NO DATA */
+    .no-data {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+    }
+    .no-data h2 { font-size: 1.2rem; margin-bottom: 8px; }
+
+    /* LOADING */
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* MODAL OVERLAY */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 2000;
+      overflow-y: auto;
+    }
+    .modal-overlay.open { display: block; }
+    .modal {
+      background: white;
+      margin: 20px auto;
+      max-width: 640px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    }
+    .modal-header {
+      background: var(--navy);
+      color: white;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .modal-header h2 { font-size: 1rem; }
+    .modal-close {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.4rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0 4px;
+    }
+    .modal-body { padding: 20px; }
+    .modal-section { margin-bottom: 24px; }
+    .modal-section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* FORM FIELDS */
+    .form-group { margin-bottom: 12px; }
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-family: inherit;
+      color: var(--text);
+      background: white;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--navy);
+    }
+    .form-group textarea { resize: vertical; min-height: 70px; }
+
+    /* STOP EDITOR */
+    .stop-editor {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .stop-editor-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .stop-num {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+    .btn-remove {
+      background: none;
+      border: 1px solid #ffcccc;
+      color: var(--food);
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      cursor: pointer;
+    }
+    .btn-add {
+      background: var(--navy);
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 4px;
+    }
+    .btn-add:hover { opacity: 0.85; }
+
+    /* TICKET EDITOR */
+    .ticket-editor {
+      border: 1px solid #e3d5f5;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #faf7ff;
+    }
+
+    /* TRANSIT EDITOR */
+    .transit-editor {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    /* APP LIST EDITOR */
+    .app-list-input {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .app-list-input input { flex: 1; }
+    .app-list-input button {
+      background: var(--navy);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+    .app-chip-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .app-chip {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: #f0f2f5;
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+    }
+    .app-chip button {
+      background: none;
+      border: none;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.9rem;
+      line-height: 1;
+      padding: 0;
+    }
+
+    /* MODAL FOOTER */
+    .modal-footer {
+      padding: 16px 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 10px;
+    }
+    .btn-save {
+      background: var(--red);
+      color: white;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      flex: 1;
+    }
+    .btn-save:hover { opacity: 0.9; }
+    .btn-cancel {
+      background: white;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    /* PAT MODAL */
+    .pat-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 3000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .pat-modal.open { display: flex; }
+    .pat-box {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 400px;
+      width: 100%;
+    }
+    .pat-box h3 { margin-bottom: 8px; }
+    .pat-box p { font-size: 0.82rem; color: var(--muted); margin-bottom: 12px; line-height: 1.5; }
+    .pat-box input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+      font-family: monospace;
+    }
+    .pat-actions { display: flex; gap: 8px; }
+    .pat-actions button {
+      flex: 1;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      border: none;
+    }
+    .pat-save { background: var(--navy); color: white; }
+    .pat-cancel { background: var(--bg); color: var(--text); border: 1px solid var(--border) !important; }
+
+    /* SAVE STATUS */
+    .save-status {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1a1a1a;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+    .save-status.show { opacity: 1; }
+
+    /* TWO-COL GRID */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <h1>Japan <span>2026</span> 🗾</h1>
+    <button class="edit-btn" onclick="openEdit()">✏️ Edit</button>
+  </div>
+  <div class="date-nav">
+    <button id="btn-prev" onclick="changeDay(-1)">‹</button>
+    <input type="date" id="date-input" onchange="selectDate(this.value)" />
+    <button id="btn-next" onclick="changeDay(1)">›</button>
+    <span class="day-counter" id="day-counter"></span>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="loading">Loading itinerary…</div>
+</main>
+
+<!-- EDIT MODAL -->
+<div class="modal-overlay" id="edit-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>✏️ Edit Day</h2>
+      <button class="modal-close" onclick="closeEdit()">✕</button>
+    </div>
+    <div class="modal-body" id="edit-body">
+      <!-- Populated dynamically -->
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" onclick="closeEdit()">Cancel</button>
+      <button class="btn-save" onclick="saveEdit()">💾 Save to GitHub</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAT MODAL -->
+<div class="pat-modal" id="pat-modal">
+  <div class="pat-box">
+    <h3>🔑 GitHub Access Token</h3>
+    <p>Enter your GitHub Personal Access Token (fine-grained, with Contents: Read & Write on the JapanTravel repo). Stored locally in this browser only.</p>
+    <input type="password" id="pat-input" placeholder="github_pat_..." />
+    <div class="pat-actions">
+      <button class="pat-cancel" onclick="closePat()">Cancel</button>
+      <button class="pat-save" onclick="savePat()">Save Token</button>
+    </div>
+  </div>
+</div>
+
+<!-- SAVE STATUS TOAST -->
+<div class="save-status" id="save-status"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// ─── CONFIG ───────────────────────────────────────────────
+const REPO    = 'akdrewfus/JapanTravel';
+const BRANCH  = 'main';
+const FILE    = 'itinerary.json';
+const RAW_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/${FILE}`;
+const API_URL = `https://api.github.com/repos/${REPO}/contents/${FILE}`;
+const PASSWORD = 'SadieAndrew';
+
+const TYPE_ICONS = {
+  hotel:      { emoji: '🏨', label: 'Hotel' },
+  food:       { emoji: '🍜', label: 'Food'  },
+  attraction: { emoji: '🏛️', label: 'Sight' },
+  shopping:   { emoji: '🛍️', label: 'Shop'  },
+  transport:  { emoji: '🚉', label: 'Transit'},
+  activity:   { emoji: '🎟️', label: 'Activity'},
+};
+
+// ─── STATE ────────────────────────────────────────────────
+let state = {
+  itinerary:     null,
+  selectedDate:  null,
+  editDayData:   null,
+  authenticated: false,
+  map:           null,
+};
+
+// ─── INIT ─────────────────────────────────────────────────
+async function init() {
+  try {
+    const cached = localStorage.getItem('japan_itinerary_cache');
+    if (cached) {
+      state.itinerary = JSON.parse(cached);
+      render();
+    }
+    // Always fetch fresh copy
+    const resp = await fetch(RAW_URL + `?t=${Date.now()}`);
+    if (!resp.ok) throw new Error('Fetch failed');
+    state.itinerary = await resp.json();
+    localStorage.setItem('japan_itinerary_cache', JSON.stringify(state.itinerary));
+    render();
+  } catch (e) {
+    if (!state.itinerary) {
+      document.getElementById('main-content').innerHTML =
+        `<div class="no-data"><h2>⚠️ Could not load itinerary</h2><p>Check your connection and reload.</p></div>`;
+    }
+  }
+}
+
+function render() {
+  if (!state.selectedDate) {
+    state.selectedDate = getActiveDate();
+  }
+  updateDatePicker();
+  renderDay();
+}
+
+// ─── DATE HELPERS ─────────────────────────────────────────
+function getActiveDate() {
+  const today = new Date().toLocaleDateString('sv'); // YYYY-MM-DD in local TZ
+  const dates = state.itinerary.days.map(d => d.date);
+  if (dates.includes(today)) return today;
+  const future = dates.filter(d => d >= today);
+  if (future.length) return future[0];
+  return dates[dates.length - 1];
+}
+
+function getDayIndex(date) {
+  return state.itinerary.days.findIndex(d => d.date === date);
+}
+
+function changeDay(delta) {
+  const idx = getDayIndex(state.selectedDate);
+  const newIdx = idx + delta;
+  if (newIdx >= 0 && newIdx < state.itinerary.days.length) {
+    state.selectedDate = state.itinerary.days[newIdx].date;
+    updateDatePicker();
+    renderDay();
+  }
+}
+
+function selectDate(val) {
+  const dates = state.itinerary.days.map(d => d.date);
+  if (!val) return;
+  // Snap to nearest trip date
+  const exact = dates.find(d => d === val);
+  if (exact) {
+    state.selectedDate = exact;
+  } else {
+    const future = dates.filter(d => d >= val);
+    state.selectedDate = future.length ? future[0] : dates[dates.length - 1];
+  }
+  updateDatePicker();
+  renderDay();
+}
+
+function updateDatePicker() {
+  const idx    = getDayIndex(state.selectedDate);
+  const total  = state.itinerary.days.length;
+  document.getElementById('date-input').value    = state.selectedDate;
+  document.getElementById('btn-prev').disabled   = idx <= 0;
+  document.getElementById('btn-next').disabled   = idx >= total - 1;
+  document.getElementById('day-counter').textContent = `Day ${idx + 1} of ${total}`;
+}
+
+// ─── RENDER DAY ───────────────────────────────────────────
+function renderDay() {
+  const day = state.itinerary.days.find(d => d.date === state.selectedDate);
+  const main = document.getElementById('main-content');
+  if (!day) {
+    main.innerHTML = `<div class="no-data"><h2>No agenda for this date</h2><p>Use the arrows to navigate to a trip day.</p></div>`;
+    return;
+  }
+
+  const dateObj   = new Date(day.date + 'T12:00:00');
+  const dateStr   = dateObj.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+
+  main.innerHTML = `
+    <div class="day-hero">
+      <div class="day-date">${dateStr}</div>
+      <div class="day-title">${day.title}</div>
+      <div class="day-location">📍 ${day.location} · ${day.hotel}</div>
+    </div>
+
+    ${day.dayNotes ? `
+    <div class="card">
+      <div class="card-title">Today's Plan</div>
+      <div class="day-notes-text">${day.dayNotes}</div>
+    </div>` : ''}
+
+    ${renderStartCard(day)}
+
+    <div id="map"></div>
+    <div class="card" style="padding: 10px 16px;">
+      <div class="map-legend" id="map-legend"></div>
+    </div>
+
+    ${renderTimeline(day)}
+    ${renderTransit(day)}
+    ${renderAppsTickets(day)}
+  `;
+
+  buildMap(day);
+}
+
+function renderStartCard(day) {
+  const rush = day.rushHourNote ? `
+    <div class="rush-warning">
+      ⚠️ <span>${day.rushHourNote}</span>
+    </div>` : '';
+  return `
+    <div class="start-card">
+      <div class="start-time-row">
+        <div class="start-time-badge">🕐 ${day.suggestedStart}</div>
+        <div class="start-label">Suggested Start</div>
+      </div>
+      <div class="start-reason">${day.startReason}</div>
+      ${rush}
+    </div>`;
+}
+
+function renderTimeline(day) {
+  if (!day.stops || !day.stops.length) return '';
+  const items = day.stops.map((s, i) => {
+    const info = TYPE_ICONS[s.type] || { emoji: '📌', label: s.type };
+    const color = `var(--${s.type}, var(--transport))`;
+    return `
+      <li class="timeline-item">
+        <div class="timeline-dot type-${s.type}">${i + 1}</div>
+        <div class="timeline-content">
+          ${s.time ? `<div class="timeline-time">⏰ ${s.time}</div>` : ''}
+          <div class="timeline-name">${info.emoji} ${s.name}</div>
+          ${s.notes ? `<div class="timeline-notes">${s.notes}</div>` : ''}
+          <span class="stop-type-tag type-${s.type}" style="background:${color}">${info.label}</span>
+        </div>
+      </li>`;
+  }).join('');
+  return `
+    <div class="card">
+      <div class="card-title">Day Schedule</div>
+      <ul class="timeline">${items}</ul>
+    </div>`;
+}
+
+function renderTransit(day) {
+  if (!day.transit || !day.transit.length) return '';
+  const items = day.transit.map(t => `
+    <div class="transit-item">
+      <div class="transit-route">
+        <span>${t.from}</span>
+        <span class="transit-arrow">→</span>
+        <span>${t.to}</span>
+      </div>
+      <div class="transit-meta">
+        <span class="transit-method-badge">${t.method}</span>
+        ${t.duration ? `<span>⏱ ${t.duration}</span>` : ''}
+        ${t.cost ? `<span>💴 ${t.cost}</span>` : ''}
+      </div>
+      ${t.notes ? `<div class="transit-notes-text">${t.notes}</div>` : ''}
+    </div>`).join('');
+  return `
+    <div class="card">
+      <div class="card-title">Transit Guide</div>
+      ${items}
+    </div>`;
+}
+
+function renderAppsTickets(day) {
+  const hasApps    = day.apps && day.apps.length;
+  const hasTickets = day.tickets && day.tickets.length;
+  if (!hasApps && !hasTickets) return '';
+
+  const appsHtml = hasApps ? `
+    <div class="modal-section">
+      <div class="card-title">Apps to Have Ready</div>
+      <div class="chips">
+        ${day.apps.map(a => `<div class="chip">📱 ${a}</div>`).join('')}
+      </div>
+    </div>` : '';
+
+  const ticketsHtml = hasTickets ? `
+    <div class="modal-section">
+      <div class="card-title">Tickets & Reservations</div>
+      ${day.tickets.map(t => `
+        <div class="ticket-item">
+          <div class="ticket-name">🎟️ ${t.name}</div>
+          ${t.reference ? `<div class="ticket-ref">Ref: ${t.reference}</div>` : ''}
+          ${t.notes ? `<div class="ticket-notes-text">${t.notes}</div>` : ''}
+        </div>`).join('')}
+    </div>` : '';
+
+  return `
+    <div class="card">
+      ${appsHtml}
+      ${ticketsHtml}
+    </div>`;
+}
+
+// ─── MAP ──────────────────────────────────────────────────
+function buildMap(day) {
+  if (state.map) { state.map.remove(); state.map = null; }
+  state.map = L.map('map');
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors',
+    maxZoom: 18,
+  }).addTo(state.map);
+
+  const stops  = (day.stops || []).filter(s => s.lat && s.lng);
+  const bounds = [];
+
+  if (stops.length > 1) {
+    const routeCoords = stops.map(s => [s.lat, s.lng]);
+    L.polyline(routeCoords, { color: '#C8102E', weight: 2, opacity: 0.5, dashArray: '6,10' }).addTo(state.map);
+  }
+
+  stops.forEach((stop, i) => {
+    const icon = L.divIcon({
+      html: `<div class="map-marker-div type-${stop.type}">${i + 1}</div>`,
+      className: '',
+      iconSize: [28, 28],
+      iconAnchor: [14, 14],
+      popupAnchor: [0, -14],
+    });
+    const info = TYPE_ICONS[stop.type] || { emoji: '📌' };
+    L.marker([stop.lat, stop.lng], { icon })
+      .addTo(state.map)
+      .bindPopup(`<strong>${info.emoji} ${stop.name}</strong>${stop.time ? '<br>⏰ ' + stop.time : ''}${stop.notes ? '<br><small>' + stop.notes + '</small>' : ''}`);
+    bounds.push([stop.lat, stop.lng]);
+  });
+
+  if (bounds.length === 0) {
+    state.map.setView([35.6762, 139.6503], 11);
+  } else if (bounds.length === 1) {
+    state.map.setView(bounds[0], 15);
+  } else {
+    state.map.fitBounds(bounds, { padding: [28, 28] });
+  }
+
+  // Legend
+  const types = [...new Set(stops.map(s => s.type))];
+  const legend = document.getElementById('map-legend');
+  if (legend) {
+    legend.innerHTML = types.map(t => {
+      const info = TYPE_ICONS[t] || { emoji: '📌', label: t };
+      return `<div class="legend-item"><div class="legend-dot type-${t}" style="background:var(--${t}, #999)"></div>${info.emoji} ${info.label}</div>`;
+    }).join('');
+  }
+}
+
+// ─── EDIT ─────────────────────────────────────────────────
+function openEdit() {
+  if (!state.authenticated) {
+    const pw = prompt('Enter edit password:');
+    if (pw !== PASSWORD) { alert('Incorrect password.'); return; }
+    state.authenticated = true;
+  }
+  const pat = localStorage.getItem('japan_pat');
+  if (!pat) {
+    openPat(() => openEdit());
+    return;
+  }
+  const day = state.itinerary.days.find(d => d.date === state.selectedDate);
+  if (!day) return;
+  state.editDayData = JSON.parse(JSON.stringify(day)); // deep clone
+  buildEditForm(state.editDayData);
+  document.getElementById('edit-modal').classList.add('open');
+}
+
+function closeEdit() {
+  document.getElementById('edit-modal').classList.remove('open');
+}
+
+function buildEditForm(day) {
+  const body = document.getElementById('edit-body');
+  body.innerHTML = `
+    <!-- BASIC INFO -->
+    <div class="modal-section">
+      <div class="modal-section-title">Basic Info</div>
+      <div class="form-group">
+        <label>Day Title</label>
+        <input id="ef-title" value="${esc(day.title)}" />
+      </div>
+      <div class="form-group">
+        <label>Location</label>
+        <input id="ef-location" value="${esc(day.location)}" />
+      </div>
+      <div class="form-group">
+        <label>Hotel</label>
+        <input id="ef-hotel" value="${esc(day.hotel)}" />
+      </div>
+      <div class="two-col">
+        <div class="form-group">
+          <label>Suggested Start</label>
+          <input id="ef-start" value="${esc(day.suggestedStart)}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Start Reason</label>
+        <textarea id="ef-start-reason">${esc(day.startReason)}</textarea>
+      </div>
+      <div class="form-group">
+        <label>Rush Hour Note</label>
+        <input id="ef-rush" value="${esc(day.rushHourNote || '')}" />
+      </div>
+      <div class="form-group">
+        <label>Day Notes</label>
+        <textarea id="ef-daynotes">${esc(day.dayNotes || '')}</textarea>
+      </div>
+    </div>
+
+    <!-- TICKETS & RESERVATIONS -->
+    <div class="modal-section">
+      <div class="modal-section-title">Tickets & Reservations</div>
+      <div id="ef-tickets">
+        ${(day.tickets || []).map((t, i) => ticketEditorHtml(t, i)).join('')}
+      </div>
+      <button class="btn-add" onclick="addTicket()">+ Add Ticket / Reservation</button>
+    </div>
+
+    <!-- STOPS -->
+    <div class="modal-section">
+      <div class="modal-section-title">Stops / Schedule</div>
+      <div id="ef-stops">
+        ${(day.stops || []).map((s, i) => stopEditorHtml(s, i)).join('')}
+      </div>
+      <button class="btn-add" onclick="addStop()">+ Add Stop</button>
+    </div>
+
+    <!-- TRANSIT -->
+    <div class="modal-section">
+      <div class="modal-section-title">Transit Steps</div>
+      <div id="ef-transit">
+        ${(day.transit || []).map((t, i) => transitEditorHtml(t, i)).join('')}
+      </div>
+      <button class="btn-add" onclick="addTransit()">+ Add Transit Step</button>
+    </div>
+
+    <!-- APPS -->
+    <div class="modal-section">
+      <div class="modal-section-title">Apps to Have Ready</div>
+      <div class="app-list-input">
+        <input id="ef-new-app" placeholder="App name…" onkeydown="if(event.key==='Enter')addApp()" />
+        <button onclick="addApp()">Add</button>
+      </div>
+      <div class="app-chip-list" id="ef-apps">
+        ${(day.apps || []).map(a => appChipHtml(a)).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function ticketEditorHtml(t, i) {
+  return `
+    <div class="ticket-editor" id="ticket-${i}">
+      <div class="stop-editor-header">
+        <span class="stop-num">Ticket ${i + 1}</span>
+        <button class="btn-remove" onclick="removeTicket(${i})">Remove</button>
+      </div>
+      <div class="form-group"><label>Name / Description</label><input data-ticket="${i}" data-field="name" value="${esc(t.name)}" /></div>
+      <div class="form-group"><label>Reference / Booking Number</label><input data-ticket="${i}" data-field="reference" value="${esc(t.reference || '')}" placeholder="e.g. GYGG45XBK2NZ" style="font-family:monospace" /></div>
+      <div class="form-group"><label>Notes</label><textarea data-ticket="${i}" data-field="notes">${esc(t.notes || '')}</textarea></div>
+    </div>`;
+}
+
+function stopEditorHtml(s, i) {
+  const typeOptions = Object.keys(TYPE_ICONS).map(k =>
+    `<option value="${k}" ${k === s.type ? 'selected' : ''}>${TYPE_ICONS[k].emoji} ${k}</option>`).join('');
+  return `
+    <div class="stop-editor" id="stop-${i}">
+      <div class="stop-editor-header">
+        <span class="stop-num">Stop ${i + 1}</span>
+        <button class="btn-remove" onclick="removeStop(${i})">Remove</button>
+      </div>
+      <div class="two-col">
+        <div class="form-group"><label>Name</label><input data-stop="${i}" data-field="name" value="${esc(s.name)}" /></div>
+        <div class="form-group"><label>Time</label><input data-stop="${i}" data-field="time" value="${esc(s.time || '')}" placeholder="e.g. 09:00" /></div>
+      </div>
+      <div class="two-col">
+        <div class="form-group"><label>Type</label><select data-stop="${i}" data-field="type">${typeOptions}</select></div>
+      </div>
+      <div class="form-group"><label>Notes</label><textarea data-stop="${i}" data-field="notes">${esc(s.notes || '')}</textarea></div>
+      <div class="two-col">
+        <div class="form-group"><label>Lat</label><input data-stop="${i}" data-field="lat" value="${s.lat || ''}" type="number" step="0.0001" /></div>
+        <div class="form-group"><label>Lng</label><input data-stop="${i}" data-field="lng" value="${s.lng || ''}" type="number" step="0.0001" /></div>
+      </div>
+    </div>`;
+}
+
+function transitEditorHtml(t, i) {
+  return `
+    <div class="transit-editor" id="transit-${i}">
+      <div class="stop-editor-header">
+        <span class="stop-num">Step ${i + 1}</span>
+        <button class="btn-remove" onclick="removeTransit(${i})">Remove</button>
+      </div>
+      <div class="two-col">
+        <div class="form-group"><label>From</label><input data-transit="${i}" data-field="from" value="${esc(t.from)}" /></div>
+        <div class="form-group"><label>To</label><input data-transit="${i}" data-field="to" value="${esc(t.to)}" /></div>
+      </div>
+      <div class="two-col">
+        <div class="form-group"><label>Method</label><input data-transit="${i}" data-field="method" value="${esc(t.method)}" /></div>
+        <div class="form-group"><label>Duration</label><input data-transit="${i}" data-field="duration" value="${esc(t.duration || '')}" /></div>
+      </div>
+      <div class="form-group"><label>Cost</label><input data-transit="${i}" data-field="cost" value="${esc(t.cost || '')}" /></div>
+      <div class="form-group"><label>Notes</label><textarea data-transit="${i}" data-field="notes">${esc(t.notes || '')}</textarea></div>
+    </div>`;
+}
+
+function appChipHtml(name) {
+  return `<div class="app-chip">${name}<button onclick="removeApp(this)" data-app="${esc(name)}">×</button></div>`;
+}
+
+// ─── EDIT ACTIONS ─────────────────────────────────────────
+function addStop() {
+  const day = state.editDayData;
+  day.stops = day.stops || [];
+  day.stops.push({ name: 'New Stop', lat: '', lng: '', type: 'attraction', time: '', notes: '' });
+  const i = day.stops.length - 1;
+  document.getElementById('ef-stops').insertAdjacentHTML('beforeend', stopEditorHtml(day.stops[i], i));
+}
+
+function removeStop(i) {
+  document.getElementById(`stop-${i}`)?.remove();
+  state.editDayData.stops.splice(i, 1);
+  // Re-render stops to fix indices
+  document.getElementById('ef-stops').innerHTML =
+    (state.editDayData.stops || []).map((s, idx) => stopEditorHtml(s, idx)).join('');
+}
+
+function addTicket() {
+  const day = state.editDayData;
+  day.tickets = day.tickets || [];
+  day.tickets.push({ name: '', reference: '', notes: '' });
+  const i = day.tickets.length - 1;
+  document.getElementById('ef-tickets').insertAdjacentHTML('beforeend', ticketEditorHtml(day.tickets[i], i));
+}
+
+function removeTicket(i) {
+  state.editDayData.tickets.splice(i, 1);
+  document.getElementById('ef-tickets').innerHTML =
+    (state.editDayData.tickets || []).map((t, idx) => ticketEditorHtml(t, idx)).join('');
+}
+
+function addTransit() {
+  const day = state.editDayData;
+  day.transit = day.transit || [];
+  day.transit.push({ from: '', to: '', method: '', duration: '', cost: '', notes: '' });
+  const i = day.transit.length - 1;
+  document.getElementById('ef-transit').insertAdjacentHTML('beforeend', transitEditorHtml(day.transit[i], i));
+}
+
+function removeTransit(i) {
+  state.editDayData.transit.splice(i, 1);
+  document.getElementById('ef-transit').innerHTML =
+    (state.editDayData.transit || []).map((t, idx) => transitEditorHtml(t, idx)).join('');
+}
+
+function addApp() {
+  const input = document.getElementById('ef-new-app');
+  const name = input.value.trim();
+  if (!name) return;
+  state.editDayData.apps = state.editDayData.apps || [];
+  state.editDayData.apps.push(name);
+  document.getElementById('ef-apps').insertAdjacentHTML('beforeend', appChipHtml(name));
+  input.value = '';
+}
+
+function removeApp(btn) {
+  const name = btn.dataset.app;
+  state.editDayData.apps = (state.editDayData.apps || []).filter(a => a !== name);
+  btn.closest('.app-chip').remove();
+}
+
+// ─── COLLECT FORM DATA ────────────────────────────────────
+function collectEditData() {
+  const d = state.editDayData;
+  d.title        = document.getElementById('ef-title').value;
+  d.location     = document.getElementById('ef-location').value;
+  d.hotel        = document.getElementById('ef-hotel').value;
+  d.suggestedStart = document.getElementById('ef-start').value;
+  d.startReason  = document.getElementById('ef-start-reason').value;
+  d.rushHourNote = document.getElementById('ef-rush').value;
+  d.dayNotes     = document.getElementById('ef-daynotes').value;
+
+  // Stops
+  document.querySelectorAll('[data-stop]').forEach(el => {
+    const i = +el.dataset.stop;
+    const f = el.dataset.field;
+    if (!d.stops[i]) return;
+    d.stops[i][f] = (f === 'lat' || f === 'lng') ? parseFloat(el.value) || '' : el.value;
+  });
+
+  // Transit
+  document.querySelectorAll('[data-transit]').forEach(el => {
+    const i = +el.dataset.transit;
+    const f = el.dataset.field;
+    if (!d.transit[i]) return;
+    d.transit[i][f] = el.value;
+  });
+
+  // Tickets
+  document.querySelectorAll('[data-ticket]').forEach(el => {
+    const i = +el.dataset.ticket;
+    const f = el.dataset.field;
+    if (!d.tickets[i]) return;
+    d.tickets[i][f] = el.value;
+  });
+}
+
+// ─── SAVE TO GITHUB ───────────────────────────────────────
+async function saveEdit() {
+  collectEditData();
+
+  const pat = localStorage.getItem('japan_pat');
+  if (!pat) { showToast('❌ No access token — click Edit again to add one.'); return; }
+
+  // Merge edited day back into full itinerary
+  const idx = state.itinerary.days.findIndex(d => d.date === state.editDayData.date);
+  if (idx === -1) return;
+  state.itinerary.days[idx] = state.editDayData;
+
+  showToast('⏳ Saving to GitHub…');
+
+  try {
+    // Get current SHA
+    const getResp = await fetch(API_URL, {
+      headers: { Authorization: `token ${pat}`, Accept: 'application/vnd.github+json' }
+    });
+    if (!getResp.ok) throw new Error('Could not get file SHA — check your token.');
+    const fileInfo = await getResp.json();
+
+    // Encode content
+    const jsonStr = JSON.stringify(state.itinerary, null, 2);
+    const encoded = btoa(unescape(encodeURIComponent(jsonStr)));
+
+    const putResp = await fetch(API_URL, {
+      method: 'PUT',
+      headers: {
+        Authorization: `token ${pat}`,
+        Accept: 'application/vnd.github+json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        message: `Update itinerary: ${state.editDayData.date}`,
+        content: encoded,
+        sha: fileInfo.sha,
+        branch: BRANCH,
+      }),
+    });
+
+    if (!putResp.ok) {
+      const err = await putResp.json();
+      throw new Error(err.message || 'Save failed');
+    }
+
+    localStorage.setItem('japan_itinerary_cache', JSON.stringify(state.itinerary));
+    closeEdit();
+    renderDay();
+    showToast('✅ Saved! Live in ~1–2 min after GitHub rebuilds.');
+  } catch (e) {
+    showToast(`❌ ${e.message}`);
+    console.error(e);
+  }
+}
+
+// ─── PAT MODAL ────────────────────────────────────────────
+let _afterPat = null;
+function openPat(callback) {
+  _afterPat = callback || null;
+  document.getElementById('pat-modal').classList.add('open');
+}
+function closePat() {
+  document.getElementById('pat-modal').classList.remove('open');
+}
+function savePat() {
+  const val = document.getElementById('pat-input').value.trim();
+  if (!val) { alert('Please enter a token.'); return; }
+  localStorage.setItem('japan_pat', val);
+  closePat();
+  if (_afterPat) _afterPat();
+}
+
+// ─── TOAST ────────────────────────────────────────────────
+let _toastTimer;
+function showToast(msg) {
+  const el = document.getElementById('save-status');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(() => el.classList.remove('show'), 4000);
+}
+
+// ─── UTILS ────────────────────────────────────────────────
+function esc(str) {
+  return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ─── GO ───────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>
