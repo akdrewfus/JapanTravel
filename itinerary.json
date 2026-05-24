@@ -552,11 +552,11 @@
         },
         {
           "name": "120-Minute Cosplay Adventure",
-          "lat": 35.6941,
-          "lng": 139.7026,
+          "lat": 35.6928,
+          "lng": 139.7021,
           "type": "activity",
           "time": "17:00",
-          "notes": "Check in at 5:00 PM near the Godzilla Head. Guided walkthrough — dress as anime characters. Finishes around 7:00 PM."
+          "notes": "Check in at 5:00 PM at Shinjuku Ale Bar — 1-14-5 Kabukicho, Shinjuku (Marui Building, 1F/2F). On Central Road heading toward the Godzilla Head, next to Karaoke 747. Guided walkthrough — dress as anime characters. Finishes around 7:00 PM. Booked via Viator (ref: 1386039823). ⚠️ Tickets available from May 30 once payment goes through — download before the day."
         },
         {
           "name": "Tsurutontan Shinjuku",
@@ -597,8 +597,8 @@
       "tickets": [
         {
           "name": "120-Minute Cosplay Adventure",
-          "reference": "",
-          "notes": "5:00 PM check-in near the Godzilla Head, Kabukicho. Pre-book via Klook."
+          "reference": "1386039823",
+          "notes": "Booked via Viator. 5:00 PM check-in at Shinjuku Ale Bar (upstairs), near the Godzilla Head, Kabukicho. Tickets available from May 30 once payment clears — download to your phone before June 1."
         }
       ]
     },
