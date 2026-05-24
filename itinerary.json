@@ -67,7 +67,7 @@
       "tickets": [
         {
           "name": "Klook Limo Transfer — Haneda to Hotel",
-          "reference": "",
+          "reference": "TFK259132",
           "notes": "Pre-booked via Klook. Driver meets at Terminal 3 arrivals hall."
         }
       ]
@@ -80,7 +80,7 @@
       "suggestedStart": "07:00",
       "startReason": "Tsukiji is best before 9 AM when stalls are freshest. Heading south early lets you beat the rush hour crowd heading into the city center.",
       "rushHourNote": "Avoid Tokyo trains 7:30–9:30 AM (you'll be walking to Tsukiji). Return from Akihabara before 5:30 PM or after 8 PM to skip evening rush.",
-      "dayNotes": "High-protein morning at the market, then deep anime dive in Akihabara. Stick to the Hibiya and Yamanote lines — simple and direct.",
+      "dayNotes": "Morning at Tsukiji, then a short walk to Age.3 Ginza for their famous fried cream bread before heading into Akihabara for the anime deep-dive. Stick to the Hibiya and Yamanote lines — simple and direct.",
       "stops": [
         {
           "name": "Courtyard by Marriott Tokyo Station",
@@ -99,12 +99,12 @@
           "notes": "Walk 15 min south or take a 5-min taxi (GO app). Fresh sushi, tamagoyaki, and street food. Browse the stalls."
         },
         {
-          "name": "Sushi no Midori — Ginza",
-          "lat": 35.6692,
-          "lng": 139.7633,
+          "name": "Age.3 Ginza",
+          "lat": 35.6738,
+          "lng": 139.7683,
           "type": "food",
           "time": "10:00",
-          "notes": "10-min walk from Tsukiji to Ginza Station. High-quality sushi at reasonable prices. May have a queue."
+          "notes": "10-min walk north from Tsukiji. Famous fluffy fried bread filled with cream — a Tokyo signature treat. Then continue a few minutes to Ginza Station for the Hibiya Line to Akihabara. (1-24-11 Ginza, near Ginza-itchome Station)"
         },
         {
           "name": "Radio Kaikan — Akihabara",
@@ -142,11 +142,11 @@
         },
         {
           "from": "Tsukiji",
-          "to": "Ginza Station (Sushi no Midori)",
+          "to": "Age.3 Ginza → Ginza Station",
           "method": "Walk",
-          "duration": "10 min",
+          "duration": "10–12 min",
           "cost": "Free",
-          "notes": "Head north toward Ginza."
+          "notes": "Walk north to Age.3 (1-24-11 Ginza, near Ginza-itchome). Grab the famous fried cream bread, then continue a few minutes to Ginza Station for the Hibiya Line."
         },
         {
           "from": "Ginza Station",
@@ -379,19 +379,11 @@
       "title": "The Master Knife & Digital Dreamscapes",
       "location": "Tokyo",
       "hotel": "Courtyard by Marriott Tokyo Station",
-      "suggestedStart": "09:00",
-      "startReason": "Browse Age.3 Ginza near the hotel first, then take the Ginza Line to Kappabashi — arriving at 10:00 AM when shops open. teamLab at 3:00 PM is ideal for a Sunday (avoids heaviest morning rush).",
+      "suggestedStart": "09:30",
+      "startReason": "Take the Ginza Line from Kyobashi Station to Tawaramachi — arriving at Kama-Asa around 10:00 AM when the knife shop opens. After Asakusa, a detour to Higashiueno for pearl jewelry. teamLab at 3:00 PM is ideal for a Sunday.",
       "rushHourNote": "Sunday — no rush hour. teamLab Borderless requires a specific entry time — book the 3:00 PM slot in advance.",
-      "dayNotes": "From high-craft knife shopping in Kappabashi to Tokyo's oldest temple, then into the neon art of teamLab. Ends with A5 Wagyu in Ginza — a 10-min walk back to the hotel.",
+      "dayNotes": "From high-craft knife shopping in Kappabashi to Tokyo's oldest temple, then a detour to Higashiueno for pearl jewellery (for Sara), into the neon art of teamLab, and ending with A5 Wagyu in Ginza.",
       "stops": [
-        {
-          "name": "Age.3 Ginza",
-          "lat": 35.6738,
-          "lng": 139.7683,
-          "type": "shopping",
-          "time": "09:15",
-          "notes": "Near the hotel. Browse to warm up the day before heading north. (1-24-11 Ginza — north end of Ginza near Ginza-itchome Station)"
-        },
         {
           "name": "Kama-Asa — Kappabashi",
           "lat": 35.7136,
@@ -423,6 +415,14 @@
           "type": "attraction",
           "time": "13:45",
           "notes": "At the Ginza Line entrance. 1950s time-capsule vibe — surprisingly photogenic."
+        },
+        {
+          "name": "PEARL SEIWA — Higashiueno",
+          "lat": 35.7116,
+          "lng": 139.7845,
+          "type": "shopping",
+          "time": "14:15",
+          "notes": "From Asakusa Station, take the Ginza Line 3 stops to Inaricho Station (3 min), then walk 5 min southwest. High-quality Japanese pearl jewellery — browse their collection and pick something for Sara. Allow about an hour."
         },
         {
           "name": "teamLab Borderless — Azabudai Hills",
@@ -468,11 +468,19 @@
         },
         {
           "from": "Asakusa Station",
+          "to": "PEARL SEIWA (Inaricho)",
+          "method": "Ginza Line — 3 stops",
+          "duration": "3 min + 5 min walk",
+          "cost": "¥180",
+          "notes": "Board the Ginza Line at Asakusa, ride 3 stops to Inaricho Station. Walk 5 min southwest to PEARL SEIWA in Higashiueno."
+        },
+        {
+          "from": "PEARL SEIWA",
           "to": "teamLab Borderless (Kamiyacho)",
-          "method": "Ginza Line → Hibiya Line",
-          "duration": "~35 min",
-          "cost": "¥280",
-          "notes": "Ginza Line from Asakusa → Ginza Station. Switch to Hibiya Line (Gray) → Kamiyacho. Follow underground signs for Azabudai Hills."
+          "method": "Walk → Hibiya Line (Gray)",
+          "duration": "~30 min",
+          "cost": "¥210",
+          "notes": "Walk 6 min to Ueno-Okachimachi Station. Board the Hibiya Line (Gray) directly to Kamiyacho Station (no transfers, ~20 min). Follow underground signs for Azabudai Hills."
         },
         {
           "from": "teamLab / Kamiyacho",
@@ -753,6 +761,14 @@
           "type": "hotel",
           "time": "14:30",
           "notes": "Exit at Sakurabashi Exit and catch the Westin Shuttle Bus (every 15–20 min, 7:30 AM–10 PM). Or 10–12 min walk via Umeda Underground."
+        },
+        {
+          "name": "Umeda Sky Building — Kuchu Teien Observatory",
+          "lat": 34.7054,
+          "lng": 135.4901,
+          "type": "attraction",
+          "time": "16:00",
+          "notes": "Two towers linked by a 'floating garden' observatory on the 39th floor — panoramic 360° views of Osaka. About 12 min walk northwest from the Westin. Open 10 AM–10 PM (last entry 9:30 PM). ¥2,000 per person. Head to Dotonbori afterwards."
         },
         {
           "name": "Dotonbori",
@@ -1137,61 +1153,69 @@
     },
     {
       "date": "2026-06-07",
-      "title": "Nara's Giants & Garden Serenity + Osaka Food Tour",
-      "location": "Nara (day trip) + Osaka",
+      "title": "Second Kyoto Day — Omurice, Pontocho & Lantern Alleys",
+      "location": "Kyoto (day trip from Osaka) + Osaka",
       "hotel": "The Westin Osaka",
-      "suggestedStart": "08:30",
-      "startReason": "Board train by 9:00 AM for a ~45–50 min journey to Nara. Arrive before crowds build at Todai-ji. Need to be back in Osaka by 6:45 PM for the 7:00 PM food tour.",
-      "rushHourNote": "Sunday — no rush hour. Evening food tour in Dotonbori starts at 7 PM. Last Special Rapid from Nara area: check schedule.",
-      "dayNotes": "Morning of scale and history in Nara, then the legendary 10 Tastings of Osaka food tour with Fay in the evening. Book the 6:57 PM train back at the latest.",
+      "suggestedStart": "09:00",
+      "startReason": "⚠️ BOOK KICHI KICHI OMURICE at 9:00 AM SHARP from hotel. Same-day online booking only — slots sell out in minutes. Have the booking page ready on your phone at 8:59 AM.",
+      "rushHourNote": "Sunday — no rush. Must depart Kyoto by 3:45 PM to be back in Osaka by 5 PM for the 7 PM food tour.",
+      "dayNotes": "Start the morning by booking Kichi Kichi at 9 AM on the dot, then take the Hankyu Kyoto Line (NOT JR) to Kyoto-Kawaramachi. Omurice lunch, Pontocho afternoon stroll, lantern arcade, and back to Osaka for Fay's food tour. The Hankyu line from Osaka-Umeda is faster and cheaper than JR for this route.",
       "stops": [
         {
-          "name": "Nara Park — Deer",
-          "lat": 34.6851,
-          "lng": 135.8431,
-          "type": "attraction",
-          "time": "10:00",
-          "notes": "10–15 min walk from Nara Station. The famous bowing deer roam freely through the park."
+          "name": "Osaka-Umeda Station (Hankyu)",
+          "lat": 34.7027,
+          "lng": 135.4986,
+          "type": "transport",
+          "time": "09:30",
+          "notes": "Walk or shuttle from Westin to Hankyu Osaka-Umeda Station. Board the Limited Express (特急) on the Hankyu Kyoto Line toward Kyoto-Kawaramachi."
         },
         {
-          "name": "Todai-ji — The Great Buddha",
-          "lat": 34.6888,
-          "lng": 135.8398,
-          "type": "attraction",
-          "time": "10:30",
-          "notes": "Houses the Daibutsu — one of the largest bronze Buddha statues in the world. The wooden hall was once the largest wooden building on earth."
-        },
-        {
-          "name": "Kasugataisha Shrine",
-          "lat": 34.6815,
-          "lng": 135.8482,
-          "type": "attraction",
-          "time": "11:00",
-          "notes": "Forest path lined with thousands of stone lanterns leading to a vermilion shrine. Serene contrast to busy Todai-ji."
-        },
-        {
-          "name": "Nakatanidou — Mochi",
-          "lat": 34.6848,
-          "lng": 135.8332,
-          "type": "food",
-          "time": "11:30",
-          "notes": "Fresh warm Yomogi Mochi with red bean filling. Watch the mochi pounding demonstration."
-        },
-        {
-          "name": "Maguro Koya (or Mizuya Chaya)",
-          "lat": 34.6851,
-          "lng": 135.8332,
+          "name": "Kichi Kichi Omurice",
+          "lat": 35.0085,
+          "lng": 135.7671,
           "type": "food",
           "time": "12:00",
-          "notes": "Option A — Maguro Koya: tiny family-run shop with incredibly fresh tuna bowls (Donburi). Opens 11 AM, often a wait. Option B — Mizuya Chaya: traditional thatched-roof teahouse inside the park serving udon/soba."
+          "notes": "⚠️ Arrive 20 min early and stand on the RED LINE painted on the pavement outside. Chef Yuichi Goto's theatrical omurice — a showstopper. Zaimokucho, 7-min walk north from Kyoto-Kawaramachi Station."
         },
         {
-          "name": "Nara Station (return to Osaka)",
-          "lat": 34.6854,
-          "lng": 135.8328,
-          "type": "transport",
+          "name": "Pontocho Alley",
+          "lat": 35.0079,
+          "lng": 135.7681,
+          "type": "attraction",
+          "time": "13:30",
+          "notes": "Narrow cobblestone lane running parallel to the Kamo River. One of Kyoto's most atmospheric alleys — quiet in the afternoon, magical at dusk."
+        },
+        {
+          "name": "Kamogawa Riverfront",
+          "lat": 35.0055,
+          "lng": 135.7700,
+          "type": "attraction",
           "time": "14:00",
-          "notes": "Walk 20 min back to station. Return to Osaka to rest before the evening food tour."
+          "notes": "Stroll along the Kamo River. Couples famously sit at equal intervals along the bank. Peaceful contrast between modern city life and Kyoto's natural setting."
+        },
+        {
+          "name": "Teramachi & Shinkyogoku Shopping Arcades",
+          "lat": 35.0054,
+          "lng": 135.7676,
+          "type": "shopping",
+          "time": "14:30",
+          "notes": "Covered arcade running north–south through the city centre. Traditional crafts, souvenir shops, fashion, and street food. Connects to Nishiki Market."
+        },
+        {
+          "name": "Furukawacho Shopping Arcade",
+          "lat": 35.0087,
+          "lng": 135.7745,
+          "type": "shopping",
+          "time": "15:00",
+          "notes": "East side of the Kamo River — the famous lantern-hung arcade. Great photo spot. 5-min walk or quick taxi from Teramachi."
+        },
+        {
+          "name": "Kyoto-Kawaramachi Station (return)",
+          "lat": 35.0038,
+          "lng": 135.7696,
+          "type": "transport",
+          "time": "15:45",
+          "notes": "⚠️ DEPART BY 15:45 on the Hankyu Kyoto Line Limited Express back to Osaka-Umeda (45 min, ¥410). Must be back in Osaka by 5 PM to rest before the 7 PM food tour."
         },
         {
           "name": "10 Tastings of Osaka Food Tour",
@@ -1204,20 +1228,36 @@
       ],
       "transit": [
         {
-          "from": "Osaka (Tennoji area or Namba)",
-          "to": "Nara",
-          "method": "JR Yamatoji Line or Kintetsu Nara Line",
-          "duration": "45–50 min",
-          "cost": "¥470–¥570",
-          "notes": "JR Yamatoji from Tennoji Station, or Kintetsu from Namba Station. Both ~45–50 min."
+          "from": "Westin Osaka",
+          "to": "Hankyu Osaka-Umeda Station",
+          "method": "Walk or Westin Shuttle",
+          "duration": "10–15 min walk / 5 min shuttle",
+          "cost": "Free",
+          "notes": "Walk south to Hankyu Osaka-Umeda Station, or take the Westin shuttle to JR Osaka Station and walk 5 min to the Hankyu building."
         },
         {
-          "from": "Nara",
-          "to": "Osaka (return)",
-          "method": "Same line back",
-          "duration": "45–50 min",
-          "cost": "¥470–¥570",
-          "notes": "Allow enough time to reach Dotonbori for the 7:00 PM food tour."
+          "from": "Hankyu Osaka-Umeda",
+          "to": "Kyoto-Kawaramachi",
+          "method": "Hankyu Kyoto Line — Limited Express (特急)",
+          "duration": "45 min",
+          "cost": "¥410",
+          "notes": "NOT JR — use the Hankyu Kyoto Line from Osaka-Umeda. Take the Limited Express (特急) direct to Kyoto-Kawaramachi. Departs every ~10 min."
+        },
+        {
+          "from": "Kyoto-Kawaramachi",
+          "to": "Kichi Kichi Omurice",
+          "method": "Walk",
+          "duration": "7 min",
+          "cost": "Free",
+          "notes": "Walk 7 min north to Zaimokucho. Google Maps: 'Kichi Kichi Omurice Kyoto.'"
+        },
+        {
+          "from": "Kyoto-Kawaramachi Station",
+          "to": "Hankyu Osaka-Umeda (return)",
+          "method": "Hankyu Kyoto Line — Limited Express (特急)",
+          "duration": "45 min",
+          "cost": "¥410",
+          "notes": "Depart no later than 15:45. Same station, opposite platform — direction Osaka-Umeda."
         },
         {
           "from": "Westin Osaka",
@@ -1225,11 +1265,16 @@
           "method": "Westin Shuttle → Midosuji Line (Red)",
           "duration": "~20 min",
           "cost": "¥240",
-          "notes": "Shuttle to Osaka Station → Umeda → Midosuji Line south → Namba."
+          "notes": "Shuttle to Osaka Station → walk 2 min to Umeda → Midosuji Line south → Namba."
         }
       ],
       "apps": ["GO", "SUICA", "Japan Travel by NAVITIME"],
       "tickets": [
+        {
+          "name": "Kichi Kichi Omurice — Same-Day Booking",
+          "reference": "",
+          "notes": "Book online at 9:00 AM SHARP on June 7. Same-day only — no advance booking. Slots sell out in minutes. Have the booking page open on your phone at 8:59 AM."
+        },
         {
           "name": "10 Tastings of Osaka — withLocals (Fay)",
           "reference": "7D89B827",
