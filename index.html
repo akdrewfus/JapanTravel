@@ -316,6 +316,92 @@
     }
     .maps-link:hover { background: #d0e1fc; }
 
+    /* STOP PHOTO */
+    .stop-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .stop-text { flex: 1; min-width: 0; }
+    .stop-photo {
+      width: 82px;
+      height: 62px;
+      object-fit: cover;
+      border-radius: 7px;
+      flex-shrink: 0;
+      cursor: zoom-in;
+      border: 1px solid var(--border);
+      transition: transform 0.15s, box-shadow 0.15s;
+      display: block;
+    }
+    .stop-photo:hover { transform: scale(1.04); box-shadow: 0 3px 10px rgba(0,0,0,0.18); }
+    .photo-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 7px;
+      background: #f5f5f5;
+      border: 1px dashed #ccc;
+      font-size: 19px;
+      text-decoration: none;
+      flex-shrink: 0;
+      transition: background 0.15s;
+      cursor: pointer;
+      align-self: center;
+    }
+    .photo-btn:hover { background: #ebebeb; }
+
+    /* PHOTO LIGHTBOX */
+    #photo-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.93);
+      z-index: 5000;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      cursor: zoom-out;
+    }
+    #photo-lightbox.open { display: flex; }
+    #photo-lightbox-img {
+      max-width: 92vw;
+      max-height: 72vh;
+      border-radius: 8px;
+      object-fit: contain;
+      box-shadow: 0 6px 40px rgba(0,0,0,0.6);
+    }
+    #photo-lightbox-caption {
+      color: rgba(255,255,255,0.88);
+      margin-top: 14px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      max-width: 340px;
+      line-height: 1.4;
+    }
+    #photo-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(255,255,255,0.15);
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #photo-close:hover { background: rgba(255,255,255,0.28); }
+
     /* TRANSIT */
     .transit-item {
       border: 1px solid var(--border);
@@ -732,6 +818,13 @@
   </div>
 </div>
 
+<!-- PHOTO LIGHTBOX -->
+<div id="photo-lightbox" onclick="closePhoto()">
+  <button id="photo-close" onclick="closePhoto()">✕</button>
+  <img id="photo-lightbox-img" src="" alt="" onclick="event.stopPropagation()" />
+  <div id="photo-lightbox-caption"></div>
+</div>
+
 <!-- SAVE STATUS TOAST -->
 <div class="save-status" id="save-status"></div>
 
@@ -900,14 +993,25 @@ function renderStartCard(day) {
 function renderTimeline(day) {
   if (!day.stops || !day.stops.length) return '';
   const items = day.stops.map((s, i) => {
-    const info = TYPE_ICONS[s.type] || { emoji: '📌', label: s.type };
-    const color = `var(--${s.type}, var(--transport))`;
+    const info    = TYPE_ICONS[s.type] || { emoji: '📌', label: s.type };
+    const color   = `var(--${s.type}, var(--transport))`;
+    const searchQ = encodeURIComponent(`${s.name} ${day.location}`);
+    const photoHtml = s.photo
+      ? `<img class="stop-photo" src="${esc(s.photo)}" alt="${esc(s.name)}" loading="lazy"
+             onclick="openPhoto('${s.photo.replace(/'/g,"\\'").replace(/"/g,'&quot;')}','${s.name.replace(/'/g,"\\'")}');event.stopPropagation()">`
+      : `<a class="photo-btn" href="https://www.google.com/search?q=${searchQ}&tbm=isch"
+            target="_blank" rel="noopener" title="Search photos of ${esc(s.name)}">📷</a>`;
     return `
       <li class="timeline-item">
         <div class="timeline-dot type-${s.type}">${i + 1}</div>
         <div class="timeline-content">
-          ${s.time ? `<div class="timeline-time">⏰ ${s.time}</div>` : ''}
-          <div class="timeline-name">${info.emoji} ${s.name}</div>
+          <div class="stop-header">
+            <div class="stop-text">
+              ${s.time ? `<div class="timeline-time">⏰ ${s.time}</div>` : ''}
+              <div class="timeline-name">${info.emoji} ${s.name}</div>
+            </div>
+            ${photoHtml}
+          </div>
           ${s.notes ? `<div class="timeline-notes">${s.notes}</div>` : ''}
           <div style="margin-top:5px;">
             <span class="stop-type-tag type-${s.type}" style="background:${color}">${info.label}</span>
@@ -1160,6 +1264,11 @@ function stopEditorHtml(s, i) {
         <div class="form-group"><label>Type</label><select data-stop="${i}" data-field="type">${typeOptions}</select></div>
       </div>
       <div class="form-group"><label>Notes</label><textarea data-stop="${i}" data-field="notes">${esc(s.notes || '')}</textarea></div>
+      <div class="form-group">
+        <label>📷 Photo URL <span style="font-weight:400;color:#999">(paste any image link — right-click a Google Image → Copy image address)</span></label>
+        <input data-stop="${i}" data-field="photo" value="${esc(s.photo || '')}" placeholder="https://upload.wikimedia.org/…" />
+        ${s.photo ? `<img src="${esc(s.photo)}" alt="preview" style="margin-top:6px;width:120px;height:80px;object-fit:cover;border-radius:5px;border:1px solid #ddd;" onerror="this.style.display='none'">` : ''}
+      </div>
       <div class="two-col">
         <div class="form-group"><label>Lat</label><input data-stop="${i}" data-field="lat" value="${s.lat || ''}" type="number" step="0.0001" /></div>
         <div class="form-group"><label>Lng</label><input data-stop="${i}" data-field="lng" value="${s.lng || ''}" type="number" step="0.0001" /></div>
@@ -1195,7 +1304,7 @@ function appChipHtml(name) {
 function addStop() {
   const day = state.editDayData;
   day.stops = day.stops || [];
-  day.stops.push({ name: 'New Stop', lat: '', lng: '', type: 'attraction', time: '', notes: '' });
+  day.stops.push({ name: 'New Stop', lat: '', lng: '', type: 'attraction', time: '', notes: '', photo: '' });
   const i = day.stops.length - 1;
   document.getElementById('ef-stops').insertAdjacentHTML('beforeend', stopEditorHtml(day.stops[i], i));
 }
@@ -1370,6 +1479,22 @@ function showToast(msg) {
   clearTimeout(_toastTimer);
   _toastTimer = setTimeout(() => el.classList.remove('show'), 4000);
 }
+
+// ─── PHOTO LIGHTBOX ───────────────────────────────────────
+function openPhoto(url, name) {
+  const lb = document.getElementById('photo-lightbox');
+  document.getElementById('photo-lightbox-img').src = url;
+  document.getElementById('photo-lightbox-caption').textContent = name;
+  lb.classList.add('open');
+}
+function closePhoto() {
+  document.getElementById('photo-lightbox').classList.remove('open');
+  document.getElementById('photo-lightbox-img').src = '';
+}
+// Close on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closePhoto();
+});
 
 // ─── UTILS ────────────────────────────────────────────────
 function esc(str) {
