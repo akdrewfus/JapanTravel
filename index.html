@@ -767,6 +767,50 @@
 
     /* TWO-COL GRID */
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    /* VISITED STATE */
+    .visited-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      border: 1.5px solid #27ae60;
+      color: #27ae60;
+      background: white;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+      line-height: 1;
+    }
+    .visited-btn.visited {
+      background: #27ae60;
+      color: white;
+    }
+    .visited-btn:hover:not(.visited) { background: #f0faf5; }
+    .timeline-item.is-visited .timeline-dot {
+      box-shadow: 0 0 0 3px rgba(39,174,96,0.35);
+    }
+    .timeline-item.is-visited .timeline-dot::after {
+      content: '✓';
+      position: absolute;
+      bottom: -3px;
+      right: -3px;
+      background: #27ae60;
+      color: white;
+      font-size: 7px;
+      font-weight: 900;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid white;
+      line-height: 12px;
+    }
   </style>
 </head>
 <body>
@@ -774,7 +818,10 @@
 <header>
   <div class="header-top">
     <h1>Japan <span>2026</span> 🗾</h1>
-    <button class="edit-btn" onclick="openEdit()">✏️ Edit</button>
+    <div style="display:flex;gap:6px;align-items:center;">
+      <a class="edit-btn" href="diary.html" style="text-decoration:none;display:inline-flex;align-items:center;">📔 Diary</a>
+      <button class="edit-btn" onclick="openEdit()">✏️ Edit</button>
+    </div>
   </div>
   <div class="date-nav">
     <button id="btn-prev" onclick="changeDay(-1)">‹</button>
@@ -1003,8 +1050,9 @@ function renderTimeline(day) {
              onclick="openPhoto('${s.photo.replace(/'/g,"\\'").replace(/"/g,'&quot;')}','${s.name.replace(/'/g,"\\'")}');event.stopPropagation()">`
       : `<a class="photo-btn" href="https://www.google.com/search?q=${searchQ}&tbm=isch"
             target="_blank" rel="noopener" title="Search photos of ${esc(s.name)}">📷</a>`;
+    const visited = !!s.visited;
     return `
-      <li class="timeline-item">
+      <li class="timeline-item${visited ? ' is-visited' : ''}" data-date="${day.date}" data-stop="${i}">
         <div class="timeline-dot type-${s.type}">${i + 1}</div>
         <div class="timeline-content">
           <div class="stop-header">
@@ -1015,9 +1063,11 @@ function renderTimeline(day) {
             ${photoHtml}
           </div>
           ${s.notes ? `<div class="timeline-notes">${s.notes}</div>` : ''}
-          <div style="margin-top:5px;">
+          <div style="margin-top:5px;display:flex;align-items:center;flex-wrap:wrap;gap:6px;">
             <span class="stop-type-tag type-${s.type}" style="background:${color}">${info.label}</span>
             ${(s.lat && s.lng) ? `<a class="maps-link" href="https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}" target="_blank" rel="noopener">🗺️ Directions</a>` : ''}
+            <button class="visited-btn${visited ? ' visited' : ''}"
+                    onclick="toggleVisited('${day.date}',${i});event.stopPropagation()">${visited ? '✓ Visited' : '○ Mark Visited'}</button>
           </div>
         </div>
       </li>`;
@@ -1306,7 +1356,7 @@ function appChipHtml(name) {
 function addStop() {
   const day = state.editDayData;
   day.stops = day.stops || [];
-  day.stops.push({ name: 'New Stop', lat: '', lng: '', type: 'attraction', time: '', notes: '', photo: '' });
+  day.stops.push({ name: 'New Stop', lat: '', lng: '', type: 'attraction', time: '', notes: '', photo: '', visited: false });
   const i = day.stops.length - 1;
   document.getElementById('ef-stops').insertAdjacentHTML('beforeend', stopEditorHtml(day.stops[i], i));
 }
@@ -1456,6 +1506,67 @@ async function saveEdit() {
     closeEdit();
     renderDay();
     showToast('✅ Saved! Live in ~1–2 min after GitHub rebuilds.');
+  } catch (e) {
+    showToast(`❌ ${e.message}`);
+    console.error(e);
+  }
+}
+
+// ─── TOGGLE VISITED ───────────────────────────────────────
+async function toggleVisited(date, stopIdx) {
+  const pat = localStorage.getItem('japan_pat');
+  if (!pat) { openPat(() => toggleVisited(date, stopIdx)); return; }
+
+  const dayIdx = state.itinerary.days.findIndex(d => d.date === date);
+  if (dayIdx === -1) return;
+  const stop = state.itinerary.days[dayIdx].stops[stopIdx];
+  stop.visited = !stop.visited;
+
+  // Update UI immediately so it feels instant
+  const item = document.querySelector(`.timeline-item[data-date="${date}"][data-stop="${stopIdx}"]`);
+  if (item) {
+    item.classList.toggle('is-visited', stop.visited);
+    const btn = item.querySelector('.visited-btn');
+    if (btn) { btn.classList.toggle('visited', stop.visited); btn.textContent = stop.visited ? '✓ Visited' : '○ Mark Visited'; }
+  }
+
+  showToast('⏳ Saving…');
+  try {
+    const getResp = await fetch(API_URL, {
+      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json' }
+    });
+    if (!getResp.ok) {
+      let detail = `HTTP ${getResp.status}`;
+      try { const e = await getResp.json(); detail += ': ' + (e.message || JSON.stringify(e)); } catch {}
+      if (getResp.status === 401) detail += ' — token invalid or expired';
+      if (getResp.status === 403) detail += ' — token lacks repo/contents write scope';
+      if (getResp.status === 404) detail += ' — repo or file not found';
+      throw new Error('Could not get file SHA — ' + detail);
+    }
+    const fileInfo = await getResp.json();
+    const jsonStr  = JSON.stringify(state.itinerary, null, 2);
+    const encoded  = btoa(unescape(encodeURIComponent(jsonStr)));
+    const putResp = await fetch(API_URL, {
+      method: 'PUT',
+      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: `${stop.visited ? 'Visited' : 'Unvisited'}: ${stop.name} (${date})`,
+        content: encoded, sha: fileInfo.sha, branch: BRANCH,
+      }),
+    });
+    if (!putResp.ok) {
+      const err = await putResp.json();
+      // Revert on failure
+      stop.visited = !stop.visited;
+      if (item) {
+        item.classList.toggle('is-visited', stop.visited);
+        const btn = item.querySelector('.visited-btn');
+        if (btn) { btn.classList.toggle('visited', stop.visited); btn.textContent = stop.visited ? '✓ Visited' : '○ Mark Visited'; }
+      }
+      throw new Error(err.message || 'Save failed');
+    }
+    localStorage.setItem('japan_itinerary_cache', JSON.stringify(state.itinerary));
+    showToast(stop.visited ? '✅ Logged to diary!' : '○ Unmarked');
   } catch (e) {
     showToast(`❌ ${e.message}`);
     console.error(e);

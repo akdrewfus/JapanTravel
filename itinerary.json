@@ -22,7 +22,8 @@
           "type": "transport",
           "time": "15:25",
           "notes": "Meet your Klook driver at the arrivals hall. Look for a sign with your name.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Courtyard by Marriott Tokyo Station",
@@ -31,7 +32,8 @@
           "type": "hotel",
           "time": "16:15",
           "notes": "Yaesu side of Tokyo Station. Check in, drop bags, freshen up. 7-Eleven is in the building.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Tokyo Character Street",
@@ -40,7 +42,8 @@
           "type": "attraction",
           "time": "17:00",
           "notes": "In the Tokyo Station basement. Official Pokémon Center and Ghibli store — perfect first stop for Sadie.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Rokurinsha (Ramen Street)",
@@ -49,16 +52,8 @@
           "type": "food",
           "time": "19:00",
           "notes": "Thick dipping-style Tsukemen ramen. Open 7:30 AM–10:30 PM, last order 10:00 PM. Expect a short queue.",
-          "photo": ""
-        },
-        {
-          "name": "Tsuru Ton Tan BIS TOKYO",
-          "lat": 35.6813,
-          "lng": 139.7669,
-          "type": "food",
-          "time": "19:00",
-          "notes": "Another option for dinner, Tsuru Ton Tan BIS TOKYO, in Tokyo Station as well (Marunouchi Underground South Exit) - this place serves Udon.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -93,7 +88,8 @@
           "reference": "TFK259132",
           "notes": "Pre-booked via Klook. Driver meets at Terminal 3 arrivals hall."
         }
-      ]
+      ],
+      "instagramPosts": []
     },
     {
       "date": "2026-05-28",
@@ -112,7 +108,8 @@
           "type": "hotel",
           "time": "07:00",
           "notes": "Leave hotel early for Tsukiji.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Tsukiji Outer Market",
@@ -121,7 +118,8 @@
           "type": "attraction",
           "time": "07:20",
           "notes": "Walk 15 min south or take a 5-min taxi (GO app). Fresh sushi, tamagoyaki, and street food. Browse the stalls.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Age.3 Ginza",
@@ -130,7 +128,8 @@
           "type": "food",
           "time": "10:00",
           "notes": "10-min walk north from Tsukiji. Famous fluffy fried bread filled with cream — a Tokyo signature treat. Then continue a few minutes to Ginza Station for the Hibiya Line to Akihabara. (1-24-11 Ginza, near Ginza-itchome Station)",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Radio Kaikan — Akihabara",
@@ -139,7 +138,8 @@
           "type": "shopping",
           "time": "12:00",
           "notes": "Floors 4–6: Hatsune Miku and anime merchandise. Right outside the Electric Town Exit.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Kanda Myojin Shrine",
@@ -148,7 +148,8 @@
           "type": "attraction",
           "time": "14:30",
           "notes": "10-min walk from Radio Kaikan. The 'geek shrine' — buy talismans for your electronics. Beautiful vermilion gates.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Ichiran Shimbashi",
@@ -157,7 +158,8 @@
           "type": "food",
           "time": "19:00",
           "notes": "Solo ramen booths — each person eats in their own cubicle. Customise your broth on a paper form.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -209,7 +211,8 @@
         "Ramen Beast",
         "GO"
       ],
-      "tickets": []
+      "tickets": [],
+      "instagramPosts": []
     },
     {
       "date": "2026-05-29",
@@ -228,7 +231,8 @@
           "type": "hotel",
           "time": "07:00",
           "notes": "Leave by 7:30 AM. Walk north to Yaesu South Exit.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Tokyo Station — Yaesu South Exit Bus Stop #1",
@@ -237,7 +241,8 @@
           "type": "transport",
           "time": "07:30",
           "notes": "Board the direct bus to Tokyo DisneySea here. Runs every 10–20 min, ~35 min ride.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Tokyo DisneySea",
@@ -246,7 +251,8 @@
           "type": "activity",
           "time": "08:15",
           "notes": "Full day at the park! Meals at quick service. Keep scoping last-minute dining reservations.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Maihama Station",
@@ -255,7 +261,8 @@
           "type": "transport",
           "time": "21:00",
           "notes": "Take the Disney Resort Line (monorail) from the park to Maihama Station.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -295,7 +302,8 @@
           "reference": "",
           "notes": "Must be pre-purchased. Book well in advance — often sells out. Use the Disney app or Klook."
         }
-      ]
+      ],
+      "instagramPosts": []
     },
     {
       "date": "2026-05-30",
@@ -314,7 +322,8 @@
           "type": "food",
           "time": "09:45",
           "notes": "Arrive 15 min before 10 AM opening to beat the queue. Show the barista a photo of Sadie's favourite anime character for 3D foam art.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Takeshita Street",
@@ -323,7 +332,8 @@
           "type": "shopping",
           "time": "10:30",
           "notes": "6-min walk from the cafe. Pedestrian-only street — the heart of Harajuku youth fashion.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "ACDC RAG 原宿本店",
@@ -332,7 +342,8 @@
           "type": "shopping",
           "time": "11:00",
           "notes": "Yami Kawaii and goth-punk styles Sadie will love. On Takeshita Street.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Totti Candy Factory",
@@ -341,7 +352,8 @@
           "type": "food",
           "time": "11:30",
           "notes": "1-min walk away. Famous 'Harajuku Rainbow' cotton candy — larger than an umbrella. Great photo.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Katsudon-ya Zuicho — Shibuya",
@@ -350,7 +362,8 @@
           "type": "food",
           "time": "12:00",
           "notes": "20-min stroll south via Cat Street corridor. Opens 11:30 AM. Counter-only. Crispy pork katsudon — arrive near opening.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "INITIAL Omotesando",
@@ -359,7 +372,8 @@
           "type": "food",
           "time": "14:00",
           "notes": "17-min walk. 'Shime Parfaits' — artistic high-end desserts with seasonal fruit and Hokkaido cream.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Shibuya 109",
@@ -368,7 +382,8 @@
           "type": "shopping",
           "time": "15:00",
           "notes": "15-min walk. 10-story tower — epicentre of Japanese teen fashion with alt and anime-influenced styles.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Shibuya Parco",
@@ -377,7 +392,8 @@
           "type": "shopping",
           "time": "16:30",
           "notes": "If you have extra time. Nintendo and Pokémon stores inside.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Yakitori Toriyoshi Nishiazabu",
@@ -386,7 +402,8 @@
           "type": "food",
           "time": "18:00",
           "notes": "Arrive ~6:00–6:15 PM, expect 30-min wait. Polished yakitori — calm, minimalist, smoke-free. 'Omakase stop system' keeps skewers coming until you say stop.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -429,7 +446,8 @@
         "Japan Travel by NAVITIME",
         "Tablelog"
       ],
-      "tickets": []
+      "tickets": [],
+      "instagramPosts": []
     },
     {
       "date": "2026-05-31",
@@ -448,7 +466,8 @@
           "type": "shopping",
           "time": "10:00",
           "notes": "Handmade Damascus-style knives. On-site engraving available — perfect functional souvenir. Arrive at opening.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Unatoto Asakusa",
@@ -457,7 +476,8 @@
           "type": "food",
           "time": "12:00",
           "notes": "10-min walk from the knife shops. Grilled eel (unagi) over rice — affordable, high-quality.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Senso-ji Temple",
@@ -466,7 +486,8 @@
           "type": "attraction",
           "time": "13:00",
           "notes": "5-min walk. Tokyo's oldest temple. Explore the Nakamise shopping street leading to the gate.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Asakusa Underground Mall",
@@ -475,7 +496,8 @@
           "type": "attraction",
           "time": "13:45",
           "notes": "At the Ginza Line entrance. 1950s time-capsule vibe — surprisingly photogenic.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "PEARL SEIWA — Higashiueno",
@@ -484,7 +506,8 @@
           "type": "shopping",
           "time": "14:15",
           "notes": "From Asakusa Station, take the Ginza Line 3 stops to Inaricho Station (3 min), then walk 5 min southwest. High-quality Japanese pearl jewellery — browse their collection and pick something for Sara. Allow about an hour.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "teamLab Borderless — Azabudai Hills",
@@ -493,7 +516,8 @@
           "type": "activity",
           "time": "15:00",
           "notes": "Booked 3:00 PM entry. Everything connected underground from Kamiyacho Station — follow signs for Azabudai Hills.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Oumi Beef Yakiniku Nikutatsu — Ginza",
@@ -502,7 +526,8 @@
           "type": "food",
           "time": "19:30",
           "notes": "A5 Wagyu with private booth seating. Tabelog reservation: 7ZSW7539A7. Take Hibiya Line back toward Ginza (~10 min).",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Itoya Stationery Store — Ginza",
@@ -511,7 +536,8 @@
           "type": "attraction",
           "time": "20:30",
           "notes": "12-story stationery store. Visit the indoor hydroponic farm on the top floor before or after dinner.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -581,7 +607,8 @@
           "reference": "",
           "notes": "Must book in advance. Entry time is strict. Located in Azabudai Hills, Mori Building."
         }
-      ]
+      ],
+      "instagramPosts": []
     },
     {
       "date": "2026-06-01",
@@ -600,7 +627,8 @@
           "type": "attraction",
           "time": "10:30",
           "notes": "Traditional Japanese, French, and English gardens — a peaceful contrast to the Shinjuku skyline. 5-min walk from station exit.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Omoide Yokocho (Memory Lane)",
@@ -609,7 +637,8 @@
           "type": "food",
           "time": "12:30",
           "notes": "'Piss Alley' — narrow grid of tiny stalls serving yakitori and ramen. Look for the green and red lanterns next to the train tracks.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Godzilla Head — Shinjuku Toho Building",
@@ -618,7 +647,8 @@
           "type": "attraction",
           "time": "14:00",
           "notes": "Look up at the Kabukicho entrance. The Godzilla head looms over the building — unmissable. (1-19-1 Kabukicho)",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Don Quijote Shinjuku Kabukicho",
@@ -627,7 +657,8 @@
           "type": "shopping",
           "time": "14:30",
           "notes": "Multi-story megastore. Perfect for unique snacks and souvenirs. (1-16-5 Kabukicho)",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "120-Minute Cosplay Adventure",
@@ -636,7 +667,8 @@
           "type": "activity",
           "time": "17:00",
           "notes": "Check in at 5:00 PM at Shinjuku Ale Bar — 1-14-5 Kabukicho, Shinjuku (Marui Building, 1F/2F). On Central Road heading toward the Godzilla Head, next to Karaoke 747. Guided walkthrough — dress as anime characters. Finishes around 7:00 PM. Booked via Viator (ref: 1386039823). ⚠️ Tickets available from May 30 once payment goes through — download before the day.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Tsurutontan Shinjuku",
@@ -645,7 +677,8 @@
           "type": "food",
           "time": "19:15",
           "notes": "4-min walk from Godzilla Head. Stylish udon brasserie — non-smoking. Massive 'washbowl' sized udon bowls. Teenager-friendly with occasional live music.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -685,7 +718,8 @@
           "reference": "1386039823",
           "notes": "Booked via Viator. 5:00 PM check-in at Shinjuku Ale Bar (upstairs), near the Godzilla Head, Kabukicho. Tickets available from May 30 once payment clears — download to your phone before June 1."
         }
-      ]
+      ],
+      "instagramPosts": []
     },
     {
       "date": "2026-06-02",
@@ -704,7 +738,8 @@
           "type": "hotel",
           "time": "08:30",
           "notes": "⚠️ DROP LARGE LUGGAGE FOR TAKKYUBIN FORWARDING TO OSAKA BY 10:00 AM. Ask the bell desk for the Takkyubin (luggage delivery) service.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Animate Ikebukuro Flagship",
@@ -713,7 +748,8 @@
           "type": "shopping",
           "time": "10:00",
           "notes": "World's largest anime shop — 9 floors of manga, CDs, exclusive merch, and a theatre. Often has exclusive pop-up shops. Opens 10:00 AM.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Namja Gyoza Stadium — Sunshine 60",
@@ -722,7 +758,8 @@
           "type": "food",
           "time": "12:00",
           "notes": "6-min walk from Animate. Inside Namjatown (indoor theme park, 2nd floor of Sunshine 60). Try tasting plates from gyoza stalls across Japan. Non-smoking.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Pokémon Center Mega Tokyo & Pikachu Sweets",
@@ -731,7 +768,8 @@
           "type": "shopping",
           "time": "13:30",
           "notes": "One of the largest Pokémon Centres in the world. Pikachu Sweets has character-themed cupcakes and lattes.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Donguri Kyowakoku — Studio Ghibli Shop",
@@ -740,7 +778,8 @@
           "type": "shopping",
           "time": "14:30",
           "notes": "Within the Sunshine 60 mall. High-quality Ghibli merch — Totoro, Spirited Away, and more.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Sunshine 60 Observatory Tenbou Park",
@@ -749,7 +788,8 @@
           "type": "attraction",
           "time": "15:30",
           "notes": "360-degree view from 251 metres up. Indoor grassy areas and café. Great last look at Tokyo.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Seafood Buffet Dining Ginza Happo",
@@ -758,7 +798,8 @@
           "type": "food",
           "time": "19:30",
           "notes": "King crab, fresh sushi, and premium yakiniku in an elegant, smoke-free basement setting. Tabelog reservation: 7P97W8MM6M. (GINZA NINE 3, B1 — south Ginza near Shimbashi)",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -811,7 +852,8 @@
           "reference": "",
           "notes": "Drop large bags at hotel bell desk BEFORE 10:00 AM. They will arrive at The Westin Osaka by the afternoon of June 3. Ask front desk to arrange."
         }
-      ]
+      ],
+      "instagramPosts": []
     },
     {
       "date": "2026-06-03",
@@ -830,7 +872,8 @@
           "type": "food",
           "time": "11:00",
           "notes": "Optional if Fuji is NOT visible. Near Higashi-Ginza (behind Kabukiza Theatre), famous for extra-wide flat noodles in a crane-shaped bowl. Opens 11:00 AM.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Tokyo Station — Shinkansen Gates",
@@ -839,7 +882,8 @@
           "type": "transport",
           "time": "11:30",
           "notes": "Board Nozomi Shinkansen bound for Shin-Osaka. ⚠️ SEATS D AND E — right-hand side when heading to Osaka. Mt. Fuji visible ~45 min in.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Mt. Fuji Viewing Window",
@@ -848,7 +892,8 @@
           "type": "attraction",
           "time": "12:15",
           "notes": "Look right from Seats D/E approximately 45 minutes into the journey. Check isfujivisible.com in the morning!",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Shin-Osaka Station",
@@ -857,7 +902,8 @@
           "type": "transport",
           "time": "14:00",
           "notes": "Arrive Shin-Osaka. Transfer to JR Kyoto Line (1 stop, 4 min) to JR Osaka Station.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "The Westin Osaka",
@@ -866,7 +912,8 @@
           "type": "hotel",
           "time": "14:30",
           "notes": "Exit at Sakurabashi Exit and catch the Westin Shuttle Bus (every 15–20 min, 7:30 AM–10 PM). Or 10–12 min walk via Umeda Underground.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Umeda Sky Building — Kuchu Teien Observatory",
@@ -875,7 +922,8 @@
           "type": "attraction",
           "time": "16:00",
           "notes": "Two towers linked by a 'floating garden' observatory on the 39th floor — panoramic 360° views of Osaka. About 12 min walk northwest from the Westin. Open 10 AM–10 PM (last entry 9:30 PM). ¥2,000 per person. Head to Dotonbori afterwards.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Dotonbori",
@@ -884,7 +932,8 @@
           "type": "attraction",
           "time": "18:00",
           "notes": "Street food, shopping, and Osaka energy. 'Kuidaore' — eat until you drop!",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Wagyu Itaden",
@@ -893,7 +942,8 @@
           "type": "food",
           "time": "18:30",
           "notes": "Amazing wagyu bento box. Alternatives: Mizuno for Okonomiyaki, Kukuru for Takoyaki.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Osaka Castle — Haunted Tour",
@@ -902,7 +952,8 @@
           "type": "activity",
           "time": "20:00",
           "notes": "Meet at the BACK EXIT of Starbucks at Jo-Terrace, near OsakaJoKoen Station. Guide wears a GREEN BACKPACK. Booking ref: GYGG45XBK2NZ.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -964,7 +1015,8 @@
           "reference": "GYGG45XBK2NZ",
           "notes": "8:00 PM. Meet at BACK EXIT of Starbucks at Jo-Terrace, near OsakaJoKoen Station. Guide wears GREEN BACKPACK."
         }
-      ]
+      ],
+      "instagramPosts": []
     },
     {
       "date": "2026-06-04",
@@ -983,7 +1035,8 @@
           "type": "hotel",
           "time": "11:00",
           "notes": "Relaxed morning. Enjoy the hotel or stroll the Nakanoshima area.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Sukiyaki Shabushabu Tsukada — KITTE Osaka",
@@ -992,7 +1045,8 @@
           "type": "food",
           "time": "12:30",
           "notes": "Premium sukiyaki and shabu-shabu with wagyu, Kobe beef, and Matsusaka beef options. 5F of KITTE Osaka (former Osaka Central Post Office), directly connected to JR Osaka Station west exit — about 8 min walk from the Westin. (3-2-2 Umeda, Kita-ku)",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Sushi Fukushima — Osaka",
@@ -1001,7 +1055,8 @@
           "type": "food",
           "time": "20:30",
           "notes": "2-hour VIP Omakase Course. Do NOT be late. Tabelog reservation: 4NQSTAYVXR. (1-2-17 Fukushima, Fukushima-ku — west of central Osaka near Fukushima Station)",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -1034,7 +1089,8 @@
           "reference": "4NQSTAYVXR",
           "notes": "8:30 PM reservation (Tabelog). 2-hour course. Confirm details and any dietary notes in advance."
         }
-      ]
+      ],
+      "instagramPosts": []
     },
     {
       "date": "2026-06-05",
@@ -1053,7 +1109,8 @@
           "type": "transport",
           "time": "08:45",
           "notes": "Take the Westin shuttle to Osaka Station.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Kyoto International Manga Museum",
@@ -1062,7 +1119,8 @@
           "type": "attraction",
           "time": "09:45",
           "notes": "Arrive by 9:45 AM — be first in line. Head IMMEDIATELY to the 'Manga Artist Corner' to sign up for the Manga Portrait list. Browse 50,000 volumes on the 'Wall of Manga' while you wait.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Omen Ginkaku-ji",
@@ -1071,7 +1129,8 @@
           "type": "food",
           "time": "12:00",
           "notes": "Artisan udon with a platter of seasonal condiments (ginger, sesame, Kyoto veg). 15-min taxi (GO app) or Bus #32/#203 to Ginkakuji-michi stop.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Nishiki Market",
@@ -1080,7 +1139,8 @@
           "type": "shopping",
           "time": "14:00",
           "notes": "'Kitchen of Kyoto.' High-quality kitchenware and food souvenirs. Bus #5 or #203 from Ginkakuji back to Shijo-Kawaramachi.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Teramachi Shopping Street",
@@ -1089,7 +1149,8 @@
           "type": "shopping",
           "time": "15:00",
           "notes": "Covered arcade adjacent to Nishiki. Traditional woodblock prints, fine stationery, and tea merchants.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Ninenzaka",
@@ -1098,7 +1159,8 @@
           "type": "attraction",
           "time": "16:00",
           "notes": "If time allows — short taxi. Preserved wooden architecture from the Edo period. Beautiful for photos.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Chao Chao Gyoza — Sanjo Kiyamachi",
@@ -1107,7 +1169,8 @@
           "type": "food",
           "time": "18:00",
           "notes": "Award-winning bite-sized 'hitokuchi' gyoza. Unique flavours: shrimp, ginger, curry. 10-min walk from Teramachi/Nishiki.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Kyoto Station",
@@ -1116,7 +1179,8 @@
           "type": "transport",
           "time": "19:30",
           "notes": "Walk 15 min or take subway from nearby Sanjo Station. Board JR Special Rapid back to Osaka.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -1166,7 +1230,8 @@
         "SUICA",
         "Japan Travel by NAVITIME"
       ],
-      "tickets": []
+      "tickets": [],
+      "instagramPosts": []
     },
     {
       "date": "2026-06-06",
@@ -1185,7 +1250,8 @@
           "type": "transport",
           "time": "11:25",
           "notes": "JR Special Rapid from Osaka Station (22 min). 5-min walk to Ishida.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Kobe Beef Steak Ishida Main Shop",
@@ -1194,7 +1260,8 @@
           "type": "food",
           "time": "12:00",
           "notes": "A5 Kobe beef prepared teppanyaki-style right in front of you. Your locked-in Kobe experience. Tabelog reservation: 4EMQNJYCCP.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Sennichimae Doguyasuji — Knife Street",
@@ -1203,7 +1270,8 @@
           "type": "shopping",
           "time": "15:15",
           "notes": "10-min walk south from Namba Station. Look for Sakai Ichimonji Mitsuhide — Damascus-style blades with on-site engraving. Name or date engraved as permanent souvenir.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Amerikamura (Amemura) — Triangle Park",
@@ -1212,7 +1280,8 @@
           "type": "shopping",
           "time": "16:30",
           "notes": "15-min walk or quick subway hop from Doguyasuji to Shinsaibashi. Heart of Osaka youth culture. Volcan & Aphrodite: bold graphic tees and alt styles for Sadie.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Tsutenkaku — Shinsekai",
@@ -1221,7 +1290,8 @@
           "type": "attraction",
           "time": "17:30",
           "notes": "Observatory deck for city views. Or try the 'Tower Slider' — 60-metre slide spiralling down the outside of the tower. (1-18-6 Ebisuhigashi, Naniwa Ward)",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Kasuga Goraku-jo Vintage Arcade",
@@ -1230,7 +1300,8 @@
           "type": "activity",
           "time": "18:30",
           "notes": "Vintage arcade near Tsutenkaku capturing the 'retro-future' look.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "MAKIBI — Italian",
@@ -1239,7 +1310,8 @@
           "type": "food",
           "time": "20:00",
           "notes": "Tabelog Italian WEST Top 100 2025 (rated 3.67). Wood-fired pizza, seasonal Italian with open-fire meat dishes — a perfect break from Japanese food. Tabelog reservation: 5CSD7KLD5F. 1F Mobius Nishitenma Building, 3-1-27 Nishitenma, Kita-ku. ~6 min walk from Naniwabashi Station.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -1308,7 +1380,8 @@
           "reference": "5CSD7KLD5F",
           "notes": "8:00 PM reservation (Tabelog). 1F Mobius Nishitenma Building, 3-1-27 Nishitenma, Kita-ku, Osaka."
         }
-      ]
+      ],
+      "instagramPosts": []
     },
     {
       "date": "2026-06-07",
@@ -1327,7 +1400,8 @@
           "type": "transport",
           "time": "09:30",
           "notes": "Walk or shuttle from Westin to Hankyu Osaka-Umeda Station. Board the Limited Express (特急) on the Hankyu Kyoto Line toward Kyoto-Kawaramachi.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Kichi Kichi Omurice",
@@ -1336,7 +1410,8 @@
           "type": "food",
           "time": "12:00",
           "notes": "⚠️ Arrive 20 min early and stand on the RED LINE painted on the pavement outside. Chef Yuichi Goto's theatrical omurice — a showstopper. Zaimokucho, 7-min walk north from Kyoto-Kawaramachi Station.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Pontocho Alley",
@@ -1345,7 +1420,8 @@
           "type": "attraction",
           "time": "13:30",
           "notes": "Narrow cobblestone lane running parallel to the Kamo River. One of Kyoto's most atmospheric alleys — quiet in the afternoon, magical at dusk.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Kamogawa Riverfront",
@@ -1354,7 +1430,8 @@
           "type": "attraction",
           "time": "14:00",
           "notes": "Stroll along the Kamo River. Couples famously sit at equal intervals along the bank. Peaceful contrast between modern city life and Kyoto's natural setting.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Teramachi & Shinkyogoku Shopping Arcades",
@@ -1363,7 +1440,8 @@
           "type": "shopping",
           "time": "14:30",
           "notes": "Covered arcade running north–south through the city centre. Traditional crafts, souvenir shops, fashion, and street food. Connects to Nishiki Market.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Furukawacho Shopping Arcade",
@@ -1372,7 +1450,8 @@
           "type": "shopping",
           "time": "15:00",
           "notes": "East side of the Kamo River — the famous lantern-hung arcade. Great photo spot. 5-min walk or quick taxi from Teramachi.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Kyoto-Kawaramachi Station (return)",
@@ -1381,7 +1460,8 @@
           "type": "transport",
           "time": "15:45",
           "notes": "⚠️ DEPART BY 15:45 on the Hankyu Kyoto Line Limited Express back to Osaka-Umeda (45 min, ¥410). Must be back in Osaka by 5 PM to rest before the 7 PM food tour.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "10 Tastings of Osaka Food Tour",
@@ -1390,7 +1470,8 @@
           "type": "activity",
           "time": "19:00",
           "notes": "With Fay from withLocals. Booking reference: 7D89B827. Meet near Dotonbori at 7:00 PM — confirm exact meeting point with Fay.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -1456,7 +1537,8 @@
           "reference": "7D89B827",
           "notes": "7:00 PM. Confirm exact meeting point with Fay ahead of time. Walking food tour of Dotonbori area."
         }
-      ]
+      ],
+      "instagramPosts": []
     },
     {
       "date": "2026-06-08",
@@ -1475,7 +1557,8 @@
           "type": "attraction",
           "time": "10:30",
           "notes": "Epicentre of Osaka street fashion. Shinsaibashi Station, Exit 7 or 8.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Alice On Wednesday",
@@ -1484,7 +1567,8 @@
           "type": "shopping",
           "time": "10:45",
           "notes": "Boutique themed after Alice in Wonderland with a 'goth-cute' aesthetic. Perfect for Sadie. (2-12-25 Nishishinsaibashi, Chuo-ku)",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Mandarake Grand Chaos",
@@ -1493,7 +1577,8 @@
           "type": "shopping",
           "time": "11:15",
           "notes": "Multi-story temple for otaku culture. Rare anime figures, alternative subculture goods. NOTE: Located in Nipponbashi (Den Den Town), not Amemura — 15-min walk south or quick taxi. (4-12-6 Nippombashi, Naniwa-ku)",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Red Rock Amemura (or Critters Burger)",
@@ -1502,7 +1587,8 @@
           "type": "food",
           "time": "12:30",
           "notes": "Option A — Red Rock: viral 'Roast Beef Don' — mountain of beef over rice with creamy yogurt sauce and raw egg yolk. Option B — Critters Burger: best gourmet burger in Osaka, Japanese beef on artisanal buns. (2-10-21 Nishishinsaibashi, Chuo-ku)",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Shinsaibashi-Suji Shopping Street",
@@ -1511,7 +1597,8 @@
           "type": "shopping",
           "time": "14:00",
           "notes": "5-min walk east from Amemura. Nearly 1 mile of covered shopping. Sanrio Gallery for character goods; huge drugstores for Japanese skincare and alt makeup.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Yoshitora — Honmachi",
@@ -1520,7 +1607,8 @@
           "type": "food",
           "time": "18:30",
           "notes": "Premier Osaka-style unagi. Grilled directly over charcoal without steaming — crispier skin, richer flavour. Midosuji Line north 1 stop to Honmachi (2 min), Exit 12, 5-min walk. (1-6-6 Bingomachi, Chuo Ward)",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -1554,7 +1642,8 @@
         "GO",
         "Japan Travel by NAVITIME"
       ],
-      "tickets": []
+      "tickets": [],
+      "instagramPosts": []
     },
     {
       "date": "2026-06-09",
@@ -1573,7 +1662,8 @@
           "type": "hotel",
           "time": "09:30",
           "notes": "Final check of luggage. If using Takkyubin, bags should already be en route to Haneda. Carry only hand luggage.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Shin-Osaka Station — Shinkansen",
@@ -1582,7 +1672,8 @@
           "type": "transport",
           "time": "11:15",
           "notes": "Board Nozomi Shinkansen to Shinagawa. ⚠️ SEATS D AND E for Mt. Fuji view on the left (~45 min in).",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Mt. Fuji Viewing Window (return trip)",
@@ -1591,7 +1682,8 @@
           "type": "attraction",
           "time": "12:00",
           "notes": "Look LEFT from Seats D/E on the return journey to Tokyo.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Shinagawa Station",
@@ -1600,7 +1692,8 @@
           "type": "transport",
           "time": "13:30",
           "notes": "Arrive from Shin-Osaka. Transfer to the Keikyu Airport Line on the same level.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Haneda Airport Terminal 3",
@@ -1609,7 +1702,8 @@
           "type": "transport",
           "time": "13:45",
           "notes": "Keikyu Airport Line Ltd. Express, ~13 min. Last stop: Haneda Airport Terminal 3.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Royal Park Hotel Tokyo Haneda",
@@ -1618,7 +1712,8 @@
           "type": "hotel",
           "time": "14:00",
           "notes": "Directly inside Terminal 3 — 3rd floor. Walk straight from the hotel lobby to check-in counters tomorrow. Note: Hotel Villa Fontaine Premier is also connected via Haneda Airport Garden (rooftop spa option).",
-          "photo": ""
+          "photo": "",
+          "visited": false
         },
         {
           "name": "Haneda Airport Garden — Dinner",
@@ -1627,7 +1722,8 @@
           "type": "food",
           "time": "19:00",
           "notes": "Massive connected complex with dozens of high-end restaurant options. The perfect final dinner before your flight home.",
-          "photo": ""
+          "photo": "",
+          "visited": false
         }
       ],
       "transit": [
@@ -1680,7 +1776,8 @@
           "reference": "",
           "notes": "If arranged, bags arrive at Royal Park Hotel by afternoon of June 9. Confirm with Westin bell desk on June 8."
         }
-      ]
+      ],
+      "instagramPosts": []
     }
   ]
 }
