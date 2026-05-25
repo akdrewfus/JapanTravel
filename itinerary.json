@@ -123,7 +123,8 @@
           "time": "07:00",
           "notes": "Leave hotel early for Tsukiji.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Tsukiji Outer Market",
@@ -133,17 +134,19 @@
           "time": "07:20",
           "notes": "Walk 15 min south or take a 5-min taxi (GO app). Fresh sushi, tamagoyaki, and street food. Browse the stalls.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Age.3 Ginza",
           "lat": 35.6738,
           "lng": 139.7683,
           "type": "food",
-          "time": "10:00",
+          "time": "11:00",
           "notes": "10-min walk north from Tsukiji. Famous fluffy fried bread filled with cream — a Tokyo signature treat. Then continue a few minutes to Ginza Station for the Hibiya Line to Akihabara. (1-24-11 Ginza, near Ginza-itchome Station)",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Radio Kaikan — Akihabara",
@@ -153,7 +156,8 @@
           "time": "12:00",
           "notes": "Floors 4–6: Hatsune Miku and anime merchandise. Right outside the Electric Town Exit.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Kanda Myojin Shrine",
@@ -163,7 +167,8 @@
           "time": "14:30",
           "notes": "10-min walk from Radio Kaikan. The 'geek shrine' — buy talismans for your electronics. Beautiful vermilion gates.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Ichiran Shimbashi",
@@ -173,7 +178,8 @@
           "time": "19:00",
           "notes": "Solo ramen booths — each person eats in their own cubicle. Customise your broth on a paper form.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         }
       ],
       "transit": [
