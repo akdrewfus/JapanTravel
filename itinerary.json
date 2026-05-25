@@ -1568,7 +1568,7 @@
           "type": "hotel",
           "time": "09:30",
           "notes": "Final check of luggage. If using Takkyubin, bags should already be en route to Haneda. Carry only hand luggage.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_Westin_Osaka_01.jpg/800px-The_Westin_Osaka_01.jpg"
+          "photo": ""
         },
         {
           "name": "Shin-Osaka Station — Shinkansen",
@@ -1577,7 +1577,7 @@
           "type": "transport",
           "time": "11:15",
           "notes": "Board Nozomi Shinkansen to Shinagawa. ⚠️ SEATS D AND E for Mt. Fuji view on the left (~45 min in).",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/IBA-Shinosaka-panoramic-view-2020.jpg/800px-IBA-Shinosaka-panoramic-view-2020.jpg"
+          "photo": ""
         },
         {
           "name": "Mt. Fuji Viewing Window (return trip)",
@@ -1586,7 +1586,7 @@
           "type": "attraction",
           "time": "12:00",
           "notes": "Look LEFT from Seats D/E on the return journey to Tokyo.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/800px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg"
+          "photo": ""
         },
         {
           "name": "Shinagawa Station",
@@ -1604,7 +1604,7 @@
           "type": "transport",
           "time": "13:45",
           "notes": "Keikyu Airport Line Ltd. Express, ~13 min. Last stop: Haneda Airport Terminal 3.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/All_haneda.jpg/800px-All_haneda.jpg"
+          "photo": ""
         },
         {
           "name": "Royal Park Hotel Tokyo Haneda",
@@ -1622,7 +1622,7 @@
           "type": "food",
           "time": "19:00",
           "notes": "Massive connected complex with dozens of high-end restaurant options. The perfect final dinner before your flight home.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/All_haneda.jpg/800px-All_haneda.jpg"
+          "photo": ""
         }
       ],
       "transit": [
