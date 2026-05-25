@@ -640,7 +640,7 @@
       "suggestedStart": "10:00",
       "startReason": "Monday morning rush runs until ~9:30 AM. Leave after 10:00 AM to ride a comfortable train. Shinjuku Gyoen is best mid-morning.",
       "rushHourNote": "Avoid the Marunouchi Line before 9:30 AM on Monday — very crowded. Leave hotel at 10:00 AM.",
-      "dayNotes": "Full day in Shinjuku. The cosplay adventure at 5 PM is the centrepiece — everything else builds around it. Tsurutontan is 4 mins from the Godzilla Head so dinner is effortless post-cosplay.",
+      "dayNotes": "Full day in Shinjuku. Lunch at YAKINIKU LIKE near the South Exit, then stroll north through the lantern-lit alley of Omoide Yokocho before hitting Kabukicho for the Godzilla Head and Don Quijote. The cosplay adventure at 5 PM is the centrepiece — everything else builds around it. Tsurutontan is 4 mins from the Godzilla Head so dinner is effortless post-cosplay.",
       "stops": [
         {
           "name": "Shinjuku Gyoen National Garden",
@@ -653,12 +653,22 @@
           "visited": false
         },
         {
+          "name": "YAKINIKU LIKE — Shinjuku Minamiguchi",
+          "lat": 35.6876,
+          "lng": 139.7002,
+          "type": "food",
+          "time": "12:00",
+          "notes": "Solo-style yakiniku — every seat has its own individual grill. High-quality beef sets at accessible prices. Great for a quick, satisfying lunch. Located just south of Shinjuku Station's South Exit (Minamiguchi).",
+          "photo": "",
+          "visited": false
+        },
+        {
           "name": "Omoide Yokocho (Memory Lane)",
           "lat": 35.6918,
           "lng": 139.6995,
           "type": "food",
-          "time": "12:30",
-          "notes": "'Piss Alley' — narrow grid of tiny stalls serving yakitori and ramen. Look for the green and red lanterns next to the train tracks.",
+          "time": "13:15",
+          "notes": "Walk north from YAKINIKU LIKE, 5 min. Narrow grid of tiny yakitori stalls wedged between the train tracks — look for the green and red lanterns. This is a walk-through and photo stop rather than a full meal (lunch is handled). Soak in the atmosphere.",
           "photo": "",
           "visited": false
         },
@@ -667,7 +677,7 @@
           "lat": 35.694,
           "lng": 139.7019,
           "type": "attraction",
-          "time": "14:00",
+          "time": "14:15",
           "notes": "Look up at the Kabukicho entrance. The Godzilla head looms over the building — unmissable. (1-19-1 Kabukicho)",
           "photo": "",
           "visited": false
@@ -677,7 +687,7 @@
           "lat": 35.6936,
           "lng": 139.7012,
           "type": "shopping",
-          "time": "14:30",
+          "time": "14:45",
           "notes": "Multi-story megastore. Perfect for unique snacks and souvenirs. (1-16-5 Kabukicho)",
           "photo": "",
           "visited": false
@@ -714,11 +724,19 @@
         },
         {
           "from": "Shinjuku Gyoen",
-          "to": "Omoide Yokocho / Kabukicho",
+          "to": "YAKINIKU LIKE (Shinjuku South Exit)",
           "method": "Walk",
-          "duration": "15 min",
+          "duration": "~12 min",
           "cost": "Free",
-          "notes": "Walk toward Shinjuku Station's West Exit for Memory Lane."
+          "notes": "Head west/northwest from the garden exit toward Shinjuku Station. YAKINIKU LIKE Minamiguchi is just south of the station's South Exit."
+        },
+        {
+          "from": "YAKINIKU LIKE",
+          "to": "Omoide Yokocho → Godzilla Head → Don Quijote",
+          "method": "Walk",
+          "duration": "5 min → 10 min → 3 min",
+          "cost": "Free",
+          "notes": "Walk north past the JR tracks to Omoide Yokocho (Memory Lane). Continue east through Kabukicho to the Godzilla Head (Shinjuku Toho Bldg), then 2 mins to Don Quijote."
         },
         {
           "from": "Shinjuku",
