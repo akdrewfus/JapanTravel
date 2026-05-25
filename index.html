@@ -995,7 +995,9 @@ function renderTimeline(day) {
   const items = day.stops.map((s, i) => {
     const info    = TYPE_ICONS[s.type] || { emoji: '📌', label: s.type };
     const color   = `var(--${s.type}, var(--transport))`;
-    const searchQ = encodeURIComponent(`${s.name} ${day.location}`);
+    const cleanName = s.name.split(' — ')[0].trim();
+    const cleanLoc  = day.location.split(/[\s(+→]/)[0].trim();
+    const searchQ = encodeURIComponent(`${cleanName} ${cleanLoc}`);
     const photoHtml = s.photo
       ? `<img class="stop-photo" src="${esc(s.photo)}" alt="${esc(s.name)}" loading="lazy"
              onclick="openPhoto('${s.photo.replace(/'/g,"\\'").replace(/"/g,'&quot;')}','${s.name.replace(/'/g,"\\'")}');event.stopPropagation()">`

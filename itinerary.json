@@ -50,15 +50,6 @@
           "time": "19:00",
           "notes": "Thick dipping-style Tsukemen ramen. Open 7:30 AM–10:30 PM, last order 10:00 PM. Expect a short queue.",
           "photo": ""
-        },
-        {
-          "name": "Tsuru Ton Tan BIS TOKYO",
-          "lat": "",
-          "lng": "",
-          "type": "food",
-          "time": "19:00",
-          "notes": "Other option for dinner - Udon at Marunouchi Underground South Exit in Tokyo Station.",
-          "photo": ""
         }
       ],
       "transit": [
@@ -1316,9 +1307,9 @@
       "location": "Kyoto (day trip from Osaka) + Osaka",
       "hotel": "The Westin Osaka",
       "suggestedStart": "09:00",
-      "startReason": "⚠️ BOOK KICHI KICHI OMURICE at 9:00 AM SHARP from hotel. Same-day online booking only — slots sell out in minutes. Have the booking page ready on your phone at 8:59 AM.",
+      "startReason": "⚠️ Two things before you leave the hotel: (1) Ask the concierge to arrange Takkyubin luggage forwarding to Royal Park Hotel Tokyo Haneda — Haneda destinations require 2 days, so today is the deadline for June 9 arrival. (2) BOOK KICHI KICHI OMURICE at 9:00 AM SHARP — same-day online only, slots sell in minutes.",
       "rushHourNote": "Sunday — no rush. Must depart Kyoto by 3:45 PM to be back in Osaka by 5 PM for the 7 PM food tour.",
-      "dayNotes": "Start the morning by booking Kichi Kichi at 9 AM on the dot, then take the Hankyu Kyoto Line (NOT JR) to Kyoto-Kawaramachi. Omurice lunch, Pontocho afternoon stroll, lantern arcade, and back to Osaka for Fay's food tour. The Hankyu line from Osaka-Umeda is faster and cheaper than JR for this route.",
+      "dayNotes": "⚠️ Before leaving: ask the Westin concierge to arrange Takkyubin forwarding for your large bags to Royal Park Hotel Tokyo Haneda — Haneda destinations require 2 days, so today is the deadline for June 9 arrival. Then book Kichi Kichi at 9 AM sharp. Take the Hankyu Kyoto Line (NOT JR) to Kyoto-Kawaramachi for omurice, Pontocho, and the lantern arcade, then back for Fay's food tour.",
       "stops": [
         {
           "name": "Osaka-Umeda Station (Hankyu)",
@@ -1441,6 +1432,11 @@
         "Japan Travel by NAVITIME"
       ],
       "tickets": [
+        {
+          "name": "Takkyubin Luggage Forwarding — Westin to Royal Park Hotel Haneda",
+          "reference": "",
+          "notes": "⚠️ Arrange with Westin concierge on the morning of June 7. Haneda destinations require 2 days — bags must be sent today to arrive June 9. Destination: Royal Park Hotel Tokyo Haneda, Terminal 3, Haneda Airport."
+        },
         {
           "name": "Kichi Kichi Omurice — Same-Day Booking",
           "reference": "",
