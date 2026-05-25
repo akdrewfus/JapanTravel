@@ -23,7 +23,8 @@
           "time": "15:25",
           "notes": "Meet your Klook driver at the arrivals hall. Look for a sign with your name.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Courtyard by Marriott Tokyo Station",
@@ -33,7 +34,8 @@
           "time": "16:15",
           "notes": "Yaesu side of Tokyo Station. Check in, drop bags, freshen up. 7-Eleven is in the building.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Tokyo Character Street",
@@ -43,7 +45,8 @@
           "time": "17:00",
           "notes": "In the Tokyo Station basement. Official Pokémon Center and Ghibli store — perfect first stop for Sadie.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Rokurinsha (Ramen Street)",
@@ -52,6 +55,17 @@
           "type": "food",
           "time": "19:00",
           "notes": "Thick dipping-style Tsukemen ramen. Open 7:30 AM–10:30 PM, last order 10:00 PM. Expect a short queue.",
+          "photo": "",
+          "visited": false,
+          "undefined": 0
+        },
+        {
+          "name": "Tsuru Ton Tan BIS TOKYO",
+          "lat": 35.6813,
+          "lng": 139.7669,
+          "type": "food",
+          "time": "19:00",
+          "notes": "Another option for dinner, Tsuru Ton Tan BIS TOKYO, in Tokyo Station as well (Marunouchi Underground South Exit) - this place serves Udon.\n",
           "photo": "",
           "visited": false
         }
