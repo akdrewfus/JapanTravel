@@ -839,7 +839,7 @@
           "type": "transport",
           "time": "11:30",
           "notes": "Board Nozomi Shinkansen bound for Shin-Osaka. ⚠️ SEATS D AND E — right-hand side when heading to Osaka. Mt. Fuji visible ~45 min in.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/800px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+          "photo": ""
         },
         {
           "name": "Mt. Fuji Viewing Window",
@@ -848,7 +848,7 @@
           "type": "attraction",
           "time": "12:15",
           "notes": "Look right from Seats D/E approximately 45 minutes into the journey. Check isfujivisible.com in the morning!",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/800px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg"
+          "photo": ""
         },
         {
           "name": "Shin-Osaka Station",
@@ -857,7 +857,7 @@
           "type": "transport",
           "time": "14:00",
           "notes": "Arrive Shin-Osaka. Transfer to JR Kyoto Line (1 stop, 4 min) to JR Osaka Station.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/IBA-Shinosaka-panoramic-view-2020.jpg/800px-IBA-Shinosaka-panoramic-view-2020.jpg"
+          "photo": ""
         },
         {
           "name": "The Westin Osaka",
@@ -866,7 +866,7 @@
           "type": "hotel",
           "time": "14:30",
           "notes": "Exit at Sakurabashi Exit and catch the Westin Shuttle Bus (every 15–20 min, 7:30 AM–10 PM). Or 10–12 min walk via Umeda Underground.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_Westin_Osaka_01.jpg/800px-The_Westin_Osaka_01.jpg"
+          "photo": ""
         },
         {
           "name": "Umeda Sky Building — Kuchu Teien Observatory",
@@ -875,7 +875,7 @@
           "type": "attraction",
           "time": "16:00",
           "notes": "Two towers linked by a 'floating garden' observatory on the 39th floor — panoramic 360° views of Osaka. About 12 min walk northwest from the Westin. Open 10 AM–10 PM (last entry 9:30 PM). ¥2,000 per person. Head to Dotonbori afterwards.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/2018_Umeda_Sky_Building.jpg/800px-2018_Umeda_Sky_Building.jpg"
+          "photo": ""
         },
         {
           "name": "Dotonbori",
@@ -884,7 +884,7 @@
           "type": "attraction",
           "time": "18:00",
           "notes": "Street food, shopping, and Osaka energy. 'Kuidaore' — eat until you drop!",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg/800px-Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg"
+          "photo": ""
         },
         {
           "name": "Wagyu Itaden",
@@ -902,7 +902,7 @@
           "type": "activity",
           "time": "20:00",
           "notes": "Meet at the BACK EXIT of Starbucks at Jo-Terrace, near OsakaJoKoen Station. Guide wears a GREEN BACKPACK. Booking ref: GYGG45XBK2NZ.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Osaka_Castle_03bs3200.jpg/800px-Osaka_Castle_03bs3200.jpg"
+          "photo": ""
         }
       ],
       "transit": [
