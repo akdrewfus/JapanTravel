@@ -50,6 +50,15 @@
           "time": "19:00",
           "notes": "Thick dipping-style Tsukemen ramen. Open 7:30 AM–10:30 PM, last order 10:00 PM. Expect a short queue.",
           "photo": ""
+        },
+        {
+          "name": "Tsuru Ton Tan BIS TOKYO",
+          "lat": 35.6813,
+          "lng": 139.7669,
+          "type": "food",
+          "time": "19:00",
+          "notes": "Another option for dinner, Tsuru Ton Tan BIS TOKYO, in Tokyo Station as well (Marunouchi Underground South Exit) - this place serves Udon.",
+          "photo": ""
         }
       ],
       "transit": [
