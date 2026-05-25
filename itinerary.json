@@ -437,8 +437,8 @@
           "lat": 35.6706,
           "lng": 139.7648,
           "type": "food",
-          "time": "19:00",
-          "notes": "A5 Wagyu with private booth seating. Take Hibiya Line back toward Ginza (~10 min)."
+          "time": "19:30",
+          "notes": "A5 Wagyu with private booth seating. Tabelog reservation: 7ZSW7539A7. Take Hibiya Line back toward Ginza (~10 min)."
         },
         {
           "name": "Itoya Stationery Store — Ginza",
@@ -501,6 +501,11 @@
       ],
       "apps": ["SUICA", "GO", "Japan Travel by NAVITIME", "Klook"],
       "tickets": [
+        {
+          "name": "Oumi Beef Yakiniku Nikutatsu — Ginza",
+          "reference": "7ZSW7539A7",
+          "notes": "7:30 PM reservation (Tabelog). A5 Wagyu, private booth seating."
+        },
         {
           "name": "teamLab Borderless — 3:00 PM Entry",
           "reference": "",
@@ -665,8 +670,8 @@
           "lat": 35.6671,
           "lng": 139.7619,
           "type": "food",
-          "time": "18:00",
-          "notes": "King crab, fresh sushi, and premium yakiniku in an elegant, smoke-free basement setting. (GINZA NINE 3, B1 — south Ginza near Shimbashi)"
+          "time": "19:30",
+          "notes": "King crab, fresh sushi, and premium yakiniku in an elegant, smoke-free basement setting. Tabelog reservation: 7P97W8MM6M. (GINZA NINE 3, B1 — south Ginza near Shimbashi)"
         }
       ],
       "transit": [
@@ -705,6 +710,11 @@
       ],
       "apps": ["SUICA", "SmartEX", "Japan Travel by NAVITIME"],
       "tickets": [
+        {
+          "name": "Seafood Buffet Dining Ginza Happo",
+          "reference": "7P97W8MM6M",
+          "notes": "7:30 PM reservation (Tabelog). GINZA NINE 3, B1F — south Ginza near Shimbashi."
+        },
         {
           "name": "Takkyubin Luggage Forwarding to Osaka",
           "reference": "",
@@ -859,7 +869,7 @@
       "suggestedStart": "11:00",
       "startReason": "Easy day — sleep in and explore on foot near the hotel. The only fixed commitment is the 6:00 PM omakase dinner.",
       "rushHourNote": "Thursday rush 7:30–9:30 AM — not relevant since you're starting late.",
-      "dayNotes": "Chill day near the Westin. The gyukatsu lunch is nearby. The omakase at Sushi Fukushima is the centrepiece — VIP Course at 6 PM. Don't be late.",
+      "dayNotes": "Chill day near the Westin. The gyukatsu lunch is nearby. The omakase at Sushi Fukushima is the centrepiece — VIP Course at 8:30 PM. Don't be late.",
       "stops": [
         {
           "name": "The Westin Osaka",
@@ -882,8 +892,8 @@
           "lat": 34.6944,
           "lng": 135.4852,
           "type": "food",
-          "time": "18:00",
-          "notes": "2-hour VIP Omakase Course. Do NOT be late. Confirm reservation details. (1-2-17 Fukushima, Fukushima-ku — west of central Osaka near Fukushima Station)"
+          "time": "20:30",
+          "notes": "2-hour VIP Omakase Course. Do NOT be late. Tabelog reservation: 4NQSTAYVXR. (1-2-17 Fukushima, Fukushima-ku — west of central Osaka near Fukushima Station)"
         }
       ],
       "transit": [
@@ -908,8 +918,8 @@
       "tickets": [
         {
           "name": "Sushi Fukushima — VIP Omakase Course",
-          "reference": "",
-          "notes": "6:00 PM reservation. 2-hour course. Confirm details and any dietary notes in advance."
+          "reference": "4NQSTAYVXR",
+          "notes": "8:30 PM reservation (Tabelog). 2-hour course. Confirm details and any dietary notes in advance."
         }
       ]
     },
@@ -1057,7 +1067,7 @@
           "lng": 135.1950,
           "type": "food",
           "time": "12:00",
-          "notes": "A5 Kobe beef prepared teppanyaki-style right in front of you. Your locked-in Kobe experience."
+          "notes": "A5 Kobe beef prepared teppanyaki-style right in front of you. Your locked-in Kobe experience. Tabelog reservation: 4EMQNJYCCP."
         },
         {
           "name": "Sennichimae Doguyasuji — Knife Street",
@@ -1144,6 +1154,11 @@
       ],
       "apps": ["SUICA", "GO", "Omakase.in", "Japan Travel by NAVITIME"],
       "tickets": [
+        {
+          "name": "Kobe Beef Steak Ishida — Lunch",
+          "reference": "4EMQNJYCCP",
+          "notes": "12:00 PM reservation (Tabelog). Teppanyaki-style A5 Kobe beef."
+        },
         {
           "name": "Omakase Monitoring — Sushi Oga / Sushiya Yohei / Sushi Harasho / Sushi Saeki",
           "reference": "",
