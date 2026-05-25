@@ -1414,9 +1414,16 @@ async function saveEdit() {
   try {
     // Get current SHA
     const getResp = await fetch(API_URL, {
-      headers: { Authorization: `token ${pat}`, Accept: 'application/vnd.github+json' }
+      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json' }
     });
-    if (!getResp.ok) throw new Error('Could not get file SHA — check your token.');
+    if (!getResp.ok) {
+      let detail = `HTTP ${getResp.status}`;
+      try { const e = await getResp.json(); detail += ': ' + (e.message || JSON.stringify(e)); } catch {}
+      if (getResp.status === 401) detail += ' — token invalid or expired';
+      if (getResp.status === 403) detail += ' — token lacks repo/contents write scope';
+      if (getResp.status === 404) detail += ' — repo or file not found';
+      throw new Error('Could not get file SHA — ' + detail);
+    }
     const fileInfo = await getResp.json();
 
     // Encode content
@@ -1426,7 +1433,7 @@ async function saveEdit() {
     const putResp = await fetch(API_URL, {
       method: 'PUT',
       headers: {
-        Authorization: `token ${pat}`,
+        Authorization: `Bearer ${pat}`,
         Accept: 'application/vnd.github+json',
         'Content-Type': 'application/json',
       },
