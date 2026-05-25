@@ -67,7 +67,8 @@
           "time": "19:00",
           "notes": "Another option for dinner, Tsuru Ton Tan BIS TOKYO, in Tokyo Station as well (Marunouchi Underground South Exit) - this place serves Udon.\n",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         }
       ],
       "transit": [
@@ -94,7 +95,8 @@
         "Japan Travel by NAVITIME",
         "NERV",
         "Papago",
-        "Payke"
+        "Payke",
+        "VisitJapan Web QR Code"
       ],
       "tickets": [
         {
