@@ -219,7 +219,8 @@
           "lng": 139.7704,
           "type": "hotel",
           "time": "07:00",
-          "notes": "Leave by 7:30 AM. Walk north to Yaesu South Exit."
+          "notes": "Leave by 7:30 AM. Walk north to Yaesu South Exit.",
+          "photo": ""
         },
         {
           "name": "Tokyo Station — Yaesu South Exit Bus Stop #1",
@@ -227,7 +228,8 @@
           "lng": 139.7686,
           "type": "transport",
           "time": "07:30",
-          "notes": "Board the direct bus to Tokyo DisneySea here. Runs every 10–20 min, ~35 min ride."
+          "notes": "Board the direct bus to Tokyo DisneySea here. Runs every 10–20 min, ~35 min ride.",
+          "photo": ""
         },
         {
           "name": "Tokyo DisneySea",
@@ -235,7 +237,8 @@
           "lng": 139.8851,
           "type": "activity",
           "time": "08:15",
-          "notes": "Full day at the park! Meals at quick service. Keep scoping last-minute dining reservations."
+          "notes": "Full day at the park! Meals at quick service. Keep scoping last-minute dining reservations.",
+          "photo": ""
         },
         {
           "name": "Maihama Station",
@@ -243,7 +246,8 @@
           "lng": 139.879,
           "type": "transport",
           "time": "21:00",
-          "notes": "Take the Disney Resort Line (monorail) from the park to Maihama Station."
+          "notes": "Take the Disney Resort Line (monorail) from the park to Maihama Station.",
+          "photo": ""
         }
       ],
       "transit": [
@@ -281,7 +285,7 @@
         {
           "name": "Tokyo DisneySea Entry Tickets",
           "reference": "",
-          "notes": "Must be pre-purchased. Book well in advance — often sells out. Use the Disney app or Klook."
+          "notes": "Tickets purchased on Disney Resorts app - no reservations - purchase express pass once in the park and book free fastpass every 2 hours."
         }
       ]
     },
