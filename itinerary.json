@@ -1,6 +1,9 @@
 {
   "tripName": "Japan 2026",
-  "travelers": ["Andrew", "Sadie"],
+  "travelers": [
+    "Andrew",
+    "Sadie"
+  ],
   "days": [
     {
       "date": "2026-05-27",
@@ -18,7 +21,8 @@
           "lng": 139.7803,
           "type": "transport",
           "time": "15:25",
-          "notes": "Meet your Klook driver at the arrivals hall. Look for a sign with your name."
+          "notes": "Meet your Klook driver at the arrivals hall. Look for a sign with your name.",
+          "photo": ""
         },
         {
           "name": "Courtyard by Marriott Tokyo Station",
@@ -26,7 +30,8 @@
           "lng": 139.7704,
           "type": "hotel",
           "time": "16:15",
-          "notes": "Yaesu side of Tokyo Station. Check in, drop bags, freshen up. 7-Eleven is in the building."
+          "notes": "Yaesu side of Tokyo Station. Check in, drop bags, freshen up. 7-Eleven is in the building.",
+          "photo": ""
         },
         {
           "name": "Tokyo Character Street",
@@ -34,7 +39,8 @@
           "lng": 139.7672,
           "type": "attraction",
           "time": "17:00",
-          "notes": "In the Tokyo Station basement. Official Pokémon Center and Ghibli store — perfect first stop for Sadie."
+          "notes": "In the Tokyo Station basement. Official Pokémon Center and Ghibli store — perfect first stop for Sadie.",
+          "photo": ""
         },
         {
           "name": "Rokurinsha (Ramen Street)",
@@ -42,7 +48,8 @@
           "lng": 139.7669,
           "type": "food",
           "time": "19:00",
-          "notes": "Thick dipping-style Tsukemen ramen. Open 7:30 AM–10:30 PM, last order 10:00 PM. Expect a short queue."
+          "notes": "Thick dipping-style Tsukemen ramen. Open 7:30 AM–10:30 PM, last order 10:00 PM. Expect a short queue.",
+          "photo": ""
         }
       ],
       "transit": [
@@ -63,7 +70,15 @@
           "notes": "Walk north to Tokyo Station Yaesu South Exit. Follow signs for 'Tokyo Ichibangai' (First Avenue), then Ramen Street."
         }
       ],
-      "apps": ["GO", "SUICA", "Japan Travel by NAVITIME", "NERV", "Papago", "Payke"],
+      "apps": [
+        "GO",
+        "SUICA",
+        "Japan Travel by NAVITIME",
+        "NERV",
+        "Papago",
+        "Payke",
+        "VisitJapan Web QR Code"
+      ],
       "tickets": [
         {
           "name": "Klook Limo Transfer — Haneda to Hotel",
@@ -116,7 +131,7 @@
         },
         {
           "name": "Kanda Myojin Shrine",
-          "lat": 35.7020,
+          "lat": 35.702,
           "lng": 139.7649,
           "type": "attraction",
           "time": "14:30",
@@ -173,7 +188,13 @@
           "notes": "Kyobashi Station is a 1-min walk from the hotel lobby. Direct to Shimbashi."
         }
       ],
-      "apps": ["SUICA", "Japan Travel by NAVITIME", "Tablelog", "Ramen Beast", "GO"],
+      "apps": [
+        "SUICA",
+        "Japan Travel by NAVITIME",
+        "Tablelog",
+        "Ramen Beast",
+        "GO"
+      ],
       "tickets": []
     },
     {
@@ -204,7 +225,7 @@
         },
         {
           "name": "Tokyo DisneySea",
-          "lat": 35.6270,
+          "lat": 35.627,
           "lng": 139.8851,
           "type": "activity",
           "time": "08:15",
@@ -213,7 +234,7 @@
         {
           "name": "Maihama Station",
           "lat": 35.6323,
-          "lng": 139.8790,
+          "lng": 139.879,
           "type": "transport",
           "time": "21:00",
           "notes": "Take the Disney Resort Line (monorail) from the park to Maihama Station."
@@ -245,7 +266,11 @@
           "notes": "Direct train back. Runs until midnight. Park usually empties by 9:30 PM."
         }
       ],
-      "apps": ["Klook", "SUICA", "Japan Travel by NAVITIME"],
+      "apps": [
+        "Klook",
+        "SUICA",
+        "Japan Travel by NAVITIME"
+      ],
       "tickets": [
         {
           "name": "Tokyo DisneySea Entry Tickets",
@@ -291,7 +316,7 @@
         {
           "name": "Totti Candy Factory",
           "lat": 35.6708,
-          "lng": 139.7050,
+          "lng": 139.705,
           "type": "food",
           "time": "11:30",
           "notes": "1-min walk away. Famous 'Harajuku Rainbow' cotton candy — larger than an umbrella. Great photo."
@@ -371,7 +396,12 @@
           "notes": "Direct taxi back to Courtyard Marriott."
         }
       ],
-      "apps": ["SUICA", "GO", "Japan Travel by NAVITIME", "Tablelog"],
+      "apps": [
+        "SUICA",
+        "GO",
+        "Japan Travel by NAVITIME",
+        "Tablelog"
+      ],
       "tickets": []
     },
     {
@@ -499,7 +529,12 @@
           "notes": "Easy walk back to Courtyard Marriott."
         }
       ],
-      "apps": ["SUICA", "GO", "Japan Travel by NAVITIME", "Klook"],
+      "apps": [
+        "SUICA",
+        "GO",
+        "Japan Travel by NAVITIME",
+        "Klook"
+      ],
       "tickets": [
         {
           "name": "Oumi Beef Yakiniku Nikutatsu — Ginza",
@@ -526,7 +561,7 @@
         {
           "name": "Shinjuku Gyoen National Garden",
           "lat": 35.6852,
-          "lng": 139.7100,
+          "lng": 139.71,
           "type": "attraction",
           "time": "10:30",
           "notes": "Traditional Japanese, French, and English gardens — a peaceful contrast to the Shinjuku skyline. 5-min walk from station exit."
@@ -541,7 +576,7 @@
         },
         {
           "name": "Godzilla Head — Shinjuku Toho Building",
-          "lat": 35.6940,
+          "lat": 35.694,
           "lng": 139.7019,
           "type": "attraction",
           "time": "14:00",
@@ -598,7 +633,11 @@
           "notes": "From Shinjuku Station directly back to Tokyo Station."
         }
       ],
-      "apps": ["SUICA", "GO", "Japan Travel by NAVITIME"],
+      "apps": [
+        "SUICA",
+        "GO",
+        "Japan Travel by NAVITIME"
+      ],
       "tickets": [
         {
           "name": "120-Minute Cosplay Adventure",
@@ -660,7 +699,7 @@
         {
           "name": "Sunshine 60 Observatory Tenbou Park",
           "lat": 35.7294,
-          "lng": 139.7190,
+          "lng": 139.719,
           "type": "attraction",
           "time": "15:30",
           "notes": "360-degree view from 251 metres up. Indoor grassy areas and café. Great last look at Tokyo."
@@ -708,7 +747,11 @@
           "notes": "Last night at the Courtyard. Easy walk or quick taxi."
         }
       ],
-      "apps": ["SUICA", "SmartEX", "Japan Travel by NAVITIME"],
+      "apps": [
+        "SUICA",
+        "SmartEX",
+        "Japan Travel by NAVITIME"
+      ],
       "tickets": [
         {
           "name": "Seafood Buffet Dining Ginza Happo",
@@ -759,7 +802,7 @@
         {
           "name": "Shin-Osaka Station",
           "lat": 34.7335,
-          "lng": 135.5000,
+          "lng": 135.5,
           "type": "transport",
           "time": "14:00",
           "notes": "Arrive Shin-Osaka. Transfer to JR Kyoto Line (1 stop, 4 min) to JR Osaka Station."
@@ -847,7 +890,12 @@
           "notes": "Taxi is easiest from Dotonbori to OsakaJoKoen Station area. Meet guide at Starbucks Jo-Terrace back exit."
         }
       ],
-      "apps": ["SmartEX", "SUICA", "GO", "Japan Travel by NAVITIME"],
+      "apps": [
+        "SmartEX",
+        "SUICA",
+        "GO",
+        "Japan Travel by NAVITIME"
+      ],
       "tickets": [
         {
           "name": "Nozomi Shinkansen — Tokyo → Shin-Osaka",
@@ -914,7 +962,12 @@
           "notes": "Recommended for a reservation dinner — don't risk being late. Restaurant is in Fukushima Ward, west of Umeda."
         }
       ],
-      "apps": ["GO", "Omakase.in", "TableCheck", "Tablelog"],
+      "apps": [
+        "GO",
+        "Omakase.in",
+        "TableCheck",
+        "Tablelog"
+      ],
       "tickets": [
         {
           "name": "Sushi Fukushima — VIP Omakase Course",
@@ -983,7 +1036,7 @@
         },
         {
           "name": "Chao Chao Gyoza — Sanjo Kiyamachi",
-          "lat": 35.0080,
+          "lat": 35.008,
           "lng": 135.7706,
           "type": "food",
           "time": "18:00",
@@ -1040,7 +1093,11 @@
           "notes": "Last Special Rapid: 11:29 PM. Local trains until 12:14 AM. Don't miss it!"
         }
       ],
-      "apps": ["GO", "SUICA", "Japan Travel by NAVITIME"],
+      "apps": [
+        "GO",
+        "SUICA",
+        "Japan Travel by NAVITIME"
+      ],
       "tickets": []
     },
     {
@@ -1064,7 +1121,7 @@
         {
           "name": "Kobe Beef Steak Ishida Main Shop",
           "lat": 34.6921,
-          "lng": 135.1950,
+          "lng": 135.195,
           "type": "food",
           "time": "12:00",
           "notes": "A5 Kobe beef prepared teppanyaki-style right in front of you. Your locked-in Kobe experience. Tabelog reservation: 4EMQNJYCCP."
@@ -1096,7 +1153,7 @@
         {
           "name": "Kasuga Goraku-jo Vintage Arcade",
           "lat": 34.6528,
-          "lng": 135.5060,
+          "lng": 135.506,
           "type": "activity",
           "time": "18:30",
           "notes": "Vintage arcade near Tsutenkaku capturing the 'retro-future' look."
@@ -1104,7 +1161,7 @@
         {
           "name": "Dinner — Omakase or Kame Sushi",
           "lat": 34.7022,
-          "lng": 135.4990,
+          "lng": 135.499,
           "type": "food",
           "time": "20:00",
           "notes": "Tier 1: Watch Omakase.in for cancellations at Sushi Oga, Sushiya Yohei, Sushi Harasho, or Sushi Saeki KitaWard. Tier 2 backup: Kame Sushi Sohonten (Umeda) — legendary high-energy sushi, world-class fish."
@@ -1152,7 +1209,12 @@
           "notes": "Last Midosuji train ~11:50 PM. Westin shuttle from Osaka Station until 10 PM, or walk/taxi 10–12 min."
         }
       ],
-      "apps": ["SUICA", "GO", "Omakase.in", "Japan Travel by NAVITIME"],
+      "apps": [
+        "SUICA",
+        "GO",
+        "Omakase.in",
+        "Japan Travel by NAVITIME"
+      ],
       "tickets": [
         {
           "name": "Kobe Beef Steak Ishida — Lunch",
@@ -1203,7 +1265,7 @@
         {
           "name": "Kamogawa Riverfront",
           "lat": 35.0055,
-          "lng": 135.7700,
+          "lng": 135.77,
           "type": "attraction",
           "time": "14:00",
           "notes": "Stroll along the Kamo River. Couples famously sit at equal intervals along the bank. Peaceful contrast between modern city life and Kyoto's natural setting."
@@ -1283,7 +1345,11 @@
           "notes": "Shuttle to Osaka Station → walk 2 min to Umeda → Midosuji Line south → Namba."
         }
       ],
-      "apps": ["GO", "SUICA", "Japan Travel by NAVITIME"],
+      "apps": [
+        "GO",
+        "SUICA",
+        "Japan Travel by NAVITIME"
+      ],
       "tickets": [
         {
           "name": "Kichi Kichi Omurice — Same-Day Booking",
@@ -1382,7 +1448,11 @@
           "notes": "2 stops north to Umeda Station. Last Midosuji from Honmachi: ~12:06 AM. Trains every 4–6 min."
         }
       ],
-      "apps": ["SUICA", "GO", "Japan Travel by NAVITIME"],
+      "apps": [
+        "SUICA",
+        "GO",
+        "Japan Travel by NAVITIME"
+      ],
       "tickets": []
     },
     {
@@ -1406,7 +1476,7 @@
         {
           "name": "Shin-Osaka Station — Shinkansen",
           "lat": 34.7335,
-          "lng": 135.5000,
+          "lng": 135.5,
           "type": "transport",
           "time": "11:15",
           "notes": "Board Nozomi Shinkansen to Shinagawa. ⚠️ SEATS D AND E for Mt. Fuji view on the left (~45 min in)."
@@ -1437,7 +1507,7 @@
         },
         {
           "name": "Royal Park Hotel Tokyo Haneda",
-          "lat": 35.5490,
+          "lat": 35.549,
           "lng": 139.7798,
           "type": "hotel",
           "time": "14:00",
@@ -1486,7 +1556,11 @@
           "notes": "Direct to Haneda Airport Terminal 3 Station."
         }
       ],
-      "apps": ["SmartEX", "SUICA", "Japan Travel by NAVITIME"],
+      "apps": [
+        "SmartEX",
+        "SUICA",
+        "Japan Travel by NAVITIME"
+      ],
       "tickets": [
         {
           "name": "Nozomi Shinkansen — Shin-Osaka → Shinagawa",
