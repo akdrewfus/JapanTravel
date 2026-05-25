@@ -769,27 +769,6 @@
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 
     /* VISITED STATE */
-    .visited-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 3px;
-      border: 1.5px solid #27ae60;
-      color: #27ae60;
-      background: white;
-      padding: 3px 10px;
-      border-radius: 12px;
-      font-size: 0.7rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-      white-space: nowrap;
-      line-height: 1;
-    }
-    .visited-btn.visited {
-      background: #27ae60;
-      color: white;
-    }
-    .visited-btn:hover:not(.visited) { background: #f0faf5; }
     .timeline-item.is-visited .timeline-dot {
       box-shadow: 0 0 0 3px rgba(39,174,96,0.35);
     }
@@ -1063,11 +1042,9 @@ function renderTimeline(day) {
             ${photoHtml}
           </div>
           ${s.notes ? `<div class="timeline-notes">${s.notes}</div>` : ''}
-          <div style="margin-top:5px;display:flex;align-items:center;flex-wrap:wrap;gap:6px;">
+          <div style="margin-top:5px;">
             <span class="stop-type-tag type-${s.type}" style="background:${color}">${info.label}</span>
             ${(s.lat && s.lng) ? `<a class="maps-link" href="https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}" target="_blank" rel="noopener">🗺️ Directions</a>` : ''}
-            <button class="visited-btn${visited ? ' visited' : ''}"
-                    onclick="toggleVisited('${day.date}',${i});event.stopPropagation()">${visited ? '✓ Visited' : '○ Mark Visited'}</button>
           </div>
         </div>
       </li>`;
@@ -1308,6 +1285,10 @@ function stopEditorHtml(s, i) {
         <span class="stop-num">Stop ${i + 1}</span>
         <button class="btn-remove" onclick="removeStop(${i})">Remove</button>
       </div>
+      <div class="form-group" style="display:flex;align-items:center;gap:8px;padding:4px 0 8px;">
+        <input type="checkbox" data-stop="${i}" data-field="visited" id="visited-${i}" ${s.visited ? 'checked' : ''} style="width:auto;margin:0;accent-color:#27ae60;width:16px;height:16px;cursor:pointer;" />
+        <label for="visited-${i}" style="font-size:0.85rem;font-weight:600;color:#27ae60;cursor:pointer;margin:0;">✓ Mark as Visited</label>
+      </div>
       <div class="two-col">
         <div class="form-group"><label>Name</label><input data-stop="${i}" data-field="name" value="${esc(s.name)}" /></div>
         <div class="form-group"><label>Time</label><input data-stop="${i}" data-field="time" value="${esc(s.time || '')}" placeholder="e.g. 09:00" /></div>
@@ -1429,7 +1410,11 @@ function collectEditData() {
     const i = +el.dataset.stop;
     const f = el.dataset.field;
     if (!d.stops[i]) return;
-    d.stops[i][f] = (f === 'lat' || f === 'lng') ? parseFloat(el.value) || '' : el.value;
+    if (f === 'visited') {
+      d.stops[i][f] = el.checked;
+    } else {
+      d.stops[i][f] = (f === 'lat' || f === 'lng') ? parseFloat(el.value) || '' : el.value;
+    }
   });
 
   // Transit
@@ -1506,67 +1491,6 @@ async function saveEdit() {
     closeEdit();
     renderDay();
     showToast('✅ Saved! Live in ~1–2 min after GitHub rebuilds.');
-  } catch (e) {
-    showToast(`❌ ${e.message}`);
-    console.error(e);
-  }
-}
-
-// ─── TOGGLE VISITED ───────────────────────────────────────
-async function toggleVisited(date, stopIdx) {
-  const pat = localStorage.getItem('japan_pat');
-  if (!pat) { openPat(() => toggleVisited(date, stopIdx)); return; }
-
-  const dayIdx = state.itinerary.days.findIndex(d => d.date === date);
-  if (dayIdx === -1) return;
-  const stop = state.itinerary.days[dayIdx].stops[stopIdx];
-  stop.visited = !stop.visited;
-
-  // Update UI immediately so it feels instant
-  const item = document.querySelector(`.timeline-item[data-date="${date}"][data-stop="${stopIdx}"]`);
-  if (item) {
-    item.classList.toggle('is-visited', stop.visited);
-    const btn = item.querySelector('.visited-btn');
-    if (btn) { btn.classList.toggle('visited', stop.visited); btn.textContent = stop.visited ? '✓ Visited' : '○ Mark Visited'; }
-  }
-
-  showToast('⏳ Saving…');
-  try {
-    const getResp = await fetch(API_URL, {
-      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json' }
-    });
-    if (!getResp.ok) {
-      let detail = `HTTP ${getResp.status}`;
-      try { const e = await getResp.json(); detail += ': ' + (e.message || JSON.stringify(e)); } catch {}
-      if (getResp.status === 401) detail += ' — token invalid or expired';
-      if (getResp.status === 403) detail += ' — token lacks repo/contents write scope';
-      if (getResp.status === 404) detail += ' — repo or file not found';
-      throw new Error('Could not get file SHA — ' + detail);
-    }
-    const fileInfo = await getResp.json();
-    const jsonStr  = JSON.stringify(state.itinerary, null, 2);
-    const encoded  = btoa(unescape(encodeURIComponent(jsonStr)));
-    const putResp = await fetch(API_URL, {
-      method: 'PUT',
-      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        message: `${stop.visited ? 'Visited' : 'Unvisited'}: ${stop.name} (${date})`,
-        content: encoded, sha: fileInfo.sha, branch: BRANCH,
-      }),
-    });
-    if (!putResp.ok) {
-      const err = await putResp.json();
-      // Revert on failure
-      stop.visited = !stop.visited;
-      if (item) {
-        item.classList.toggle('is-visited', stop.visited);
-        const btn = item.querySelector('.visited-btn');
-        if (btn) { btn.classList.toggle('visited', stop.visited); btn.textContent = stop.visited ? '✓ Visited' : '○ Mark Visited'; }
-      }
-      throw new Error(err.message || 'Save failed');
-    }
-    localStorage.setItem('japan_itinerary_cache', JSON.stringify(state.itinerary));
-    showToast(stop.visited ? '✅ Logged to diary!' : '○ Unmarked');
   } catch (e) {
     showToast(`❌ ${e.message}`);
     console.error(e);
