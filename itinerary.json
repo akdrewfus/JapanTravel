@@ -637,18 +637,28 @@
       "title": "Shinjuku Subcultures & Cosplay Adventures",
       "location": "Tokyo",
       "hotel": "Courtyard by Marriott Tokyo Station",
-      "suggestedStart": "10:00",
-      "startReason": "Monday morning rush runs until ~9:30 AM. Leave after 10:00 AM to ride a comfortable train. Shinjuku Gyoen is best mid-morning.",
-      "rushHourNote": "Avoid the Marunouchi Line before 9:30 AM on Monday — very crowded. Leave hotel at 10:00 AM.",
-      "dayNotes": "Full day in Shinjuku. Kaiten sushi lunch at Kura Sushi on the west side, then a short walk east to stroll through the lantern-lit alley of Omoide Yokocho before heading into Kabukicho for the Godzilla Head and Don Quijote. The cosplay adventure at 5 PM is the centrepiece — everything else builds around it. Tsurutontan is 4 mins from the Godzilla Head so dinner is effortless post-cosplay.",
+      "suggestedStart": "08:30",
+      "startReason": "Early start for laundry — walk to 39 Laundry at 8:30 AM before the machines fill up. Back at the hotel by 10:30, then depart to Shinjuku for a full afternoon.",
+      "rushHourNote": "The 8:30 AM laundry walk is on foot — no train needed. By the time you board the Marunouchi Line to Shinjuku (~11:00 AM), Monday rush hour is fully over and trains are comfortable.",
+      "dayNotes": "Morning laundry run to 39 Laundry in Hatchobori — get two loads done early while prepping for a full Shinjuku day. Back at the hotel by 10:30, then it's a direct Marunouchi Line ride to Shinjuku. Kaiten sushi lunch at Kura Sushi (west side of the station) — Sadie will love the Bikkura-Pon capsule lottery every 5 plates. Short walk east through Memory Lane (Omoide Yokocho), then into Kabukicho for the Godzilla Head and Don Quijote. The 5 PM cosplay adventure is the centrepiece of the day. Tsurutontan udon is 4 mins away — effortless post-cosplay dinner.",
       "stops": [
         {
-          "name": "Shinjuku Gyoen National Garden",
-          "lat": 35.6852,
-          "lng": 139.71,
-          "type": "attraction",
+          "name": "39 Laundry — Hatchobori",
+          "lat": 35.6742,
+          "lng": 139.775,
+          "type": "activity",
+          "time": "08:30",
+          "notes": "Morning laundry run — 2 loads while Shinjuku day prep happens. Self-service laundromat at 3 Chome-5-8 Hatchobori, Chuo City. ~15 min walk southeast from the hotel. Washer cycles ~30–35 min, dryer ~40–45 min per load; plan for 90 min total including walk time. Head back to the hotel around 10:00–10:30 before setting off to Shinjuku.",
+          "photo": "",
+          "visited": false
+        },
+        {
+          "name": "Courtyard by Marriott Tokyo Station (return)",
+          "lat": 35.6793,
+          "lng": 139.7681,
+          "type": "hotel",
           "time": "10:30",
-          "notes": "Traditional Japanese, French, and English gardens — a peaceful contrast to the Shinjuku skyline. 5-min walk from station exit.",
+          "notes": "Back at the hotel after laundry. Drop off clean clothes, freshen up, grab bags for a full Shinjuku day. Head to Tokyo Station to catch the Marunouchi Line for Shinjuku.",
           "photo": "",
           "visited": false
         },
@@ -668,7 +678,7 @@
           "lng": 139.6995,
           "type": "food",
           "time": "13:15",
-          "notes": "Walk north from YAKINIKU LIKE, 5 min. Narrow grid of tiny yakitori stalls wedged between the train tracks — look for the green and red lanterns. This is a walk-through and photo stop rather than a full meal (lunch is handled). Soak in the atmosphere.",
+          "notes": "Short walk east from Kura Sushi (~5 min). Narrow grid of tiny yakitori stalls wedged between the JR tracks — look for the green and red lanterns. Walk-through and photo stop rather than a full meal (lunch at Kura Sushi is handled). Soak in the atmosphere before heading east into Kabukicho.",
           "photo": "",
           "visited": false
         },
@@ -715,20 +725,28 @@
       ],
       "transit": [
         {
+          "from": "Courtyard by Marriott Tokyo Station",
+          "to": "39 Laundry — Hatchobori",
+          "method": "Walk",
+          "duration": "~15 min",
+          "cost": "Free",
+          "notes": "Head southeast from the hotel — Hatchobori is just across the Kanda River. Walk past the Showa-dori intersection; 39 Laundry is on Hatchobori 3-chome."
+        },
+        {
+          "from": "39 Laundry — Hatchobori",
+          "to": "Courtyard by Marriott Tokyo Station",
+          "method": "Walk",
+          "duration": "~15 min",
+          "cost": "Free",
+          "notes": "Same route back. Return to hotel ~10:00–10:30, freshen up, then head to Tokyo Station."
+        },
+        {
           "from": "Tokyo Station",
-          "to": "Shinjuku-gyoemmae Station",
+          "to": "Shinjuku Station",
           "method": "Marunouchi Line (Red)",
           "duration": "20 min",
           "cost": "¥210",
-          "notes": "Direct from Tokyo Station. Exit at Shinjuku-gyoemmae — garden is a 5-min walk."
-        },
-        {
-          "from": "Shinjuku Gyoen",
-          "to": "Kura Sushi Nishishinjuku",
-          "method": "Walk",
-          "duration": "~18 min",
-          "cost": "Free",
-          "notes": "Head northwest from the garden exit, pass through the station underpass to the west side (Nishishinjuku). Kura Sushi is in the 1-chome area just west of the station."
+          "notes": "Direct from Tokyo Station. Well after morning rush — trains are comfortable by 11:00 AM. Exit West or South at Shinjuku; Kura Sushi Nishishinjuku is a 3-min walk west."
         },
         {
           "from": "Kura Sushi Nishishinjuku",
