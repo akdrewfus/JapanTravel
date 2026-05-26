@@ -640,7 +640,7 @@
       "suggestedStart": "10:00",
       "startReason": "Monday morning rush runs until ~9:30 AM. Leave after 10:00 AM to ride a comfortable train. Shinjuku Gyoen is best mid-morning.",
       "rushHourNote": "Avoid the Marunouchi Line before 9:30 AM on Monday — very crowded. Leave hotel at 10:00 AM.",
-      "dayNotes": "Full day in Shinjuku. Lunch at YAKINIKU LIKE near the South Exit, then stroll north through the lantern-lit alley of Omoide Yokocho before hitting Kabukicho for the Godzilla Head and Don Quijote. The cosplay adventure at 5 PM is the centrepiece — everything else builds around it. Tsurutontan is 4 mins from the Godzilla Head so dinner is effortless post-cosplay.",
+      "dayNotes": "Full day in Shinjuku. Kaiten sushi lunch at Kura Sushi on the west side, then a short walk east to stroll through the lantern-lit alley of Omoide Yokocho before heading into Kabukicho for the Godzilla Head and Don Quijote. The cosplay adventure at 5 PM is the centrepiece — everything else builds around it. Tsurutontan is 4 mins from the Godzilla Head so dinner is effortless post-cosplay.",
       "stops": [
         {
           "name": "Shinjuku Gyoen National Garden",
@@ -653,12 +653,12 @@
           "visited": false
         },
         {
-          "name": "YAKINIKU LIKE — Shinjuku Minamiguchi",
-          "lat": 35.6876,
-          "lng": 139.7002,
+          "name": "Kura Sushi — Nishishinjuku",
+          "lat": 35.6914,
+          "lng": 139.6951,
           "type": "food",
           "time": "12:00",
-          "notes": "Solo-style yakiniku — every seat has its own individual grill. High-quality beef sets at accessible prices. Great for a quick, satisfying lunch. Located just south of Shinjuku Station's South Exit (Minamiguchi).",
+          "notes": "Kaiten (revolving) sushi with tablet ordering — sushi comes directly to your booth on an individual conveyor. Every 5 plates you play 'Bikkura-Pon', a capsule prize lottery — Sadie will be into this. Ultra-fresh fish sealed under nitrogen until ordered. Most plates ¥115–¥187, so lunch for two runs well under ¥3,000. Located in Nishishinjuku, west side of Shinjuku Station.",
           "photo": "",
           "visited": false
         },
@@ -724,19 +724,19 @@
         },
         {
           "from": "Shinjuku Gyoen",
-          "to": "YAKINIKU LIKE (Shinjuku South Exit)",
+          "to": "Kura Sushi Nishishinjuku",
           "method": "Walk",
-          "duration": "~12 min",
+          "duration": "~18 min",
           "cost": "Free",
-          "notes": "Head west/northwest from the garden exit toward Shinjuku Station. YAKINIKU LIKE Minamiguchi is just south of the station's South Exit."
+          "notes": "Head northwest from the garden exit, pass through the station underpass to the west side (Nishishinjuku). Kura Sushi is in the 1-chome area just west of the station."
         },
         {
-          "from": "YAKINIKU LIKE",
+          "from": "Kura Sushi Nishishinjuku",
           "to": "Omoide Yokocho → Godzilla Head → Don Quijote",
           "method": "Walk",
-          "duration": "5 min → 10 min → 3 min",
+          "duration": "~5 min → 10 min → 3 min",
           "cost": "Free",
-          "notes": "Walk north past the JR tracks to Omoide Yokocho (Memory Lane). Continue east through Kabukicho to the Godzilla Head (Shinjuku Toho Bldg), then 2 mins to Don Quijote."
+          "notes": "Short walk east along the JR tracks — Omoide Yokocho (Memory Lane) is right there on the north side of the station. Continue east through Kabukicho to the Godzilla Head, then 2 mins south to Don Quijote."
         },
         {
           "from": "Shinjuku",
