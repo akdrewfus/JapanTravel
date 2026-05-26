@@ -1260,6 +1260,21 @@ function buildEditForm(day) {
         ${(day.apps || []).map(a => appChipHtml(a)).join('')}
       </div>
     </div>
+
+    <!-- INSTAGRAM POSTS -->
+    <div class="modal-section">
+      <div class="modal-section-title">📸 Instagram Posts</div>
+      <div class="app-chip-list" id="ef-instagram" style="margin-bottom:8px;">
+        ${(day.instagramPosts || []).map((code, i) => igChipHtml(code, i)).join('')}
+      </div>
+      <div class="app-list-input">
+        <input id="ef-new-ig" placeholder="Paste URL or shortcode…" onkeydown="if(event.key==='Enter')addInstagramPost()" />
+        <button onclick="addInstagramPost()">Add</button>
+      </div>
+      <div style="font-size:0.72rem;color:var(--muted);margin-top:4px;line-height:1.4;">
+        Paste a full Instagram post URL or just the shortcode (e.g. CxY8abc123D)
+      </div>
+    </div>
   `;
 }
 
@@ -1333,6 +1348,14 @@ function appChipHtml(name) {
   return `<div class="app-chip">${name}<button onclick="removeApp(this)" data-app="${esc(name)}">×</button></div>`;
 }
 
+function igChipHtml(code, i) {
+  return `<div class="app-chip" id="ig-chip-${i}">
+    <a href="https://www.instagram.com/p/${esc(code)}/" target="_blank" rel="noopener"
+       style="color:inherit;text-decoration:none;font-family:monospace;font-size:0.78rem;">${esc(code)}</a>
+    <button onclick="removeInstagramPost(${i})">×</button>
+  </div>`;
+}
+
 // ─── EDIT ACTIONS ─────────────────────────────────────────
 function addStop() {
   const day = state.editDayData;
@@ -1392,6 +1415,26 @@ function removeApp(btn) {
   const name = btn.dataset.app;
   state.editDayData.apps = (state.editDayData.apps || []).filter(a => a !== name);
   btn.closest('.app-chip').remove();
+}
+
+function addInstagramPost() {
+  const input = document.getElementById('ef-new-ig');
+  let val = input.value.trim();
+  if (!val) return;
+  const urlMatch = val.match(/instagram\.com\/p\/([^\/\?&#]+)/);
+  if (urlMatch) val = urlMatch[1];
+  state.editDayData.instagramPosts = state.editDayData.instagramPosts || [];
+  if (state.editDayData.instagramPosts.includes(val)) { showToast('Already added!'); return; }
+  state.editDayData.instagramPosts.push(val);
+  const i = state.editDayData.instagramPosts.length - 1;
+  document.getElementById('ef-instagram').insertAdjacentHTML('beforeend', igChipHtml(val, i));
+  input.value = '';
+}
+
+function removeInstagramPost(i) {
+  state.editDayData.instagramPosts.splice(i, 1);
+  document.getElementById('ef-instagram').innerHTML =
+    (state.editDayData.instagramPosts || []).map((code, idx) => igChipHtml(code, idx)).join('');
 }
 
 // ─── COLLECT FORM DATA ────────────────────────────────────

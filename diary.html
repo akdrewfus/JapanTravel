@@ -254,112 +254,6 @@
       height: 480px;
       border: none;
     }
-    .ig-remove {
-      position: absolute;
-      top: 6px;
-      right: 6px;
-      background: rgba(0,0,0,0.65);
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-      font-size: 0.65rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 10;
-      transition: background 0.15s;
-    }
-    .ig-remove:hover { background: rgba(200,16,46,0.85); }
-
-    /* ── ADD POST ───────────────────────────────────────── */
-    .add-post-row {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 6px;
-    }
-    .ig-input {
-      flex: 1;
-      padding: 9px 11px;
-      border: 1px solid var(--border);
-      border-radius: 7px;
-      font-size: 0.84rem;
-      font-family: inherit;
-      color: var(--text);
-      background: #f8f9fa;
-      transition: border-color 0.2s;
-    }
-    .ig-input:focus { outline: none; border-color: var(--navy); background: white; }
-    .ig-add-btn {
-      background: var(--navy);
-      color: white;
-      border: none;
-      padding: 9px 16px;
-      border-radius: 7px;
-      font-size: 0.84rem;
-      font-weight: 600;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: opacity 0.2s;
-    }
-    .ig-add-btn:hover { opacity: 0.85; }
-    .ig-hint { font-size: 0.72rem; color: var(--muted); line-height: 1.4; }
-
-    /* ── PAT MODAL ──────────────────────────────────────── */
-    .pat-modal {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.7);
-      z-index: 3000;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .pat-modal.open { display: flex; }
-    .pat-box {
-      background: white;
-      border-radius: 12px;
-      padding: 24px;
-      max-width: 400px;
-      width: 100%;
-    }
-    .pat-box h3 { margin-bottom: 8px; }
-    .pat-box p { font-size: 0.82rem; color: var(--muted); margin-bottom: 12px; line-height: 1.5; }
-    .pat-box input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      font-size: 0.85rem;
-      margin-bottom: 10px;
-      font-family: monospace;
-    }
-    .pat-actions { display: flex; gap: 8px; }
-    .pat-actions button { flex: 1; padding: 10px; border-radius: 6px; font-size: 0.85rem; cursor: pointer; border: none; }
-    .pat-save { background: var(--navy); color: white; }
-    .pat-cancel { background: var(--bg); color: var(--text); border: 1px solid var(--border) !important; }
-
-    /* ── TOAST ──────────────────────────────────────────── */
-    .save-status {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #1a1a1a;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      z-index: 9999;
-      opacity: 0;
-      transition: opacity 0.3s;
-      pointer-events: none;
-      white-space: nowrap;
-    }
-    .save-status.show { opacity: 1; }
 
     /* ── LOADING ────────────────────────────────────────── */
     .loading {
@@ -396,28 +290,12 @@
   <div class="loading">Loading diary…</div>
 </main>
 
-<!-- PAT MODAL -->
-<div class="pat-modal" id="pat-modal">
-  <div class="pat-box">
-    <h3>🔑 GitHub Access Token</h3>
-    <p>Enter your GitHub Personal Access Token to save Instagram posts. Same token as the main itinerary app — stored only in this browser.</p>
-    <input type="password" id="pat-input" placeholder="github_pat_…" />
-    <div class="pat-actions">
-      <button class="pat-cancel" onclick="closePat()">Cancel</button>
-      <button class="pat-save" onclick="savePat()">Save Token</button>
-    </div>
-  </div>
-</div>
-
-<div class="save-status" id="save-status"></div>
-
 <script>
 // ─── CONFIG ───────────────────────────────────────────────
 const REPO    = 'akdrewfus/JapanTravel';
 const BRANCH  = 'main';
 const FILE    = 'itinerary.json';
 const RAW_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/${FILE}`;
-const API_URL = `https://api.github.com/repos/${REPO}/contents/${FILE}`;
 
 // Trip timeline bounds (for the days-elapsed bar)
 const TRIP_START = new Date('2026-05-26T00:00:00');
@@ -573,7 +451,7 @@ function renderDayContent() {
         </div>`).join('')}
     </div>` : '';
 
-  // Instagram embeds
+  // Instagram embeds (display only)
   const igHtml = posts.length ? `
     <div class="diary-section">
       <div class="section-label">📸 Instagram Highlights</div>
@@ -583,7 +461,6 @@ function renderDayContent() {
             <iframe src="https://www.instagram.com/p/${esc(code)}/embed"
                     class="ig-embed" frameborder="0" scrolling="no"
                     allowtransparency="true" loading="lazy"></iframe>
-            <button class="ig-remove" onclick="removePost('${esc(day.date)}','${esc(code)}')" title="Remove">✕</button>
           </div>`).join('')}
       </div>
     </div>` : '';
@@ -596,19 +473,6 @@ function renderDayContent() {
       <a href="index.html" class="empty-link">Mark stops as visited →</a>
     </div>` : '';
 
-  // Add post
-  const addPostHtml = `
-    <div class="diary-section add-post-section">
-      <div class="section-label">Add Instagram Post</div>
-      <div class="add-post-row">
-        <input type="text" class="ig-input" id="ig-${esc(day.date)}"
-               placeholder="Paste post URL or shortcode…"
-               onkeydown="if(event.key==='Enter')addPost('${esc(day.date)}')" />
-        <button class="ig-add-btn" onclick="addPost('${esc(day.date)}')">Add</button>
-      </div>
-      <div class="ig-hint">Paste a full Instagram URL or just the shortcode (e.g. CxY8abc123D)</div>
-    </div>`;
-
   main.innerHTML = `
     <div class="diary-day">
       ${heroHtml}
@@ -616,109 +480,10 @@ function renderDayContent() {
         ${emptyHtml}
         ${stopsHtml}
         ${igHtml}
-        ${addPostHtml}
       </div>
     </div>`;
 }
 
-// ─── ADD / REMOVE INSTAGRAM POST ──────────────────────────
-async function addPost(date) {
-  const input = document.getElementById(`ig-${date}`);
-  if (!input) return;
-  let val = input.value.trim();
-  if (!val) return;
-  const urlMatch = val.match(/instagram\.com\/p\/([^\/\?&#]+)/);
-  if (urlMatch) val = urlMatch[1];
-
-  const pat = localStorage.getItem('japan_pat');
-  if (!pat) { openPat(() => addPost(date)); return; }
-
-  const day = itinerary.days.find(d => d.date === date);
-  if (!day) return;
-  day.instagramPosts = day.instagramPosts || [];
-  if (day.instagramPosts.includes(val)) { showToast('Already added!'); return; }
-
-  day.instagramPosts.push(val);
-  input.value = '';
-  showToast('⏳ Saving…');
-  try {
-    await writeToGitHub(`Add Instagram post to ${date}`);
-    showToast('✅ Post added!');
-    renderDayContent();
-  } catch (e) {
-    day.instagramPosts = day.instagramPosts.filter(c => c !== val);
-    showToast(`❌ ${e.message}`);
-  }
-}
-
-async function removePost(date, code) {
-  if (!confirm('Remove this post from the diary?')) return;
-  const pat = localStorage.getItem('japan_pat');
-  if (!pat) { openPat(() => removePost(date, code)); return; }
-  const day = itinerary.days.find(d => d.date === date);
-  if (!day) return;
-  const prev = [...(day.instagramPosts || [])];
-  day.instagramPosts = prev.filter(c => c !== code);
-  showToast('⏳ Saving…');
-  try {
-    await writeToGitHub(`Remove Instagram post from ${date}`);
-    showToast('✅ Removed.');
-    renderDayContent();
-  } catch (e) {
-    day.instagramPosts = prev;
-    showToast(`❌ ${e.message}`);
-  }
-}
-
-// ─── GITHUB WRITE-BACK ────────────────────────────────────
-async function writeToGitHub(commitMsg) {
-  const pat = localStorage.getItem('japan_pat');
-  const getResp = await fetch(API_URL, {
-    headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json' }
-  });
-  if (!getResp.ok) {
-    let detail = `HTTP ${getResp.status}`;
-    try { const e = await getResp.json(); detail += ': ' + (e.message || JSON.stringify(e)); } catch {}
-    if (getResp.status === 401) detail += ' — token invalid or expired';
-    if (getResp.status === 403) detail += ' — token lacks repo/contents write scope';
-    if (getResp.status === 404) detail += ' — repo or file not found';
-    throw new Error('Could not get file SHA — ' + detail);
-  }
-  const fileInfo = await getResp.json();
-  const encoded  = btoa(unescape(encodeURIComponent(JSON.stringify(itinerary, null, 2))));
-  const putResp  = await fetch(API_URL, {
-    method: 'PUT',
-    headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
-    body: JSON.stringify({ message: commitMsg, content: encoded, sha: fileInfo.sha, branch: BRANCH }),
-  });
-  if (!putResp.ok) {
-    const err = await putResp.json();
-    throw new Error(err.message || 'Save failed');
-  }
-  localStorage.setItem('japan_itinerary_cache', JSON.stringify(itinerary));
-}
-
-// ─── PAT MODAL ────────────────────────────────────────────
-let _afterPat = null;
-function openPat(cb) { _afterPat = cb || null; document.getElementById('pat-modal').classList.add('open'); }
-function closePat()  { document.getElementById('pat-modal').classList.remove('open'); }
-function savePat() {
-  const val = document.getElementById('pat-input').value.trim();
-  if (!val) { alert('Please enter a token.'); return; }
-  localStorage.setItem('japan_pat', val);
-  closePat();
-  if (_afterPat) _afterPat();
-}
-
-// ─── TOAST ────────────────────────────────────────────────
-let _toastTimer;
-function showToast(msg) {
-  const el = document.getElementById('save-status');
-  el.textContent = msg;
-  el.classList.add('show');
-  clearTimeout(_toastTimer);
-  _toastTimer = setTimeout(() => el.classList.remove('show'), 4000);
-}
 
 // ─── UTILS ────────────────────────────────────────────────
 function esc(str) {
