@@ -492,12 +492,12 @@
           "visited": false
         },
         {
-          "name": "Unatoto Asakusa",
-          "lat": 35.7119,
-          "lng": 139.7958,
+          "name": "Asakusa Unatetsu — Kokusai-dori",
+          "lat": 35.711,
+          "lng": 139.7952,
           "type": "food",
           "time": "12:00",
-          "notes": "10-min walk from the knife shops. Grilled eel (unagi) over rice — affordable, high-quality.",
+          "notes": "~8 min walk south from Kama-Asa. Long-standing Asakusa institution serving traditional grilled eel (unagi) — order the unaju (lacquered box) for the full experience. Eel is grilled over charcoal, steamed, then glazed in house tare. Address: 1-43-7 Asakusa, Taito-ku, on Kokusai-dori (International Street). Open 11:30–22:00; closed Tuesdays (Sunday May 31 is fine).",
           "photo": "",
           "visited": false
         },
@@ -573,11 +573,11 @@
         },
         {
           "from": "Kappabashi",
-          "to": "Asakusa (lunch & temple)",
+          "to": "Asakusa Unatetsu (Kokusai-dori)",
           "method": "Walk",
           "duration": "10 min",
           "cost": "Free",
-          "notes": "Easy flat walk south into Asakusa."
+          "notes": "Easy flat walk south from Kappabashi into Asakusa. Unatetsu is on Kokusai-dori — head south on Kappabashi-dori, then east along Kokusai-dori. About 8 min."
         },
         {
           "from": "Asakusa Station",
