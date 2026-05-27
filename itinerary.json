@@ -23,7 +23,7 @@
           "time": "15:25",
           "notes": "Meet your Klook driver at the arrivals hall. Look for a sign with your name.",
           "photo": "",
-          "visited": false,
+          "visited": true,
           "undefined": 0
         },
         {
@@ -34,7 +34,7 @@
           "time": "16:15",
           "notes": "Yaesu side of Tokyo Station. Check in, drop bags, freshen up. 7-Eleven is in the building.",
           "photo": "",
-          "visited": false,
+          "visited": true,
           "undefined": 0
         },
         {
