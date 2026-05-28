@@ -173,14 +173,14 @@
           "undefined": 0
         },
         {
-          "name": "Ichiran Shimbashi",
+          "name": "Tsurutontan Bis Tokyo",
           "lat": 35.6655,
           "lng": 139.7586,
           "type": "food",
-          "time": "19:00",
-          "notes": "Solo ramen booths — each person eats in their own cubicle. Customise your broth on a paper form.",
+          "time": "17:00",
+          "notes": "Udon",
           "photo": "",
-          "visited": false,
+          "visited": true,
           "undefined": 0
         }
       ],
