@@ -256,7 +256,8 @@
           "time": "07:00",
           "notes": "Leave by 7:30 AM. Walk north to Yaesu South Exit.",
           "photo": "",
-          "visited": false
+          "visited": true,
+          "undefined": 0
         },
         {
           "name": "Tokyo Station — Yaesu South Exit Bus Stop #1",
@@ -266,7 +267,8 @@
           "time": "07:30",
           "notes": "Board the direct bus to Tokyo DisneySea here. Runs every 10–20 min, ~35 min ride.",
           "photo": "",
-          "visited": false
+          "visited": true,
+          "undefined": 0
         },
         {
           "name": "Tokyo DisneySea",
@@ -276,7 +278,8 @@
           "time": "08:15",
           "notes": "Full day at the park! Meals at quick service. Keep scoping last-minute dining reservations.",
           "photo": "",
-          "visited": false
+          "visited": true,
+          "undefined": 0
         },
         {
           "name": "Maihama Station",
@@ -286,7 +289,8 @@
           "time": "21:00",
           "notes": "Take the Disney Resort Line (monorail) from the park to Maihama Station.",
           "photo": "",
-          "visited": false
+          "visited": true,
+          "undefined": 0
         }
       ],
       "transit": [
