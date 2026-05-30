@@ -353,7 +353,7 @@
           "time": "09:45",
           "notes": "Arrive 15 min before 10 AM opening to beat the queue. Show the barista a photo of Sadie's favourite anime character for 3D foam art.",
           "photo": "",
-          "visited": false,
+          "visited": true,
           "undefined": 0
         },
         {
@@ -364,7 +364,7 @@
           "time": "10:30",
           "notes": "6-min walk from the cafe. Pedestrian-only street — the heart of Harajuku youth fashion.",
           "photo": "",
-          "visited": false,
+          "visited": true,
           "undefined": 0
         },
         {
@@ -375,7 +375,7 @@
           "time": "11:00",
           "notes": "Yami Kawaii and goth-punk styles Sadie will love. On Takeshita Street.",
           "photo": "",
-          "visited": false,
+          "visited": true,
           "undefined": 0
         },
         {
@@ -386,7 +386,7 @@
           "time": "11:30",
           "notes": "1-min walk away. Famous 'Harajuku Rainbow' cotton candy — larger than an umbrella. Great photo.",
           "photo": "",
-          "visited": false,
+          "visited": true,
           "undefined": 0
         },
         {
@@ -452,7 +452,8 @@
           "time": "20:00",
           "notes": "Lantern lit small ally filled with stalls and small bars, quick photoshoot for Sadie before we head back into Shibuya",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         }
       ],
       "transit": [
