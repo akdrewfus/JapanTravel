@@ -353,7 +353,8 @@
           "time": "09:45",
           "notes": "Arrive 15 min before 10 AM opening to beat the queue. Show the barista a photo of Sadie's favourite anime character for 3D foam art.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Takeshita Street",
@@ -363,7 +364,8 @@
           "time": "10:30",
           "notes": "6-min walk from the cafe. Pedestrian-only street — the heart of Harajuku youth fashion.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "ACDC RAG 原宿本店",
@@ -373,7 +375,8 @@
           "time": "11:00",
           "notes": "Yami Kawaii and goth-punk styles Sadie will love. On Takeshita Street.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Totti Candy Factory",
@@ -383,27 +386,8 @@
           "time": "11:30",
           "notes": "1-min walk away. Famous 'Harajuku Rainbow' cotton candy — larger than an umbrella. Great photo.",
           "photo": "",
-          "visited": false
-        },
-        {
-          "name": "Katsudon-ya Zuicho — Shibuya",
-          "lat": 35.6601,
-          "lng": 139.6982,
-          "type": "food",
-          "time": "12:00",
-          "notes": "20-min stroll south via Cat Street corridor. Opens 11:30 AM. Counter-only. Crispy pork katsudon — arrive near opening.",
-          "photo": "",
-          "visited": false
-        },
-        {
-          "name": "INITIAL Omotesando",
-          "lat": 35.6653,
-          "lng": 139.7142,
-          "type": "food",
-          "time": "14:00",
-          "notes": "17-min walk. 'Shime Parfaits' — artistic high-end desserts with seasonal fruit and Hokkaido cream.",
-          "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Shibuya 109",
@@ -413,7 +397,8 @@
           "time": "15:00",
           "notes": "15-min walk. 10-story tower — epicentre of Japanese teen fashion with alt and anime-influenced styles.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Shibuya Parco",
@@ -423,7 +408,8 @@
           "time": "16:30",
           "notes": "If you have extra time. Nintendo and Pokémon stores inside.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Yakitori Toriyoshi Nishiazabu",
@@ -432,6 +418,39 @@
           "type": "food",
           "time": "18:00",
           "notes": "Arrive ~6:00–6:15 PM, expect 30-min wait. Polished yakitori — calm, minimalist, smoke-free. 'Omakase stop system' keeps skewers coming until you say stop.",
+          "photo": "",
+          "visited": false,
+          "undefined": 0
+        },
+        {
+          "name": "Ichiran Ramen",
+          "lat": "",
+          "lng": "",
+          "type": "food",
+          "time": "15:00",
+          "notes": "Quick stop for ramen after dropping off all our shopping bags",
+          "photo": "",
+          "visited": false,
+          "undefined": 0
+        },
+        {
+          "name": "Shibuya Center Gai",
+          "lat": "",
+          "lng": "",
+          "type": "food",
+          "time": "19:00",
+          "notes": "Street vendors and shopping for dinner after doing the Shibuya Crossing",
+          "photo": "",
+          "visited": false,
+          "undefined": 0
+        },
+        {
+          "name": "Shibuya Nonbei Yokocho",
+          "lat": "",
+          "lng": "",
+          "type": "attraction",
+          "time": "20:00",
+          "notes": "Lantern lit small ally filled with stalls and small bars, quick photoshoot for Sadie before we head back into Shibuya",
           "photo": "",
           "visited": false
         }
