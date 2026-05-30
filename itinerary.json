@@ -394,19 +394,8 @@
           "lat": 35.6597,
           "lng": 139.6986,
           "type": "shopping",
-          "time": "15:00",
+          "time": "19:00",
           "notes": "15-min walk. 10-story tower — epicentre of Japanese teen fashion with alt and anime-influenced styles.",
-          "photo": "",
-          "visited": false,
-          "undefined": 0
-        },
-        {
-          "name": "Shibuya Parco",
-          "lat": 35.6592,
-          "lng": 139.6984,
-          "type": "shopping",
-          "time": "16:30",
-          "notes": "If you have extra time. Nintendo and Pokémon stores inside.",
           "photo": "",
           "visited": false,
           "undefined": 0
@@ -441,7 +430,8 @@
           "time": "16:00",
           "notes": "Line at Ichiran was long, stopped by this place. Chef is famous for buying the most expensive tuna on record. Amazing sushi, a little over priced. ",
           "photo": "",
-          "visited": true
+          "visited": true,
+          "undefined": 0
         }
       ],
       "transit": [
