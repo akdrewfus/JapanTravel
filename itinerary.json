@@ -412,28 +412,6 @@
           "undefined": 0
         },
         {
-          "name": "Yakitori Toriyoshi Nishiazabu",
-          "lat": 35.6544,
-          "lng": 139.7278,
-          "type": "food",
-          "time": "18:00",
-          "notes": "Arrive ~6:00–6:15 PM, expect 30-min wait. Polished yakitori — calm, minimalist, smoke-free. 'Omakase stop system' keeps skewers coming until you say stop.",
-          "photo": "",
-          "visited": false,
-          "undefined": 0
-        },
-        {
-          "name": "Ichiran Ramen",
-          "lat": "",
-          "lng": "",
-          "type": "food",
-          "time": "15:00",
-          "notes": "Quick stop for ramen after dropping off all our shopping bags",
-          "photo": "",
-          "visited": false,
-          "undefined": 0
-        },
-        {
           "name": "Shibuya Center Gai",
           "lat": "",
           "lng": "",
