@@ -432,6 +432,16 @@
           "photo": "",
           "visited": false,
           "undefined": 0
+        },
+        {
+          "name": "Sushi Zanmai Shinbashi",
+          "lat": "",
+          "lng": "",
+          "type": "food",
+          "time": "16:00",
+          "notes": "Line at Ichiran was long, stopped by this place. Chef is famous for buying the most expensive tuna on record. Amazing sushi, a little over priced. ",
+          "photo": "",
+          "visited": true
         }
       ],
       "transit": [
