@@ -497,17 +497,8 @@
           "time": "10:00",
           "notes": "Handmade Damascus-style knives. On-site engraving available — perfect functional souvenir. Arrive at opening.",
           "photo": "",
-          "visited": false
-        },
-        {
-          "name": "Asakusa Unatetsu — Kokusai-dori",
-          "lat": 35.711,
-          "lng": 139.7952,
-          "type": "food",
-          "time": "12:00",
-          "notes": "~8 min walk south from Kama-Asa. Long-standing Asakusa institution serving traditional grilled eel (unagi) — order the unaju (lacquered box) for the full experience. Eel is grilled over charcoal, steamed, then glazed in house tare. Address: 1-43-7 Asakusa, Taito-ku, on Kokusai-dori (International Street). Open 11:30–22:00; closed Tuesdays (Sunday May 31 is fine).",
-          "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Senso-ji Temple",
@@ -517,17 +508,8 @@
           "time": "13:00",
           "notes": "5-min walk. Tokyo's oldest temple. Explore the Nakamise shopping street leading to the gate.",
           "photo": "",
-          "visited": false
-        },
-        {
-          "name": "Asakusa Underground Mall",
-          "lat": 35.7118,
-          "lng": 139.7965,
-          "type": "attraction",
-          "time": "13:45",
-          "notes": "At the Ginza Line entrance. 1950s time-capsule vibe — surprisingly photogenic.",
-          "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "PEARL SEIWA — Higashiueno",
@@ -537,7 +519,8 @@
           "time": "14:15",
           "notes": "From Asakusa Station, take the Ginza Line 3 stops to Inaricho Station (3 min), then walk 5 min southwest. High-quality Japanese pearl jewellery — browse their collection and pick something for Sara. Allow about an hour.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "teamLab Borderless — Azabudai Hills",
@@ -547,7 +530,8 @@
           "time": "15:00",
           "notes": "Booked 3:00 PM entry. Everything connected underground from Kamiyacho Station — follow signs for Azabudai Hills.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Oumi Beef Yakiniku Nikutatsu — Ginza",
@@ -557,7 +541,8 @@
           "time": "19:30",
           "notes": "A5 Wagyu with private booth seating. Tabelog reservation: 7ZSW7539A7. Take Hibiya Line back toward Ginza (~10 min).",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Itoya Stationery Store — Ginza",
@@ -567,7 +552,8 @@
           "time": "20:30",
           "notes": "12-story stationery store. Visit the indoor hydroponic farm on the top floor before or after dinner.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         }
       ],
       "transit": [
