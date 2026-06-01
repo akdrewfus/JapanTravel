@@ -646,7 +646,8 @@
           "time": "08:30",
           "notes": "Morning laundry run — 2 loads while Shinjuku day prep happens. Self-service laundromat at 3 Chome-5-8 Hatchobori, Chuo City. ~15 min walk southeast from the hotel. Washer cycles ~30–35 min, dryer ~40–45 min per load; plan for 90 min total including walk time. Head back to the hotel around 10:00–10:30 before setting off to Shinjuku.",
           "photo": "",
-          "visited": false
+          "visited": true,
+          "undefined": 0
         },
         {
           "name": "Courtyard by Marriott Tokyo Station (return)",
@@ -656,7 +657,8 @@
           "time": "10:30",
           "notes": "Back at the hotel after laundry. Drop off clean clothes, freshen up, grab bags for a full Shinjuku day. Head to Tokyo Station to catch the Marunouchi Line for Shinjuku.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         },
         {
           "name": "Kura Sushi — Nishishinjuku",
@@ -666,7 +668,8 @@
           "time": "12:00",
           "notes": "Kaiten (revolving) sushi with tablet ordering — sushi comes directly to your booth on an individual conveyor. Every 5 plates you play 'Bikkura-Pon', a capsule prize lottery — Sadie will be into this. Ultra-fresh fish sealed under nitrogen until ordered. Most plates ¥115–¥187, so lunch for two runs well under ¥3,000. Located in Nishishinjuku, west side of Shinjuku Station.",
           "photo": "",
-          "visited": false
+          "visited": true,
+          "undefined": 0
         },
         {
           "name": "Omoide Yokocho (Memory Lane)",
@@ -676,7 +679,8 @@
           "time": "13:15",
           "notes": "Short walk east from Kura Sushi (~5 min). Narrow grid of tiny yakitori stalls wedged between the JR tracks — look for the green and red lanterns. Walk-through and photo stop rather than a full meal (lunch at Kura Sushi is handled). Soak in the atmosphere before heading east into Kabukicho.",
           "photo": "",
-          "visited": false
+          "visited": true,
+          "undefined": 0
         },
         {
           "name": "Godzilla Head — Shinjuku Toho Building",
@@ -686,7 +690,8 @@
           "time": "14:15",
           "notes": "Look up at the Kabukicho entrance. The Godzilla head looms over the building — unmissable. (1-19-1 Kabukicho)",
           "photo": "",
-          "visited": false
+          "visited": true,
+          "undefined": 0
         },
         {
           "name": "Don Quijote Shinjuku Kabukicho",
@@ -696,7 +701,8 @@
           "time": "14:45",
           "notes": "Multi-story megastore. Perfect for unique snacks and souvenirs. (1-16-5 Kabukicho)",
           "photo": "",
-          "visited": false
+          "visited": true,
+          "undefined": 0
         },
         {
           "name": "120-Minute Cosplay Adventure",
@@ -706,7 +712,8 @@
           "time": "17:00",
           "notes": "Check in at 5:00 PM at Shinjuku Ale Bar — 1-14-5 Kabukicho, Shinjuku (Marui Building, 1F/2F). On Central Road heading toward the Godzilla Head, next to Karaoke 747. Guided walkthrough — dress as anime characters. Finishes around 7:00 PM. Booked via Viator (ref: 1386039823). ⚠️ Tickets available from May 30 once payment goes through — download before the day.",
           "photo": "",
-          "visited": false
+          "visited": true,
+          "undefined": 0
         },
         {
           "name": "Tsurutontan Shinjuku",
@@ -716,7 +723,8 @@
           "time": "19:15",
           "notes": "4-min walk from Godzilla Head. Stylish udon brasserie — non-smoking. Massive 'washbowl' sized udon bowls. Teenager-friendly with occasional live music.",
           "photo": "",
-          "visited": false
+          "visited": false,
+          "undefined": 0
         }
       ],
       "transit": [
